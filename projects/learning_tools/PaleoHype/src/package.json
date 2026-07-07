@@ -1,0 +1,6 @@
+{
+  "name": "paleohype-dinosaurs-prehistoric-life",
+  "version": "1.0.0",
+  "description": "PaleoHype: an offline, single-file React educational app covering dinosaurs, fossils, and prehistoric life. 501 lessons across 8 tracks.",
+  "private": true
+}

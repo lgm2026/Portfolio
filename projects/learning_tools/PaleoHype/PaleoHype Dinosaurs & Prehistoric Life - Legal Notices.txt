@@ -1,0 +1,126 @@
+PaleoHype Dinosaurs & Prehistoric Life
+Legal Notices, Disclaimers, and Safety Information
+=================================================
+
+Last updated: 2026
+
+1. ABOUT THIS APP
+-----------------
+PaleoHype Dinosaurs & Prehistoric Life ("PaleoHype," "the app") is a free,
+offline educational study tool about dinosaurs, fossils, and prehistoric life.
+It is published and maintained by its operator under the alias "openPaleoDB"
+(referred to here as "the operator"). The app teaches introductory concepts in
+paleontology, geology, deep time, and prehistoric life through bite-sized
+lessons, quizzes, illustrations, and reference material.
+
+The app runs entirely on your device. It requires no account, collects no
+personal information, and stores your progress only in your own web browser's
+local storage on the device you use. The operator does not receive, transmit,
+or have access to your name, your progress, or any usage data. Clearing your
+browser data, or using the in-app reset, will permanently erase your saved
+progress.
+
+2. EDUCATIONAL USE ONLY — NOT A SUBSTITUTE FOR PROFESSIONAL INSTRUCTION
+----------------------------------------------------------------------
+PaleoHype is intended for general education and personal enrichment for a
+broad audience, including younger learners. It is NOT:
+
+  * a substitute for accredited coursework, a formal curriculum, or a degree
+    program in paleontology, geology, biology, or any related field;
+  * a professional field guide, a scientific authority, or a tool for making
+    decisions about fossil collecting, land use, permits, or safety;
+  * a source of legal, regulatory, or safety advice.
+
+The lessons present simplified explanations chosen for clarity. Scientific
+understanding of prehistoric life changes as new fossils are found and
+studied. Always confirm important information with qualified educators,
+peer-reviewed sources, and the primary references listed in the app before
+relying on it.
+
+3. ACCURACY AND "AS IS" DISCLAIMER
+----------------------------------
+The factual content in PaleoHype was compiled from publicly available,
+reputable educational and scientific sources, and considerable care was taken
+to keep it accurate. Nevertheless, the content is provided "AS IS" and "AS
+AVAILABLE," without warranties of any kind, whether express or implied,
+including but not limited to accuracy, completeness, fitness for a particular
+purpose, or non-infringement. Errors and omissions may exist, and some
+details about extinct life (such as exact colors, behaviors, or measurements)
+remain scientific estimates rather than settled fact. To the fullest extent
+permitted by law, the operator disclaims all liability for any loss, injury,
+or damage of any kind arising from the use of, or reliance on, this app or
+its content.
+
+4. IMPORTANT SAFETY INFORMATION
+-------------------------------
+Fossil hunting and outdoor exploration can carry real risks. Please read and
+follow these guidelines:
+
+  * Respect all laws, regulations, and landowner permissions. Collecting
+    fossils, rocks, or minerals, and entering certain lands, may be
+    restricted or illegal. Many parks, preserves, and protected sites
+    prohibit removing or disturbing natural and cultural materials, and some
+    require a permit. Always obtain permission and follow local, state,
+    tribal, and federal rules before collecting anything.
+
+  * When in doubt, observe and photograph rather than collect, and consult a
+    qualified local expert, museum, or land manager about what is permitted.
+
+  * Practice "Leave No Trace": stay on marked trails and paths, pack out
+    everything you bring in, and leave fragile sites undisturbed for others
+    and for future research wherever collecting is not clearly permitted.
+
+  * Always prioritize your own safety outdoors: tell someone your plans,
+    watch the weather and terrain, wear appropriate protection when near
+    rock faces or excavation sites, carry water, and supervise children.
+    Minors should explore outdoors only with a responsible adult.
+
+  * This app is not a guide for identifying, valuing, buying, or selling
+    fossils, and does not provide any of that guidance.
+
+5. TRADEMARKS, SOURCES, AND NON-AFFILIATION
+-------------------------------------------
+PaleoHype is an independent project. It is NOT affiliated with, endorsed by,
+sponsored by, or otherwise connected to any government agency, organization,
+institution, or company, including but not limited to: the Smithsonian
+Institution; the American Museum of Natural History; the UC Museum of
+Paleontology; the Natural History Museum (London); the Field Museum;
+Encyclopaedia Britannica; the U.S. Geological Survey (USGS); the National
+Park Service (NPS); the National Aeronautics and Space Administration (NASA);
+or the National Oceanic and Atmospheric Administration (NOAA).
+
+These and any other organizations or sources are named within the app solely
+to credit and point users toward authoritative reference material, and for
+identification and educational attribution. All trademarks, service marks,
+agency names, and logos are the property of their respective owners. Their
+mention does not imply any partnership, sponsorship, or endorsement in either
+direction.
+
+6. ILLUSTRATIONS AND IMAGERY
+----------------------------
+All illustrations of prehistoric life, fossils, and environments in PaleoHype
+are original, stylized vector graphics created for this app. They are drawn
+reconstructions intended as friendly visual aids, not scientifically exact or
+photographic depictions. Extinct species are known only from fossil evidence,
+and scientists' reconstructions of their appearance continue to be refined as
+new evidence emerges. The app works fully offline and does not load images
+from any external source.
+
+7. INTELLECTUAL PROPERTY
+------------------------
+The app's software, design, original text, and original artwork are the
+property of the operator. You may use the app for personal, non-commercial
+educational purposes. You may not resell it or present it as your own.
+
+8. CHANGES
+----------
+The operator may update this app and these notices from time to time.
+Continued use of the app constitutes acceptance of the then-current notices.
+
+9. CONTACT
+----------
+Questions about these notices may be directed to the operator, openPaleoDB.
+
+By using PaleoHype Dinosaurs & Prehistoric Life, you acknowledge that you
+have read, understood, and agreed to these notices, disclaimers, and safety
+information.
