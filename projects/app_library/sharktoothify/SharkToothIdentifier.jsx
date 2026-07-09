@@ -4997,7 +4997,7 @@ function WeatherScreen({loc,onSaveLoc,style,onSaveStyle,onBack,onOpenMini,onNetw
 //  app gracefully falls back to bring-your-own-key only.
 // ════════════════════════════════════════════════════════════════════════════
 const AI_BACKEND = {
-  workerUrl: "https://sharktoothify-ai.REPLACE_SUBDOMAIN.workers.dev", // or https://api.sharktoothify.us
+  workerUrl: "https://sharktoothify-ai.letsgetmonetized.workers.dev", // or https://api.sharktoothify.us
   freePerDay: 1, // one free analysis per device every 24 h (enforced server-side)
   packs: [
     { id:"pack1",  credits:1,  price:"$4.99",  tag:"",           link:"https://buy.stripe.com/REPLACE_PACK_1"  },
