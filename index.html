@@ -361,6 +361,29 @@
         color: var(--cream);
         margin-bottom: 12px;
       }
+.hero-actions-resume {
+  margin-top: 10px;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.hero-actions-resume .btn {
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .hero-actions-resume {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions-resume .btn {
+    width: 100%;
+  }
+}
+
       .tagline {
         font-family: var(--fdisp);
         font-weight: 600;
@@ -4362,10 +4385,7 @@
                     {ABOUT_NUDGE}
                   </p>
                   <div className="hero-see">See My Experience</div>
-                  <div
-                    className="hero-actions"
-                    style={{ marginTop: 10, gap: 10, flexWrap: "nowrap" }}
-                  >
+                  <div className="hero-actions hero-actions-resume">
                     <button
                       className="btn btn-blue"
                       style={{
