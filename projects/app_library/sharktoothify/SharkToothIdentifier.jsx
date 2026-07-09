@@ -1701,6 +1701,20 @@ gap:.3rem;
 .terms-body{flex:1;overflow-y:auto;padding:1.5rem;font-size:.84rem;color:var(--ink2);line-height:1.7}
 .terms-body h3{font-family:'DM Serif Display',serif;font-size:1rem;color:var(--ocean3);margin:1.1rem 0 .4rem}
 .terms-body h3:first-child{margin-top:0}
+.app-banner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .app-banner {
+    margin-left: calc(-1 * max(0px, env(safe-area-inset-left)));
+    margin-right: calc(-1 * max(0px, env(safe-area-inset-right)));
+    padding-left: .65rem !important;
+    padding-right: .65rem !important;
+    border-radius: 0 !important;
+  }
+}
 `;
 
 // ─── REPORT HTML ──────────────────────────────────────────────────────────────
@@ -4428,7 +4442,7 @@ function DataBlockedPopup({open,onClose}){
 function AppBanner({display,menuOpen,setMenuOpen,items}){
   const d=display||{name:"Menu",subtitle:"Navigation",avatar:null,initial:"☰"};
   return (
-    <div style={{background:"linear-gradient(135deg,#0069A0 0%,#004E78 100%)",height:"64px",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 1.1rem",boxShadow:"0 2px 16px rgba(0,20,50,.18)",position:"sticky",top:0,zIndex:50,borderBottom:"1px solid rgba(255,255,255,.15)"}}>
+    <div className="app-banner" style={{background:"linear-gradient(135deg,#0069A0 0%,#004E78 100%)",height:"64px",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 1.1rem",boxShadow:"0 2px 16px rgba(0,20,50,.18)",position:"sticky",top:0,zIndex:50,borderBottom:"1px solid rgba(255,255,255,.15)"}}>
       <div className="nav-brand">
         <Logo size={36}/>
         <div>
