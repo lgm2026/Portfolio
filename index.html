@@ -6207,41 +6207,44 @@
             alert("Please fill in all fields.");
             return;
           }
-          if (!SITE.workerUrl) {
-            setErr(
-              "Contact delivery is not configured yet. Please email Dustin directly for now."
-            );
-            return;
-          }
+
           setSending(true);
           setErr("");
+
           try {
-            const res = await fetch(
-              SITE.workerUrl.replace(/\/+$/, "") + "/contact",
-              {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                  name: f.name.trim(),
-                  email: f.email.trim(),
-                  message: f.message.trim(),
-                  website: "",
-                }),
-              }
-            );
+            const res = await fetch("https://formspree.io/f/xzdlleoe", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify({
+                name: f.name.trim(),
+                email: f.email.trim(),
+                message: f.message.trim(),
+                _subject: "Portfolio contact from " + f.name.trim(),
+              }),
+            });
+
             const data = await res.json().catch(() => ({}));
-            if (!res.ok || !data.ok) {
-              throw new Error(data.error || "Message could not be sent.");
+
+            if (!res.ok) {
+              const msg =
+                data && data.errors && data.errors.length
+                  ? data.errors.map((e) => e.message).join(" ")
+                  : data.error || "Message could not be sent.";
+              throw new Error(msg);
             }
           } catch (e) {
             setErr(
               e && e.message
                 ? e.message
-                : "Message could not be sent. Please email Dustin directly."
+                : "Message could not be sent. Please email Dustin directly.",
             );
             setSending(false);
             return;
           }
+
           setSending(false);
           setSent(true);
         };
@@ -6321,7 +6324,11 @@
                           placeholder="What's on your mind?"
                         />
                       </div>
-                      <button className="btn btn-gold" onClick={submit} disabled={sending}>
+                      <button
+                        className="btn btn-gold"
+                        onClick={submit}
+                        disabled={sending}
+                      >
                         {sending ? "Sending..." : "Send Message"}
                       </button>
                       {err && <div className="notice">{err}</div>}
