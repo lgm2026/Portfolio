@@ -18,9 +18,9 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"SharkToothify","url":"https://sharktoothify.us/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Identify shark teeth instantly with AI or a free manual identifier. Live tide charts, weather, a hunt planner, badges and reports for fossil hunters.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"SharktoothifyUS"}}</script>
 
   <!-- PWA -->
-  <link rel="icon" href="/favicon.ico" sizes="any"/>
-  <link rel="manifest" href="/manifest.webmanifest"/>
-  <link rel="apple-touch-icon" href="/icons/icon-180.png"/>
+  <link rel="icon" href="./favicon.ico" sizes="any"/>
+<link rel="manifest" href="./manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="./icons/icon-180.png"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <meta name="apple-mobile-web-app-title" content="SharkToothify"/>
@@ -64,7 +64,7 @@
       <li>100% private — your collection never leaves your device</li>
     </ul>
     <p>Free to use in any browser. Installs to your home screen and works offline at the beach.</p>
-    <p style="font-size:.85rem"><a href="/terms.html" style="color:#9fd7ea">Terms of Service</a> · <a href="/privacy.html" style="color:#9fd7ea">Privacy Policy</a> · <a href="/terms.html#disclaimers" style="color:#9fd7ea">Disclaimers</a> · © 2025–2026 SharktoothifyUS</p>
+    <p style="font-size:.85rem"><a href="./terms.html" style="color:#9fd7ea">Terms of Service</a> · <a href="./privacy.html" style="color:#9fd7ea">Privacy Policy</a> · <a href="/terms.html#disclaimers" style="color:#9fd7ea">Disclaimers</a> · © 2025–2026 SharktoothifyUS</p>
   </section>
   <noscript><div style="position:fixed;inset:0;background:#0a3149;color:#cfe9f5;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;font-family:system-ui">SharkToothify needs JavaScript enabled to identify your shark teeth. Please enable JavaScript and reload.</div></noscript>
 
@@ -80,7 +80,7 @@
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(React.createElement(AppComponent));
     };
-    fetch("/SharkToothIdentifier.jsx")
+    fetch("./SharkToothIdentifier.jsx")
       .then(r => r.text())
       .then(src => {
         src = src
@@ -100,7 +100,7 @@
 
     // PWA service worker
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(()=>{}));
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(()=>{}));
     }
   </script>
 </body>
