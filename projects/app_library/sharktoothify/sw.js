@@ -1,13 +1,15 @@
 /* SharkToothify service worker — app shell cached for offline beach use.
  * Data APIs (NOAA / NWS / Stripe / your Worker / Anthropic) are NEVER cached. */
-const VERSION = "stfy-v1";
+const VERSION = "stfy-v2";
+const BASE = self.registration.scope;
+
 const SHELL = [
-  "/",
-  "/index.html",
-  "/SharkToothIdentifier.jsx",
-  "/manifest.webmanifest",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png"
+  BASE,
+  BASE + "index.html",
+  BASE + "SharkToothIdentifier.jsx",
+  BASE + "manifest.webmanifest",
+  BASE + "icons/icon-192.png",
+  BASE + "icons/icon-512.png"
 ];
 const NEVER_CACHE = [
   "api.tidesandcurrents.noaa.gov",
