@@ -1,0 +1,52 @@
+{
+  "name": "qrhype",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QRHype. A free, private, client-side QR code generator with coastal styling.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:preview": "vite build --config vite.config.preview.ts",
+    "build:offline": "node scripts/build-offline.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test:payloads": "node scripts/run-smoke.mjs",
+    "icons": "python3 scripts/generate_icons.py",
+    "predeploy": "npm run build:offline",
+    "deploy": "gh-pages -d dist",
+    "android:add": "cap add android",
+    "android:sync": "npm run build && cap sync android",
+    "android:open": "cap open android",
+    "android:apk": "npm run android:sync && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@fontsource-variable/inter": "^5.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.0.0",
+    "jspdf": "^3.0.0",
+    "lucide-react": "^0.468.0",
+    "qr-code-styling": "^1.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.5.0",
+    "esbuild": "^0.25.0",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~5.8.0",
+    "vite": "^6.3.0",
+    "vite-plugin-pwa": "^1.0.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
