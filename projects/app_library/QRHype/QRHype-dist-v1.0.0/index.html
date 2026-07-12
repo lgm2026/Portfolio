@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a8171" />
+    <meta
+      name="description"
+      content="QRHype creates clean, custom QR codes in seconds. Free, private, and fully in your browser. No login, no tracking, no stored data."
+    />
+    <meta property="og:title" content="QRHype" />
+    <meta
+      property="og:description"
+      content="Create clean, custom QR codes in seconds. Free, private, and fully in your browser."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>QRHype</title>
+    <style>
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        background: linear-gradient(180deg, #fbfaf7 0%, #ffffff 45%, #f1faf7 100%);
+        transition: opacity 0.4s ease;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      #splash.splash-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #splash img {
+        width: 72px;
+        height: 72px;
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(22, 50, 74, 0.12);
+        animation: splash-pulse 1.6s ease-in-out infinite;
+      }
+      #splash span {
+        color: #16324a;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        font-size: 18px;
+      }
+      @keyframes splash-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #splash img {
+          animation: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-Cyyhv9fu.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DdVxHrI4.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="splash" aria-hidden="true">
+      <img src="./icons/icon-192.png" alt="" />
+      <span>QRHype</span>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
