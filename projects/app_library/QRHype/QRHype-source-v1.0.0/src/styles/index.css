@@ -1,0 +1,131 @@
+@import "@fontsource-variable/inter/wght.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Seafoam: the working accent of the interface */
+  --color-seafoam-50: #f1faf7;
+  --color-seafoam-100: #dcf3ec;
+  --color-seafoam-200: #bce6da;
+  --color-seafoam-300: #8fd3c2;
+  --color-seafoam-400: #5cb9a5;
+  --color-seafoam-500: #399e8a;
+  --color-seafoam-600: #2a8171;
+  --color-seafoam-700: #25675c;
+  --color-seafoam-800: #21534b;
+  --color-seafoam-900: #1e453f;
+
+  /* Navy slate: ink, headings, structure */
+  --color-navy-50: #f4f7fa;
+  --color-navy-100: #e6edf3;
+  --color-navy-200: #c9d8e4;
+  --color-navy-300: #a0bacd;
+  --color-navy-400: #7096b1;
+  --color-navy-500: #4f7a99;
+  --color-navy-600: #3d627f;
+  --color-navy-700: #345067;
+  --color-navy-800: #2e4356;
+  --color-navy-900: #16324a;
+  --color-navy-950: #0e2233;
+
+  /* Soft sand: warm neutrals */
+  --color-sand-50: #fbfaf7;
+  --color-sand-100: #f5f2ea;
+  --color-sand-200: #eae3d2;
+  --color-sand-300: #dccfb3;
+
+  --shadow-card:
+    0 1px 2px rgb(22 50 74 / 0.05), 0 10px 30px -8px rgb(22 50 74 / 0.1);
+  --shadow-lift: 0 14px 40px -10px rgb(22 50 74 / 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  color: var(--color-navy-900);
+  background: linear-gradient(
+    180deg,
+    var(--color-sand-50) 0%,
+    #ffffff 38%,
+    var(--color-seafoam-50) 100%
+  );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-seafoam-200);
+}
+
+input[type="range"] {
+  accent-color: var(--color-seafoam-600);
+}
+
+/* The horizon rule: QRHype's one signature flourish. A thin gradient line
+   that reads as a coastline at dusk, used sparingly under the hero and
+   across the top of each step card. */
+.horizon-rule {
+  height: 2px;
+  border: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    var(--color-sand-200) 0%,
+    var(--color-seafoam-400) 45%,
+    var(--color-navy-900) 100%
+  );
+}
+
+/* Checkerboard backing so transparent QR backgrounds are visible */
+.checker {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(45deg, #eef2f4 25%, transparent 25%, transparent 75%, #eef2f4 75%),
+    linear-gradient(45deg, #eef2f4 25%, transparent 25%, transparent 75%, #eef2f4 75%);
+  background-size: 16px 16px;
+  background-position:
+    0 0,
+    8px 8px;
+}
+
+/* Keep the rendered QR canvas or svg responsive inside its frame */
+.qr-frame canvas,
+.qr-frame svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Native color inputs, tidied to sit inside the hex field */
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid rgb(22 50 74 / 0.15);
+  border-radius: 8px;
+}
+input[type="color"]::-moz-color-swatch {
+  border: 1px solid rgb(22 50 74 / 0.15);
+  border-radius: 8px;
+}
