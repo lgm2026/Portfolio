@@ -6,6 +6,12 @@
 -->
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258275639543826"
+      crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dustin Burich — Portfolio & Résumé</title>
@@ -361,28 +367,28 @@
         color: var(--cream);
         margin-bottom: 12px;
       }
-.hero-actions-resume {
-  margin-top: 10px;
-  gap: 10px;
-  flex-wrap: nowrap;
-}
+      .hero-actions-resume {
+        margin-top: 10px;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
 
-.hero-actions-resume .btn {
-  flex: 1;
-  justify-content: center;
-  min-width: 0;
-}
+      .hero-actions-resume .btn {
+        flex: 1;
+        justify-content: center;
+        min-width: 0;
+      }
 
-@media (max-width: 640px) {
-  .hero-actions-resume {
-    flex-direction: column;
-    align-items: stretch;
-  }
+      @media (max-width: 640px) {
+        .hero-actions-resume {
+          flex-direction: column;
+          align-items: stretch;
+        }
 
-  .hero-actions-resume .btn {
-    width: 100%;
-  }
-}
+        .hero-actions-resume .btn {
+          width: 100%;
+        }
+      }
 
       .tagline {
         font-family: var(--fdisp);
@@ -854,7 +860,7 @@
       }
       @media (min-width: 720px) {
         .proj-cats {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
       .proj-cat {
@@ -3953,6 +3959,11 @@
    TUNES CONFIG: add tracks as {t:"Song Title",platform:"youtube",id:"VIDEO_ID"} or
    {t:"Song Title",platform:"spotify",id:"TRACK_ID"}. They appear in the player instantly. */
       const APP_LIBRARY = [
+        {
+          t: "QRHype",
+          sub: "Fast, Simple QR Code Generator",
+          url: "projects/app_library/QRHype/",
+        },
         {
           t: "SharkToothify",
           sub: "Shark Tooth Hunter's Log and AI Assisted Identifier",
