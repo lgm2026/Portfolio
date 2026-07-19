@@ -5334,6 +5334,20 @@
         var cc = useState(false);
         var copied = cc[0],
           setCopied = cc[1];
+        var pf = useState(null);
+        var publishFile = pf[0],
+          setPublishFile = pf[1];
+        var pk = useState(
+          sessionStorage.getItem("dustinPublishKey") || "",
+        );
+        var publishKey = pk[0],
+          setPublishKey = pk[1];
+        var ps = useState("");
+        var publishStatus = ps[0],
+          setPublishStatus = ps[1];
+        var pb = useState(false);
+        var publishing = pb[0],
+          setPublishing = pb[1];
         var submit = function () {
           if (val.trim().toLowerCase() === SITE.adminKey.toLowerCase()) {
             onUnlock();
@@ -5405,6 +5419,8 @@
           setMode(m2);
           setForm({});
           setCopied(false);
+          setPublishFile(null);
+          setPublishStatus("");
         };
         var J = function (s) {
           return JSON.stringify(s);
@@ -5551,6 +5567,110 @@
             fallback();
           }
         };
+        var fileToBase64 = function (file) {
+          return new Promise(function (resolve, reject) {
+            var reader = new FileReader();
+
+            reader.onload = function () {
+              var result = String(reader.result || "");
+              var comma = result.indexOf(",");
+              resolve(comma >= 0 ? result.slice(comma + 1) : result);
+            };
+
+            reader.onerror = function () {
+              reject(new Error("The PDF could not be read."));
+            };
+
+            reader.readAsDataURL(file);
+          });
+        };
+
+        var publishCertificate = async function () {
+          setPublishStatus("");
+
+          if (!g("name") || !g("issuer") || !g("date")) {
+            setPublishStatus(
+              "Certificate name, issuer, and date are required.",
+            );
+            return;
+          }
+
+          if (!publishFile) {
+            setPublishStatus("Choose the certificate PDF first.");
+            return;
+          }
+
+          if (
+            publishFile.type !== "application/pdf" &&
+            !publishFile.name.toLowerCase().endsWith(".pdf")
+          ) {
+            setPublishStatus("Please select a PDF file.");
+            return;
+          }
+
+          if (publishFile.size > 10 * 1024 * 1024) {
+            setPublishStatus("PDF must be 10 MB or smaller.");
+            return;
+          }
+
+          if (!publishKey.trim()) {
+            setPublishStatus("Enter the private publishing password.");
+            return;
+          }
+
+          setPublishing(true);
+
+          try {
+            var pdfBase64 = await fileToBase64(publishFile);
+            var workerBase = String(SITE.workerUrl || "").replace(/\/+$/, "");
+
+            if (!workerBase) {
+              throw new Error("The Worker URL is missing from SITE.workerUrl.");
+            }
+
+            sessionStorage.setItem("dustinPublishKey", publishKey);
+
+            var response = await fetch(
+              workerBase + "/publish-certificate",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-publish-key": publishKey,
+                },
+                body: JSON.stringify({
+                  name: g("name"),
+                  issuer: g("issuer"),
+                  date: g("date"),
+                  tier: g("tier") || "2",
+                  desc: g("desc"),
+                  filename: g("file") || publishFile.name,
+                  originalFilename: publishFile.name,
+                  pdfBase64: pdfBase64,
+                }),
+              },
+            );
+
+            var data = await response.json();
+
+            if (!response.ok) {
+              throw new Error(data.error || "Publishing failed.");
+            }
+
+            setPublishStatus(
+              "Published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live.",
+            );
+            setForm({});
+            setPublishFile(null);
+          } catch (error) {
+            setPublishStatus(
+              error && error.message ? error.message : "Publishing failed.",
+            );
+          } finally {
+            setPublishing(false);
+          }
+        };
+
         var F = function (label, key, ph, area) {
           return (
             <div className="field" key={key}>
@@ -5574,7 +5694,7 @@
               <SecHead
                 eyebrow="Admin"
                 title="Site Updates"
-                lead="Build a new entry below. The generator hands you a paste-ready block and shows exactly where it will land, because the site sorts everything chronologically at load. Paste it anywhere inside the matching array in dburich24.html and redeploy."
+                lead="Add a certificate and publish its PDF directly to GitHub from this page. Work experience and letters still use the copyable snippet tool."
               />
               <div className="upd-modes">
                 <button
@@ -5661,6 +5781,47 @@
                       )
                     : null}
                   {F("PDF file name (optional)", "file", "e.g. AZ-104.pdf")}
+                  {mode === "cert" ? (
+                    <div className="field">
+                      <label>Choose Certificate PDF</label>
+                      <input
+                        type="file"
+                        accept="application/pdf,.pdf"
+                        onChange={function (e) {
+                          var file =
+                            e.target.files && e.target.files[0]
+                              ? e.target.files[0]
+                              : null;
+
+                          setPublishFile(file);
+                          setPublishStatus("");
+
+                          if (file && !g("file")) {
+                            var nf = {};
+                            for (var p in form) {
+                              nf[p] = form[p];
+                            }
+                            nf.file = file.name;
+                            setForm(nf);
+                          }
+                        }}
+                      />
+                    </div>
+                  ) : null}
+                  {mode === "cert" ? (
+                    <div className="field">
+                      <label>Publishing Password</label>
+                      <input
+                        type="password"
+                        value={publishKey}
+                        onChange={function (e) {
+                          setPublishKey(e.target.value);
+                        }}
+                        placeholder="Private Cloudflare publishing password"
+                        autoComplete="current-password"
+                      />
+                    </div>
+                  ) : null}
                   {F(
                     "Short description (optional)",
                     "desc",
@@ -5673,15 +5834,39 @@
                   <div className="upd-place">{placeNote}</div>
                   <pre className="upd-snip">{snippet}</pre>
                   <div className="upd-actions">
+                    {mode === "cert" ? (
+                      <button
+                        className="btn btn-blue btn-sm"
+                        onClick={publishCertificate}
+                        disabled={publishing}
+                      >
+                        {publishing
+                          ? "Publishing..."
+                          : "Publish Certificate"}
+                      </button>
+                    ) : null}
                     <button className="btn btn-gold btn-sm" onClick={doCopy}>
                       {copied ? "Copied" : "Copy Snippet"}
                     </button>
                     <span className="upd-hint">
                       {mode === "exp"
                         ? "Paste anywhere inside the EXPERIENCE array. Order is automatic."
-                        : "Paste anywhere inside the CERTS array. Order is automatic. If it has a PDF, also add the file per the DEPLOYMENT checklist."}
+                        : mode === "cert"
+                          ? "Publish sends the PDF and certificate entry to GitHub. Copy Snippet remains as a backup."
+                          : "Paste anywhere inside the CERTS array. Order is automatic. If it has a PDF, also add the file per the DEPLOYMENT checklist."}
                     </span>
                   </div>
+                  {mode === "cert" && publishStatus ? (
+                    <div
+                      className={
+                        publishStatus.indexOf("Published successfully") === 0
+                          ? "notice"
+                          : "file-err"
+                      }
+                    >
+                      {publishStatus}
+                    </div>
+                  ) : null}
                 </div>
               ) : (
                 <p className="upd-hint">
