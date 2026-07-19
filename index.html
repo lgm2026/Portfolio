@@ -3088,6 +3088,82 @@
           gap: 10px;
         }
       }
+
+      /* Admin content managers */
+      .mgr-wrap {
+        max-width: 860px;
+      }
+      .mgr-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+        background: var(--card);
+      }
+      .mgr-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .mgr-grid .full {
+        grid-column: 1 / -1;
+      }
+      .mgr-list {
+        max-height: 420px;
+        overflow-y: auto;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 18px;
+      }
+      .mgr-row {
+        width: 100%;
+        text-align: left;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin-bottom: 5px;
+        background: rgba(255,255,255,.025);
+      }
+      .mgr-row:hover,
+      .mgr-row.on {
+        border-color: var(--gold);
+        background: rgba(201,168,76,.08);
+      }
+      .mgr-row-title {
+        font-weight: 600;
+        color: var(--cream);
+      }
+      .mgr-row-meta {
+        font-size: 12px;
+        color: var(--sea);
+        margin-top: 2px;
+      }
+      .mgr-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .mgr-danger {
+        border: 1px solid var(--copper);
+        color: #efb49a;
+      }
+      .mgr-danger:hover {
+        background: rgba(160,99,58,.15);
+      }
+      .mgr-textarea {
+        min-height: 150px !important;
+      }
+      @media (max-width: 680px) {
+        .mgr-grid {
+          grid-template-columns: 1fr;
+        }
+        .mgr-grid .full {
+          grid-column: auto;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -3665,14 +3741,6 @@
       ];
 
       const CERTS = [
-        {
-          t: "Sacrament of Reconciliation",
-          iss: "Sacred Heart Church · 1999",
-          tier: 3,
-          status: "active",
-          file: "1999_1207-Dustin_Burich-Reconciliation_Religious.pdf",
-          religious: true,
-        },
         {
           t: "First Communion",
           iss: "Sacred Heart Church · 2000",
@@ -6118,6 +6186,559 @@
       }
 
       /* ================= Site Administration hub ================= */
+
+      const DOC_SECTION_OPTIONS = [
+        ["formal-education", "Work Experience — Formal Education"],
+        ["federal-apprenticeships", "Work Experience — Federal Apprenticeships"],
+        ["headline", "Work Experience — Certifications — Headline Credentials"],
+        ["supporting", "Work Experience — Certifications — Supporting Credentials"],
+        ["historical", "Work Experience — Certifications — Historical & Recognition"],
+        ["letters", "Acknowledgements — Letters & Recognition"],
+        ["religious", "Acknowledgements — Religious"],
+      ];
+
+      function documentSectionFor(item, source) {
+        if (source === "education") return "formal-education";
+        if (source === "apprentice") return "federal-apprenticeships";
+        if (item.religious) return "religious";
+        if (item.ack) return "letters";
+        if (item.status === "historical") return "historical";
+        if (item.tier === 1) return "headline";
+        return "supporting";
+      }
+
+      function ManageDocumentsPage(props) {
+        var docs = [];
+        EDU_DEGREES.forEach(function (x) {
+          if (x.file) docs.push({ source: "education", item: x });
+        });
+        APPRENTICE.forEach(function (x) {
+          if (x.file) docs.push({ source: "apprentice", item: x });
+        });
+        CERTS.forEach(function (x) {
+          if (x.file) docs.push({ source: "cert", item: x });
+        });
+
+        var ss = useState(docs.length ? docs[0].item.file : "");
+        var selectedFile = ss[0],
+          setSelectedFile = ss[1];
+        var selected = docs.find(function (x) {
+          return x.item.file === selectedFile;
+        }) || null;
+        var initial = selected
+          ? {
+              originalFile: selected.item.file,
+              originalSection: documentSectionFor(
+                selected.item,
+                selected.source,
+              ),
+              section: documentSectionFor(selected.item, selected.source),
+              title: selected.item.t || selected.item.ti || "",
+              meta: selected.item.iss || selected.item.meta || "",
+              desc: selected.item.desc || "",
+              hist: selected.item.hist || "",
+              vlabel: selected.item.vlabel || "View Document",
+              file: selected.item.file,
+            }
+          : {};
+        var ff = useState(initial);
+        var form = ff[0],
+          setForm = ff[1];
+        var kk = useState(
+          sessionStorage.getItem("dustinPublishKey") || "",
+        );
+        var key = kk[0],
+          setKey = kk[1];
+        var st = useState("");
+        var status = st[0],
+          setStatus = st[1];
+        var bb = useState(false);
+        var busy = bb[0],
+          setBusy = bb[1];
+
+        useEffect(
+          function () {
+            if (!selected) return;
+            setForm({
+              originalFile: selected.item.file,
+              originalSection: documentSectionFor(
+                selected.item,
+                selected.source,
+              ),
+              section: documentSectionFor(selected.item, selected.source),
+              title: selected.item.t || selected.item.ti || "",
+              meta: selected.item.iss || selected.item.meta || "",
+              desc: selected.item.desc || "",
+              hist: selected.item.hist || "",
+              vlabel: selected.item.vlabel || "View Document",
+              file: selected.item.file,
+            });
+            setStatus("");
+          },
+          [selectedFile],
+        );
+
+        var set = function (name) {
+          return function (e) {
+            var next = Object.assign({}, form);
+            next[name] = e.target.value;
+            setForm(next);
+          };
+        };
+
+        var send = async function (action, deletePdf) {
+          if (!selected || busy) return;
+          if (!key.trim()) {
+            setStatus("Enter the publishing password.");
+            return;
+          }
+          if (
+            action === "delete" &&
+            !window.confirm(
+              deletePdf
+                ? "Delete this listing and its PDF from GitHub?"
+                : "Delete this website listing but keep the PDF?",
+            )
+          ) {
+            return;
+          }
+
+          setBusy(true);
+          setStatus("");
+          sessionStorage.setItem("dustinPublishKey", key);
+
+          try {
+            var response = await fetch(
+              String(SITE.workerUrl).replace(/\/+$/, "") +
+                "/manage-document",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-publish-key": key,
+                },
+                body: JSON.stringify(
+                  Object.assign({}, form, {
+                    action: action,
+                    deletePdf: Boolean(deletePdf),
+                  }),
+                ),
+              },
+            );
+            var data = await response.json();
+            if (!response.ok) {
+              throw new Error(data.error || "Document update failed.");
+            }
+            setStatus(
+              action === "delete"
+                ? "Document removed successfully. Reloading the updated site..."
+                : "Document saved successfully. Reloading the updated site...",
+            );
+            setTimeout(function () {
+              window.location.reload();
+            }, 1400);
+          } catch (error) {
+            setStatus(error.message || "Document update failed.");
+          } finally {
+            setBusy(false);
+          }
+        };
+
+        return (
+          <div className="page">
+            <div className="wrap mgr-wrap">
+              <SecHead
+                eyebrow="Admin"
+                title="Manage Documents"
+                lead="Edit document details, move an existing PDF to another portfolio section, or remove an old listing."
+              />
+              <div className="mgr-list">
+                {docs.map(function (x) {
+                  var section = documentSectionFor(x.item, x.source);
+                  var label =
+                    (DOC_SECTION_OPTIONS.find(function (o) {
+                      return o[0] === section;
+                    }) || [section, section])[1];
+                  return (
+                    <button
+                      className={
+                        "mgr-row" +
+                        (selectedFile === x.item.file ? " on" : "")
+                      }
+                      key={x.item.file}
+                      onClick={function () {
+                        setSelectedFile(x.item.file);
+                      }}
+                    >
+                      <div className="mgr-row-title">
+                        {x.item.t || x.item.ti}
+                      </div>
+                      <div className="mgr-row-meta">
+                        {label} · {x.item.file}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {selected ? (
+                <div className="mgr-card">
+                  <div className="mgr-grid">
+                    <div className="field full">
+                      <label>Destination Section</label>
+                      <select value={form.section || ""} onChange={set("section")}>
+                        {DOC_SECTION_OPTIONS.map(function (o) {
+                          return (
+                            <option value={o[0]} key={o[0]}>
+                              {o[1]}
+                            </option>
+                          );
+                        })}
+                      </select>
+                    </div>
+                    <div className="field full">
+                      <label>Document Title</label>
+                      <input value={form.title || ""} onChange={set("title")} />
+                    </div>
+                    <div className="field full">
+                      <label>School, Agency, Organization, Issuer & Date</label>
+                      <input value={form.meta || ""} onChange={set("meta")} />
+                    </div>
+                    <div className="field full">
+                      <label>Description</label>
+                      <textarea value={form.desc || ""} onChange={set("desc")} />
+                    </div>
+                    {form.section === "historical" ? (
+                      <div className="field full">
+                        <label>Historical Note</label>
+                        <input value={form.hist || ""} onChange={set("hist")} />
+                      </div>
+                    ) : null}
+                    <div className="field full">
+                      <label>PDF Filename</label>
+                      <input value={form.file || ""} readOnly />
+                    </div>
+                    <div className="field full">
+                      <label>Publishing Password</label>
+                      <input
+                        type="password"
+                        value={key}
+                        onChange={function (e) {
+                          setKey(e.target.value);
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mgr-actions">
+                    <button
+                      className="btn btn-gold btn-sm"
+                      disabled={busy}
+                      onClick={function () {
+                        send("save", false);
+                      }}
+                    >
+                      {busy ? "Saving..." : "Save / Move Document"}
+                    </button>
+                    <button
+                      className="btn btn-ghost btn-sm mgr-danger"
+                      disabled={busy}
+                      onClick={function () {
+                        send("delete", false);
+                      }}
+                    >
+                      Delete Listing Only
+                    </button>
+                    <button
+                      className="btn btn-ghost btn-sm mgr-danger"
+                      disabled={busy}
+                      onClick={function () {
+                        send("delete", true);
+                      }}
+                    >
+                      Delete Listing + PDF
+                    </button>
+                  </div>
+                  {status ? (
+                    <div
+                      className={
+                        status.indexOf("successfully") > -1
+                          ? "notice"
+                          : "file-err"
+                      }
+                    >
+                      {status}
+                    </div>
+                  ) : null}
+                </div>
+              ) : (
+                <div className="empty">No uploaded documents were found.</div>
+              )}
+            </div>
+          </div>
+        );
+      }
+
+      function linesToArray(value) {
+        return String(value || "")
+          .split("\n")
+          .map(function (x) {
+            return x.trim();
+          })
+          .filter(Boolean);
+      }
+
+      function ManageExperiencePage() {
+        var ss = useState(EXPERIENCE.length ? EXPERIENCE[0].id : "");
+        var selectedId = ss[0],
+          setSelectedId = ss[1];
+        var selected =
+          EXPERIENCE.find(function (x) {
+            return x.id === selectedId;
+          }) || null;
+        var ff = useState(selected ? Object.assign({}, selected) : {});
+        var form = ff[0],
+          setForm = ff[1];
+        var kk = useState(
+          sessionStorage.getItem("dustinPublishKey") || "",
+        );
+        var key = kk[0],
+          setKey = kk[1];
+        var st = useState("");
+        var status = st[0],
+          setStatus = st[1];
+        var bb = useState(false);
+        var busy = bb[0],
+          setBusy = bb[1];
+
+        useEffect(
+          function () {
+            if (selected) {
+              setForm(Object.assign({}, selected));
+              setStatus("");
+            }
+          },
+          [selectedId],
+        );
+
+        var set = function (name) {
+          return function (e) {
+            var next = Object.assign({}, form);
+            next[name] =
+              e.target.type === "checkbox"
+                ? e.target.checked
+                : e.target.value;
+            setForm(next);
+          };
+        };
+
+        var send = async function (action) {
+          if (!selected || busy) return;
+          if (!key.trim()) {
+            setStatus("Enter the publishing password.");
+            return;
+          }
+          if (
+            action === "delete" &&
+            !window.confirm(
+              "Delete this entire experience entry from the portfolio?",
+            )
+          ) {
+            return;
+          }
+
+          var experience = Object.assign({}, form, {
+            bullets: Array.isArray(form.bullets)
+              ? form.bullets
+              : linesToArray(form.bullets),
+            tags: Array.isArray(form.tags)
+              ? form.tags
+              : linesToArray(form.tags),
+            quals: Array.isArray(form.quals)
+              ? form.quals
+              : linesToArray(form.quals),
+            awards: Array.isArray(form.awards)
+              ? form.awards
+              : linesToArray(form.awards),
+          });
+
+          setBusy(true);
+          setStatus("");
+          sessionStorage.setItem("dustinPublishKey", key);
+
+          try {
+            var response = await fetch(
+              String(SITE.workerUrl).replace(/\/+$/, "") +
+                "/manage-experience",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-publish-key": key,
+                },
+                body: JSON.stringify({
+                  action: action,
+                  originalId: selected.id,
+                  experience: experience,
+                }),
+              },
+            );
+            var data = await response.json();
+            if (!response.ok) {
+              throw new Error(data.error || "Experience update failed.");
+            }
+            setStatus(
+              action === "delete"
+                ? "Experience deleted successfully. Reloading the updated site..."
+                : "Experience saved successfully. Reloading the updated site...",
+            );
+            setTimeout(function () {
+              window.location.reload();
+            }, 1400);
+          } catch (error) {
+            setStatus(error.message || "Experience update failed.");
+          } finally {
+            setBusy(false);
+          }
+        };
+
+        var arrayText = function (value) {
+          return Array.isArray(value) ? value.join("\n") : value || "";
+        };
+
+        return (
+          <div className="page">
+            <div className="wrap mgr-wrap">
+              <SecHead
+                eyebrow="Admin"
+                title="Manage Experience"
+                lead="Choose a job or assignment, edit its résumé details, and add, remove, or rewrite bullets one per line."
+              />
+              <div className="field">
+                <label>Choose Experience</label>
+                <select
+                  value={selectedId}
+                  onChange={function (e) {
+                    setSelectedId(e.target.value);
+                  }}
+                >
+                  {EXPERIENCE.map(function (x) {
+                    return (
+                      <option value={x.id} key={x.id}>
+                        {x.title} — {x.org}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+
+              {selected ? (
+                <div className="mgr-card">
+                  <div className="mgr-grid">
+                    <div className="field">
+                      <label>Job Title</label>
+                      <input value={form.title || ""} onChange={set("title")} />
+                    </div>
+                    <div className="field">
+                      <label>Company / Organization</label>
+                      <input value={form.org || ""} onChange={set("org")} />
+                    </div>
+                    <div className="field">
+                      <label>Dates</label>
+                      <input value={form.dates || ""} onChange={set("dates")} />
+                    </div>
+                    <div className="field">
+                      <label>Location</label>
+                      <input value={form.loc || ""} onChange={set("loc")} />
+                    </div>
+                    <div className="field">
+                      <label>Experience Type</label>
+                      <input value={form.type || ""} onChange={set("type")} />
+                    </div>
+                    <div className="field">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked={Boolean(form.hl)}
+                          onChange={set("hl")}
+                          style={{ width: "auto", marginRight: 8 }}
+                        />
+                        Featured Highlight
+                      </label>
+                    </div>
+                    <div className="field full">
+                      <label>Civilian Translation / Intro</label>
+                      <textarea value={form.trans || ""} onChange={set("trans")} />
+                    </div>
+                    <div className="field full">
+                      <label>Résumé Bullets — One Per Line</label>
+                      <textarea
+                        className="mgr-textarea"
+                        value={arrayText(form.bullets)}
+                        onChange={set("bullets")}
+                      />
+                    </div>
+                    <div className="field full">
+                      <label>Tags — One Per Line</label>
+                      <textarea value={arrayText(form.tags)} onChange={set("tags")} />
+                    </div>
+                    <div className="field full">
+                      <label>Qualifications — One Per Line</label>
+                      <textarea value={arrayText(form.quals)} onChange={set("quals")} />
+                    </div>
+                    <div className="field full">
+                      <label>Awards — One Per Line</label>
+                      <textarea value={arrayText(form.awards)} onChange={set("awards")} />
+                    </div>
+                    <div className="field full">
+                      <label>Publishing Password</label>
+                      <input
+                        type="password"
+                        value={key}
+                        onChange={function (e) {
+                          setKey(e.target.value);
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mgr-actions">
+                    <button
+                      className="btn btn-gold btn-sm"
+                      disabled={busy}
+                      onClick={function () {
+                        send("save");
+                      }}
+                    >
+                      {busy ? "Saving..." : "Save Experience"}
+                    </button>
+                    <button
+                      className="btn btn-ghost btn-sm mgr-danger"
+                      disabled={busy}
+                      onClick={function () {
+                        send("delete");
+                      }}
+                    >
+                      Delete Experience
+                    </button>
+                  </div>
+                  {status ? (
+                    <div
+                      className={
+                        status.indexOf("successfully") > -1
+                          ? "notice"
+                          : "file-err"
+                      }
+                    >
+                      {status}
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
+          </div>
+        );
+      }
+
+
       function AdminHub(props) {
         var isAdmin = props.isAdmin,
           onUnlock = props.onUnlock,
@@ -6200,6 +6821,18 @@
             e: "Content",
             t: "Site Updates",
             d: "Generate paste ready experience, certificate, and letter entries with automatic chronological placement.",
+          },
+          {
+            k: "manage-documents",
+            e: "Organize",
+            t: "Manage Documents",
+            d: "Edit, move, or delete existing education, certification, letter, and religious document listings.",
+          },
+          {
+            k: "manage-experience",
+            e: "Edit",
+            t: "Manage Experience",
+            d: "Edit job details and add, rewrite, reorder, or remove résumé bullets.",
           },
         ];
         return (
@@ -9590,6 +10223,24 @@
           hypeteen: <HypeTeenAcademy go={go} />,
           updates: (
             <UpdatesPage isAdmin={isAdmin} onUnlock={() => setIsAdmin(true)} />
+          ),
+          "manage-documents": isAdmin ? (
+            <ManageDocumentsPage />
+          ) : (
+            <AdminHub
+              isAdmin={isAdmin}
+              onUnlock={() => setIsAdmin(true)}
+              go={go}
+            />
+          ),
+          "manage-experience": isAdmin ? (
+            <ManageExperiencePage />
+          ) : (
+            <AdminHub
+              isAdmin={isAdmin}
+              onUnlock={() => setIsAdmin(true)}
+              go={go}
+            />
           ),
           admin: (
             <AdminHub
