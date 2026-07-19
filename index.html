@@ -6886,18 +6886,72 @@
         nov: 11,
         dec: 12,
       };
-      function certKey(c) {
-        const s = (c.iss || "") + " " + (c.hist || "");
-        const m = s.match(/([A-Za-z]{3})[a-z]*\.?\s+(\d{4})/);
-        if (m) {
-          const mo = _MO[m[1].toLowerCase()] || 0;
-          return parseInt(m[2], 10) * 100 + mo;
+      function documentDateKey(item) {
+        const source = [
+          item && item.iss,
+          item && item.meta,
+          item && item.hist,
+          item && item.date,
+          item && item.file,
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        // Prefer explicit month + year text, such as "May 2026" or "Aug 2016".
+        const monthYear = source.match(
+          /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+(\d{4})\b/i,
+        );
+        if (monthYear) {
+          const month = _MO[monthYear[1].slice(0, 3).toLowerCase()] || 0;
+          return Number(monthYear[2]) * 10000 + month * 100 + 31;
         }
-        const y = s.match(/(\d{4})/);
-        return y ? parseInt(y[1], 10) * 100 : 0;
+
+        // Support filename dates such as 2026_0507, 2021_0117, or 2003_May.
+        const numericFileDate = source.match(
+          /\b(19\d{2}|20\d{2})[_-](0?[1-9]|1[0-2])(?:[_-](0?[1-9]|[12]\d|3[01]))?\b/,
+        );
+        if (numericFileDate) {
+          return (
+            Number(numericFileDate[1]) * 10000 +
+            Number(numericFileDate[2]) * 100 +
+            Number(numericFileDate[3] || 1)
+          );
+        }
+
+        const yearMonthName = source.match(
+          /\b(19\d{2}|20\d{2})[_-](Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\b/i,
+        );
+        if (yearMonthName) {
+          const month = _MO[yearMonthName[2].slice(0, 3).toLowerCase()] || 0;
+          return Number(yearMonthName[1]) * 10000 + month * 100 + 1;
+        }
+
+        // Fall back to a year-only date.
+        const years = source.match(/\b(19\d{2}|20\d{2})\b/g);
+        if (years && years.length) {
+          return Math.max.apply(
+            null,
+            years.map(function (year) {
+              return Number(year) * 10000;
+            }),
+          );
+        }
+
+        return 0;
       }
-      const sortCerts = (arr) =>
-        [...arr].sort((a, b) => certKey(b) - certKey(a));
+
+      const sortDocumentsNewestFirst = (arr) =>
+        [...arr].sort(function (a, b) {
+          const dateDifference = documentDateKey(b) - documentDateKey(a);
+          if (dateDifference) return dateDifference;
+
+          // Keep equally dated records predictable instead of randomly moving.
+          const aTitle = String((a && (a.t || a.ti)) || "");
+          const bTitle = String((b && (b.t || b.ti)) || "");
+          return aTitle.localeCompare(bTitle);
+        });
+
+      const sortCerts = sortDocumentsNewestFirst;
 
       // Robust PDF delivery: fixes premature-revoke bug and falls back to a new tab inside sandboxed iframes
       function downloadBytes(bytes, filename) {
@@ -7099,14 +7153,14 @@
         y += 5;
         // Education & apprenticeships — compact lines
         section("Education");
-        EDU_DEGREES.forEach(function (e) {
+        sortDocumentsNewestFirst(EDU_DEGREES).forEach(function (e) {
           eduLine(e.ti, e.meta);
         });
         eduLine(
           EDU_JST.ti,
           EDU_JST.meta + " · 78 ACE-recommended credit hours",
         );
-        APPRENTICE.forEach(function (e) {
+        sortDocumentsNewestFirst(APPRENTICE).forEach(function (e) {
           eduLine(e.ti, e.meta);
         });
         y += 5;
@@ -7198,7 +7252,7 @@
 
             <div className="edu-block">
               <div className="tier-lbl">Formal Education</div>
-              {EDU_DEGREES.map((e, i) => (
+              {sortDocumentsNewestFirst(EDU_DEGREES).map((e, i) => (
                 <div className="edu-item" key={i}>
                   <div>
                     <div className="ti">{e.ti}</div>
@@ -7218,7 +7272,7 @@
 
             <div className="edu-block">
               <div className="tier-lbl">Federal Apprenticeships</div>
-              {APPRENTICE.map((e, i) => (
+              {sortDocumentsNewestFirst(APPRENTICE).map((e, i) => (
                 <div className="edu-item" key={i}>
                   <div>
                     <div className="ti">{e.ti}</div>
@@ -9987,13 +10041,15 @@
             </div>
           );
         }
-        var certDocs = CERTS.filter(function (c) {
-          return c.file;
-        }).map(function (c) {
+        var certDocs = sortDocumentsNewestFirst(
+          CERTS.filter(function (c) {
+            return c.file;
+          }),
+        ).map(function (c) {
           return { file: c.file, title: c.t, meta: c.iss };
         });
         var eduList = [];
-        EDU_DEGREES.forEach(function (d) {
+        sortDocumentsNewestFirst(EDU_DEGREES).forEach(function (d) {
           if (d.file) {
             eduList.push({ file: d.file, title: d.ti, meta: d.meta });
           }
@@ -10005,10 +10061,25 @@
             meta: EDU_JST.meta,
           });
         }
-        APPRENTICE.forEach(function (a) {
+        sortDocumentsNewestFirst(APPRENTICE).forEach(function (a) {
           if (a.file) {
             eduList.push({ file: a.file, title: a.ti, meta: a.meta });
           }
+        });
+        eduList = sortDocumentsNewestFirst(
+          eduList.map(function (item) {
+            return {
+              ti: item.title,
+              meta: item.meta,
+              file: item.file,
+            };
+          }),
+        ).map(function (item) {
+          return {
+            file: item.file,
+            title: item.ti,
+            meta: item.meta,
+          };
         });
         return (
           <div className="page">
