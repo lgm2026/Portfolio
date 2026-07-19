@@ -1102,7 +1102,8 @@
         margin-bottom: 6px;
       }
       .field input,
-      .field textarea {
+      .field textarea,
+      .field select {
         width: 100%;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid var(--line);
@@ -1114,7 +1115,8 @@
         transition: 0.15s;
       }
       .field input:focus,
-      .field textarea:focus {
+      .field textarea:focus,
+      .field select:focus {
         outline: none;
         border-color: var(--gold);
         background: rgba(255, 255, 255, 0.05);
@@ -1122,6 +1124,16 @@
       .field textarea {
         resize: vertical;
         min-height: 120px;
+      }
+      .field select {
+        width: 100%;
+        background: var(--navy2);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+        color: var(--cream);
+        font-family: inherit;
+        font-size: 15px;
       }
       .notice {
         font-size: 12.5px;
@@ -4814,7 +4826,12 @@
 
       function Acknowledgements() {
         const initials = (s) => s; // already initials
-        const letters = sortCerts(CERTS.filter((c) => c.ack));
+        const letters = sortCerts(
+          CERTS.filter((c) => c.ack && !c.religious),
+        );
+        const religiousDocs = sortCerts(
+          CERTS.filter((c) => c.religious),
+        );
         const openPdf = (f) => {
           if (f) openCertViewer(f);
         };
@@ -4866,6 +4883,35 @@
                   </div>
                 ))}
               </div>
+
+              <div className="tier-lbl">Religious</div>
+              {religiousDocs.length ? (
+                <div className="letters-list">
+                  {religiousDocs.map((c, i) => (
+                    <div className="letter" key={i}>
+                      <div>
+                        <div className="lt">{c.t}</div>
+                        <div className="lm">{c.iss}</div>
+                      </div>
+                      {c.file && (
+                        <div
+                          className="lv"
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => openPdf(c.file)}
+                          onKeyDown={kb(() => openPdf(c.file))}
+                        >
+                          View ↗
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="upd-hint" style={{ marginBottom: 28 }}>
+                  Religious documents and service records will appear here.
+                </p>
+              )}
 
               <div className="ack-refs">
                 <p>
@@ -5448,7 +5494,16 @@
         };
         var switchMode = function (m2) {
           setMode(m2);
-          setForm({});
+          setForm({
+            section:
+              m2 === "letter"
+                ? "letters"
+                : m2 === "religious"
+                  ? "religious"
+                  : m2 === "cert"
+                    ? "supporting"
+                    : "",
+          });
           setCopied(false);
           setPublishFile(null);
           setPublishStatus("");
@@ -5524,19 +5579,44 @@
             snippet = lines.join("\n");
           }
         } else {
-          var isLetter = mode === "letter";
-          ready = !!(g("name") && g("issuer") && g("date"));
+          var section =
+            g("section") ||
+            (mode === "letter"
+              ? "letters"
+              : mode === "religious"
+                ? "religious"
+                : "supporting");
+          var isLetter = section === "letters";
+          var isReligious = section === "religious";
+          var isHistorical = section === "historical";
+          ready = !!(g("name") && g("issuer") && g("date") && section);
           if (ready) {
             var iss = g("issuer") + " \u00b7 " + g("date");
-            var tier = parseInt(g("tier") || "2", 10) || 2;
+            var tier =
+              section === "headline"
+                ? 1
+                : section === "supporting"
+                  ? 2
+                  : 3;
             var tmpc = { t: g("name"), iss: iss };
             var pool = isLetter
               ? CERTS.filter(function (c) {
-                  return c.ack;
+                  return c.ack && !c.religious;
                 })
-              : CERTS.filter(function (c) {
-                  return c.tier === tier && !c.ack;
-                });
+              : isReligious
+                ? CERTS.filter(function (c) {
+                    return c.religious;
+                  })
+                : CERTS.filter(function (c) {
+                    return (
+                      c.tier === tier &&
+                      !c.ack &&
+                      !c.religious &&
+                      (isHistorical
+                        ? c.status === "historical"
+                        : c.status !== "historical")
+                    );
+                  });
             var sorted = sortCerts(
               pool.concat([Object.assign({ __nw: 1 }, tmpc)]),
             );
@@ -5552,15 +5632,31 @@
               " of " +
               sorted.length +
               " in its " +
-              (isLetter ? "letters list" : "tier " + tier + " grid") +
+              (isLetter
+                ? "letters list"
+                : isReligious
+                  ? "Religious section"
+                  : isHistorical
+                    ? "Historical & Recognition section"
+                    : "tier " + tier + " grid") +
               ", newest first.";
             var parts2 = [" {t:" + J(g("name")) + ",iss:" + J(iss) + ","];
             if (isLetter) {
               parts2.push("  ack:true,");
             }
+            if (isReligious) {
+              parts2.push("  religious:true,");
+            }
             parts2.push(
-              "  tier:" + (isLetter ? 3 : tier) + ',status:"active",',
+              "  tier:" +
+                (isLetter || isReligious || isHistorical ? 3 : tier) +
+                ',status:' +
+                J(isHistorical ? "historical" : "active") +
+                ",",
             );
+            if (isHistorical && g("hist")) {
+              parts2.push("  hist:" + J(g("hist")) + ",");
+            }
             if (g("file")) {
               parts2.push("  file:" + J(g("file")) + ",");
             }
@@ -5621,13 +5717,13 @@
 
           if (!g("name") || !g("issuer") || !g("date")) {
             setPublishStatus(
-              "Certificate name, issuer, and date are required.",
+              "Document title, issuer, and date are required.",
             );
             return;
           }
 
           if (!publishFile) {
-            setPublishStatus("Choose the certificate PDF first.");
+            setPublishStatus("Choose the PDF first.");
             return;
           }
 
@@ -5673,8 +5769,20 @@
                   name: g("name"),
                   issuer: g("issuer"),
                   date: g("date"),
-                  tier: g("tier") || "2",
-                  documentType: mode === "letter" ? "letter" : "certificate",
+                  section:
+                    g("section") ||
+                    (mode === "letter"
+                      ? "letters"
+                      : mode === "religious"
+                        ? "religious"
+                        : "supporting"),
+                  documentType:
+                    g("section") === "letters"
+                      ? "letter"
+                      : g("section") === "religious"
+                        ? "religious"
+                        : "certificate",
+                  historicalNote: g("hist"),
                   desc: g("desc"),
                   filename: g("file") || publishFile.name,
                   originalFilename: publishFile.name,
@@ -5690,9 +5798,7 @@
             }
 
             setPublishStatus(
-              (mode === "letter"
-                ? "Letter published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live."
-                : "Certificate published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live."),
+              "Published successfully to the selected page section. GitHub received the PDF and website update. It may take a minute or two to appear live.",
             );
             setForm({});
             setPublishFile(null);
@@ -5728,7 +5834,7 @@
               <SecHead
                 eyebrow="Admin"
                 title="Site Updates"
-                lead="Publish certificates and letters of appreciation directly to GitHub from this page. Work experience still uses the copyable snippet tool."
+                lead="Upload a PDF, choose exactly where it should appear using the Page Section dropdown, and publish it directly to GitHub. Work experience still uses the copyable snippet tool."
               />
               <div className="upd-modes">
                 <button
@@ -5761,6 +5867,17 @@
                   }}
                 >
                   Letter of Appreciation
+                </button>
+                <button
+                  className={
+                    "btn btn-sm " +
+                    (mode === "religious" ? "btn-gold" : "btn-ghost")
+                  }
+                  onClick={function () {
+                    switchMode("religious");
+                  }}
+                >
+                  Religious
                 </button>
               </div>
               {mode === "exp" ? (
@@ -5798,29 +5915,60 @@
                 </div>
               ) : (
                 <div className="upd-form">
+                  <div className="field">
+                    <label>Page Section</label>
+                    <select value={g("section")} onChange={set("section")}>
+                      <option value="">Choose where this document appears</option>
+                      <option value="headline">
+                        Credentials — Headline Credentials
+                      </option>
+                      <option value="supporting">
+                        Credentials — Supporting Credentials
+                      </option>
+                      <option value="historical">
+                        Credentials — Historical & Recognition
+                      </option>
+                      <option value="letters">
+                        Acknowledgements — Letters & Recognition
+                      </option>
+                      <option value="religious">
+                        Acknowledgements — Religious
+                      </option>
+                    </select>
+                  </div>
                   {F(
-                    mode === "letter" ? "Letter Title" : "Certificate Name",
+                    mode === "letter"
+                      ? "Letter Title"
+                      : mode === "religious"
+                        ? "Religious Document Title"
+                        : "Certificate Name",
                     "name",
                     mode === "letter"
                       ? "e.g. Letter of Appreciation, USS Iwo Jima"
-                      : "e.g. Microsoft Certified: AZ-104",
+                      : mode === "religious"
+                        ? "e.g. Church Membership, Ministry Service, Ordination"
+                        : "e.g. Microsoft Certified: AZ-104",
                   )}
                   {F("Issuer", "issuer", "e.g. Microsoft")}
                   {F("Date (e.g. Feb 2026)", "date", "Mon YYYY")}
-                  {mode === "cert"
+                  {g("section") === "historical"
                     ? F(
-                        "Tier (1 top credentials, 2 training)",
-                        "tier",
-                        "1 or 2",
+                        "Historical note",
+                        "hist",
+                        "e.g. Expired Nov 2019 or Training pipeline",
                       )
                     : null}
                   {F("PDF file name (optional)", "file", "e.g. AZ-104.pdf")}
-                  {mode === "cert" || mode === "letter" ? (
+                  {mode === "cert" ||
+                  mode === "letter" ||
+                  mode === "religious" ? (
                     <div className="field">
                       <label>
                         {mode === "letter"
                           ? "Choose Letter PDF"
-                          : "Choose Certificate PDF"}
+                          : mode === "religious"
+                            ? "Choose Religious Document PDF"
+                            : "Choose Certificate PDF"}
                       </label>
                       <input
                         type="file"
@@ -5846,7 +5994,9 @@
                       />
                     </div>
                   ) : null}
-                  {mode === "cert" || mode === "letter" ? (
+                  {mode === "cert" ||
+                  mode === "letter" ||
+                  mode === "religious" ? (
                     <div className="field">
                       <label>Publishing Password</label>
                       <input
@@ -5872,17 +6022,15 @@
                   <div className="upd-place">{placeNote}</div>
                   <pre className="upd-snip">{snippet}</pre>
                   <div className="upd-actions">
-                    {mode === "cert" || mode === "letter" ? (
+                    {mode === "cert" ||
+                    mode === "letter" ||
+                    mode === "religious" ? (
                       <button
                         className="btn btn-blue btn-sm"
                         onClick={publishCertificate}
                         disabled={publishing}
                       >
-                        {publishing
-                          ? "Publishing..."
-                          : mode === "letter"
-                            ? "Publish Letter"
-                            : "Publish Certificate"}
+                        {publishing ? "Publishing..." : "Publish Document"}
                       </button>
                     ) : null}
                     <button className="btn btn-gold btn-sm" onClick={doCopy}>
@@ -5893,14 +6041,18 @@
                         ? "Paste anywhere inside the EXPERIENCE array. Order is automatic."
                         : mode === "cert"
                           ? "Publish sends the PDF and certificate entry to GitHub. Copy Snippet remains as a backup."
-                          : "Publish sends the letter PDF and acknowledgement entry to GitHub. Copy Snippet remains as a backup."}
+                          : mode === "letter"
+                            ? "Publish sends the letter PDF and acknowledgement entry to GitHub. Copy Snippet remains as a backup."
+                            : "Publish sends the PDF and Religious-section entry to GitHub. Copy Snippet remains as a backup."}
                     </span>
                   </div>
-                  {(mode === "cert" || mode === "letter") &&
+                  {(mode === "cert" ||
+                    mode === "letter" ||
+                    mode === "religious") &&
                   publishStatus ? (
                     <div
                       className={
-                        publishStatus.indexOf("published successfully") > -1
+                        publishStatus.indexOf("Published successfully") === 0
                           ? "notice"
                           : "file-err"
                       }
