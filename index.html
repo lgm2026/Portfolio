@@ -5739,9 +5739,14 @@
         var publishCertificate = async function () {
           setPublishStatus("");
 
+          if (!g("section")) {
+            setPublishStatus("Choose the Page Section first.");
+            return;
+          }
+
           if (!g("name") || !g("issuer") || !g("date")) {
             setPublishStatus(
-              "Document title, issuer, and date are required.",
+              "Document title, organization or issuer, and date are required.",
             );
             return;
           }
@@ -5793,13 +5798,7 @@
                   name: g("name"),
                   issuer: g("issuer"),
                   date: g("date"),
-                  section:
-                    g("section") ||
-                    (mode === "letter"
-                      ? "letters"
-                      : mode === "religious"
-                        ? "religious"
-                        : "supporting"),
+                  section: g("section"),
                   documentType:
                     g("section") === "letters"
                       ? "letter"
@@ -5858,7 +5857,7 @@
               <SecHead
                 eyebrow="Admin"
                 title="Site Updates"
-                lead="Upload a PDF, choose exactly where it should appear using the Page Section dropdown, and publish it directly to GitHub. Work experience still uses the copyable snippet tool."
+                lead="Upload a PDF and choose one of the seven exact page destinations. The selected destination controls where the document appears on the live site."
               />
               <div className="upd-modes">
                 <button
@@ -5943,14 +5942,20 @@
                     <label>Page Section</label>
                     <select value={g("section")} onChange={set("section")}>
                       <option value="">Choose where this document appears</option>
+                      <option value="formal-education">
+                        Work Experience — Formal Education
+                      </option>
+                      <option value="federal-apprenticeships">
+                        Work Experience — Federal Apprenticeships
+                      </option>
                       <option value="headline">
-                        Credentials — Headline Credentials
+                        Work Experience — Certifications — Headline Credentials
                       </option>
                       <option value="supporting">
-                        Credentials — Supporting Credentials
+                        Work Experience — Certifications — Supporting Credentials
                       </option>
                       <option value="historical">
-                        Credentials — Historical & Recognition
+                        Work Experience — Certifications — Historical & Recognition
                       </option>
                       <option value="letters">
                         Acknowledgements — Letters & Recognition
@@ -5961,19 +5966,15 @@
                     </select>
                   </div>
                   {F(
-                    mode === "letter"
-                      ? "Letter Title"
-                      : mode === "religious"
-                        ? "Religious Document Title"
-                        : "Certificate Name",
+                    "Document Title",
                     "name",
-                    mode === "letter"
-                      ? "e.g. Letter of Appreciation, USS Iwo Jima"
-                      : mode === "religious"
-                        ? "e.g. Church Membership, Ministry Service, Ordination"
-                        : "e.g. Microsoft Certified: AZ-104",
+                    "Degree, apprenticeship, certificate, letter, or religious document",
                   )}
-                  {F("Issuer", "issuer", "e.g. Microsoft")}
+                  {F(
+                    "School, Agency, Organization, or Issuer",
+                    "issuer",
+                    "e.g. Saint Leo University, U.S. Department of Labor, Microsoft",
+                  )}
                   {F("Date (e.g. Feb 2026)", "date", "Mon YYYY")}
                   {g("section") === "historical"
                     ? F(
@@ -5988,11 +5989,7 @@
                   mode === "religious" ? (
                     <div className="field">
                       <label>
-                        {mode === "letter"
-                          ? "Choose Letter PDF"
-                          : mode === "religious"
-                            ? "Choose Religious Document PDF"
-                            : "Choose Certificate PDF"}
+                        Choose Document PDF
                       </label>
                       <input
                         type="file"
@@ -6595,7 +6592,11 @@
                   {tl}
                 </div>
                 <div className="cert-grid">
-                  {sortCerts(CERTS.filter((c) => c.tier === tn && !c.ack)).map(
+                  {sortCerts(
+                    CERTS.filter(
+                      (c) => c.tier === tn && !c.ack && !c.religious,
+                    ),
+                  ).map(
                     (c, i) => (
                       <div className="cert" key={i}>
                         <div>
