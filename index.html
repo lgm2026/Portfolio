@@ -2305,6 +2305,21 @@
         font-size: 14px;
         line-height: 1.6;
       }
+      .cv-pdf {
+        display: block;
+        width: 100%;
+        height: min(78vh, 900px);
+        min-height: 520px;
+        border: 0;
+        border-radius: 6px;
+        background: #fff;
+      }
+      @media (max-width: 600px) {
+        .cv-pdf {
+          min-height: 68vh;
+          height: 68vh;
+        }
+      }
       /* ---- Custom Tailoring UI (added) ---- */
       .mode-switch {
         display: flex;
@@ -3638,15 +3653,6 @@
       ];
 
       const CERTS = [
-        {
-          t: "Certificate of Appreciation; Seagate Village ARC",
-          iss: "Jeanie Stoker, Board President · May 2026",
-          tier: 3,
-          status: "active",
-          file: "2026_05xx-Dustin_Burich-Seagate_ARC_CoA.pdf",
-          ack: true,
-          desc: "Volunteered support for Architectural Review Committee, increasing community aesthetic, architectural, and formal compliance, supporting long term health of 800 house community.",
-        },
         // tier 1
         {
           t: "Microsoft Applied Skills: Create an AI Agent",
@@ -9306,14 +9312,15 @@
                       key={i}
                       src={src}
                       className="cv-img"
-                      alt={"Certificate page " + (i + 1)}
+                      alt={"Document page " + (i + 1)}
                     />
                   ))
                 ) : (
-                  <div className="cv-empty">
-                    This document isn't bundled in the preview. The
-                    full-resolution copy is in the certificate handoff archive.
-                  </div>
+                  <iframe
+                    className="cv-pdf"
+                    src={"assets/certs/" + encodeURIComponent(file)}
+                    title={docTitleFor(file)}
+                  />
                 )}
               </div>
             </div>
