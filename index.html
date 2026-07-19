@@ -5643,6 +5643,7 @@
                   issuer: g("issuer"),
                   date: g("date"),
                   tier: g("tier") || "2",
+                  documentType: mode === "letter" ? "letter" : "certificate",
                   desc: g("desc"),
                   filename: g("file") || publishFile.name,
                   originalFilename: publishFile.name,
@@ -5658,7 +5659,9 @@
             }
 
             setPublishStatus(
-              "Published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live.",
+              (mode === "letter"
+                ? "Letter published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live."
+                : "Certificate published successfully. GitHub received the PDF and website update. It may take a minute or two to appear live."),
             );
             setForm({});
             setPublishFile(null);
@@ -5694,7 +5697,7 @@
               <SecHead
                 eyebrow="Admin"
                 title="Site Updates"
-                lead="Add a certificate and publish its PDF directly to GitHub from this page. Work experience and letters still use the copyable snippet tool."
+                lead="Publish certificates and letters of appreciation directly to GitHub from this page. Work experience still uses the copyable snippet tool."
               />
               <div className="upd-modes">
                 <button
@@ -5781,9 +5784,13 @@
                       )
                     : null}
                   {F("PDF file name (optional)", "file", "e.g. AZ-104.pdf")}
-                  {mode === "cert" ? (
+                  {mode === "cert" || mode === "letter" ? (
                     <div className="field">
-                      <label>Choose Certificate PDF</label>
+                      <label>
+                        {mode === "letter"
+                          ? "Choose Letter PDF"
+                          : "Choose Certificate PDF"}
+                      </label>
                       <input
                         type="file"
                         accept="application/pdf,.pdf"
@@ -5808,7 +5815,7 @@
                       />
                     </div>
                   ) : null}
-                  {mode === "cert" ? (
+                  {mode === "cert" || mode === "letter" ? (
                     <div className="field">
                       <label>Publishing Password</label>
                       <input
@@ -5834,7 +5841,7 @@
                   <div className="upd-place">{placeNote}</div>
                   <pre className="upd-snip">{snippet}</pre>
                   <div className="upd-actions">
-                    {mode === "cert" ? (
+                    {mode === "cert" || mode === "letter" ? (
                       <button
                         className="btn btn-blue btn-sm"
                         onClick={publishCertificate}
@@ -5842,7 +5849,9 @@
                       >
                         {publishing
                           ? "Publishing..."
-                          : "Publish Certificate"}
+                          : mode === "letter"
+                            ? "Publish Letter"
+                            : "Publish Certificate"}
                       </button>
                     ) : null}
                     <button className="btn btn-gold btn-sm" onClick={doCopy}>
@@ -5853,13 +5862,14 @@
                         ? "Paste anywhere inside the EXPERIENCE array. Order is automatic."
                         : mode === "cert"
                           ? "Publish sends the PDF and certificate entry to GitHub. Copy Snippet remains as a backup."
-                          : "Paste anywhere inside the CERTS array. Order is automatic. If it has a PDF, also add the file per the DEPLOYMENT checklist."}
+                          : "Publish sends the letter PDF and acknowledgement entry to GitHub. Copy Snippet remains as a backup."}
                     </span>
                   </div>
-                  {mode === "cert" && publishStatus ? (
+                  {(mode === "cert" || mode === "letter") &&
+                  publishStatus ? (
                     <div
                       className={
-                        publishStatus.indexOf("Published successfully") === 0
+                        publishStatus.indexOf("published successfully") > -1
                           ? "notice"
                           : "file-err"
                       }
