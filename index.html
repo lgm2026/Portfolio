@@ -5918,9 +5918,15 @@
             setForm({});
             setPublishFile(null);
           } catch (error) {
-            setPublishStatus(
-              error && error.message ? error.message : "Publishing failed.",
-            );
+            var message =
+              error && error.message ? error.message : "Publishing failed.";
+
+            if (message === "Failed to fetch") {
+              message =
+                "Could not reach the Cloudflare publishing Worker. This usually means the deployed Worker is an older version, the x-publish-key CORS header is missing, or the Worker route is unavailable. Deploy the matching Worker file and retry the same PDF. If the PDF already exists in GitHub, it will be reused.";
+            }
+
+            setPublishStatus(message);
           } finally {
             setPublishing(false);
           }
@@ -6350,7 +6356,7 @@
               <SecHead
                 eyebrow="Admin"
                 title="Manage Documents"
-                lead="Edit document details, move an existing PDF to another portfolio section, or remove an old listing."
+                lead="Edit document details and tags, move an existing PDF to another portfolio section, or remove an old listing."
               />
               <div className="mgr-list">
                 {docs.map(function (x) {
@@ -6375,6 +6381,7 @@
                       </div>
                       <div className="mgr-row-meta">
                         {label} · {x.item.file}
+                        {x.item.hist ? " · Note: " + x.item.hist : ""}
                       </div>
                     </button>
                   );
@@ -6408,12 +6415,25 @@
                       <label>Description</label>
                       <textarea value={form.desc || ""} onChange={set("desc")} />
                     </div>
-                    {form.section === "historical" ? (
-                      <div className="field full">
-                        <label>Historical Note</label>
-                        <input value={form.hist || ""} onChange={set("hist")} />
+                    <div className="field full">
+                      <label>
+                        Historical Note / Tag
+                        <span className="opt">
+                          Optional — visible here for every document
+                        </span>
+                      </label>
+                      <textarea
+                        className="mgr-textarea"
+                        value={form.hist || ""}
+                        onChange={set("hist")}
+                        placeholder="Examples: Historical credential, Expired Nov 2019, Training pipeline, Recognition, Church record"
+                      />
+                      <div className="upd-hint" style={{ marginTop: 6 }}>
+                        This field can hold historical labels, tags, expiration
+                        notes, status notes, or other document-specific context.
+                        It stays attached if the document is moved.
                       </div>
-                    ) : null}
+                    </div>
                     <div className="field full">
                       <label>PDF Filename</label>
                       <input value={form.file || ""} readOnly />
