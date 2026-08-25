@@ -1,0 +1,16 @@
+{
+  "appId": "io.dbmb.secondchance",
+  "appName": "Second Chance",
+  "webDir": "dist",
+  "backgroundColor": "#FAF4EA",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#FAF4EA",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    }
+  },
+  "ios": { "contentInset": "always", "backgroundColor": "#FAF4EA" },
+  "android": { "backgroundColor": "#FAF4EA" }
+}
