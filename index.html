@@ -2772,6 +2772,114 @@
         opacity: 0.85;
         font-size: 15px;
       }
+/* ---- project showcase scroller on About page ---- */
+.project-strip {
+  position: relative;
+  margin: 2px 0 34px;
+  padding: 16px 44px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.project-strip-window {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.project-strip-window::-webkit-scrollbar {
+  display: none;
+}
+
+.project-strip-track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+}
+
+.project-strip-card {
+  flex: 0 0 220px;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  overflow: hidden;
+  background: var(--card);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.project-strip-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+
+.project-strip-img {
+  display: block;
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  background: var(--navy2);
+}
+
+.project-strip-name {
+  padding: 10px 12px;
+  font-family: var(--fdisp);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: var(--cream);
+  text-align: center;
+}
+
+.project-strip-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 34px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--navy2);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-strip-arrow:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.project-strip-arrow.left {
+  left: 2px;
+}
+
+.project-strip-arrow.right {
+  right: 2px;
+}
+
+@media (max-width: 600px) {
+  .project-strip {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .project-strip-card {
+    flex-basis: 175px;
+  }
+
+  .project-strip-img {
+    height: 95px;
+  }
+}
+
       /* Summary modal placement: clear the fixed masthead, center professionally, keep the close button on screen */
       .sum-bg {
         align-items: center;
@@ -4420,6 +4528,124 @@ window.CERT_IMAGES = {};
       /* ============================================================
    PAGES
 ============================================================ */
+      function ProjectStrip({ go }) {
+  const stripRef = useRef(null);
+
+const projectItems = [
+  ...APP_LIBRARY.filter((a) => a.url).map((a) => ({
+    ...a,
+    img:
+      "projects/app_library/project-images/" +
+      a.t.replace(/\s+/g, "-") +
+      "-img.png",
+    type: "external",
+  })),
+
+  {
+    t: "HypeTeen Academy",
+    img: "projects/app_library/project-images/HypeTeen-Academy-img.png",
+    type: "internal",
+    page: "hypeteen",
+  },
+];
+
+  const scrollProjects = (direction) => {
+    const el = stripRef.current;
+    if (!el) return;
+
+    el.scrollBy({
+      left: direction * 240,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const el = stripRef.current;
+    if (!el || projectItems.length < 2) return;
+
+    const timer = setInterval(() => {
+      const nearEnd =
+        el.scrollLeft + el.clientWidth >= el.scrollWidth - 10;
+
+      if (nearEnd) {
+        el.scrollTo({
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        el.scrollBy({
+          left: 1,
+          behavior: "auto",
+        });
+      }
+    }, 35);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="project-strip">
+      <button
+        className="project-strip-arrow left"
+        onClick={() => scrollProjects(-1)}
+        aria-label="Scroll projects left"
+      >
+        ‹
+      </button>
+
+      <div className="project-strip-window" ref={stripRef}>
+        <div className="project-strip-track">
+         {projectItems.map((project) =>
+  project.type === "internal" ? (
+    <button
+      key={project.t}
+      className="project-strip-card"
+      onClick={() => go(project.page)}
+    >
+      <img
+        className="project-strip-img"
+        src={project.img}
+        alt={project.t}
+        loading="lazy"
+      />
+      <div className="project-strip-name">
+        {project.t}
+      </div>
+    </button>
+  ) : (
+    <a
+      key={project.t}
+      className="project-strip-card"
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        className="project-strip-img"
+        src={project.img}
+        alt={project.t}
+        loading="lazy"
+      />
+      <div className="project-strip-name">
+        {project.t}
+      </div>
+    </a>
+  )
+)}
+        </div>
+      </div>
+
+      <button
+        className="project-strip-arrow right"
+        onClick={() => scrollProjects(1)}
+        aria-label="Scroll projects right"
+      >
+        ›
+      </button>
+    </div>
+  );
+}
+      
       function About({ go, onUnlock }) {
         return (
           <div className="page">
@@ -4471,7 +4697,9 @@ window.CERT_IMAGES = {};
                     </button>
                   </div>
                 </div>
-              </div>
+                            </div>
+
+              <ProjectStrip go={go} />
 
               <div className="about-full">
                 <SecHead eyebrow="About Me" title="The Good Stuff" />
