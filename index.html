@@ -2786,7 +2786,6 @@
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
-  scroll-behavior: smooth;
 }
 
 .project-strip-window::-webkit-scrollbar {
@@ -4549,39 +4548,59 @@ const projectItems = [
   },
 ];
 
-  const scrollProjects = (direction) => {
-    const el = stripRef.current;
-    if (!el) return;
+const loopItems = [...projectItems, ...projectItems];
 
-    el.scrollBy({
-      left: direction * 240,
-      behavior: "smooth",
-    });
+const scrollProjects = (direction) => {
+  const el = stripRef.current;
+  if (!el) return;
+
+  const halfway = el.scrollWidth / 2;
+
+  if (direction < 0 && el.scrollLeft < 470) {
+    el.scrollLeft += halfway;
+  }
+
+  if (direction > 0 && el.scrollLeft >= halfway - 470) {
+    el.scrollLeft -= halfway;
+  }
+
+  el.scrollBy({
+    left: direction * 468,
+    behavior: "smooth",
+  });
+};
+
+useEffect(() => {
+  const el = stripRef.current;
+  if (!el || projectItems.length < 2) return;
+
+  let animationFrame;
+  let lastTime = 0;
+
+  const autoScroll = (time) => {
+    if (!lastTime) lastTime = time;
+
+    const elapsed = time - lastTime;
+
+    if (elapsed >= 30) {
+      el.scrollLeft += 0.5;
+
+      const halfway = el.scrollWidth / 2;
+
+      if (el.scrollLeft >= halfway) {
+        el.scrollLeft -= halfway;
+      }
+
+      lastTime = time;
+    }
+
+    animationFrame = requestAnimationFrame(autoScroll);
   };
 
-  useEffect(() => {
-    const el = stripRef.current;
-    if (!el || projectItems.length < 2) return;
+  animationFrame = requestAnimationFrame(autoScroll);
 
-    const timer = setInterval(() => {
-      const nearEnd =
-        el.scrollLeft + el.clientWidth >= el.scrollWidth - 10;
-
-      if (nearEnd) {
-        el.scrollTo({
-          left: 0,
-          behavior: "smooth",
-        });
-      } else {
-        el.scrollBy({
-          left: 1,
-          behavior: "auto",
-        });
-      }
-    }, 35);
-
-    return () => clearInterval(timer);
-  }, []);
+  return () => cancelAnimationFrame(animationFrame);
+}, []);
 
   return (
     <div className="project-strip">
@@ -4595,10 +4614,10 @@ const projectItems = [
 
       <div className="project-strip-window" ref={stripRef}>
         <div className="project-strip-track">
-         {projectItems.map((project) =>
+         {loopItems.map((project, index) =>
   project.type === "internal" ? (
     <button
-      key={project.t}
+      key={project.t + "-" + index}
       className="project-strip-card"
       onClick={() => go(project.page)}
     >
@@ -4614,7 +4633,7 @@ const projectItems = [
     </button>
   ) : (
     <a
-      key={project.t}
+      key={project.t + "-" + index}
       className="project-strip-card"
       href={project.url}
       target="_blank"
