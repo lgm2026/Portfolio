@@ -1432,7 +1432,7 @@ function ProjectStrip({ go }) {
                       }}
                       onClick={() => go("experience")}
                     >
-                      View Experience
+                      Professional Experience
                     </button>
                   </div>
                 </div>
