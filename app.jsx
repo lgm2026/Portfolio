@@ -1395,15 +1395,11 @@ function ProjectStrip({ go }) {
                     <a href={"mailto:" + SITE.email}>{SITE.email}</a>
                   </div>
                   <div className="project-strip-mobile">
-  <div className="project-strip-label">
-    My most recent work:
-  </div>
-  <div className="project-strip-desktop">
+<div className="project-strip-mobile">
   <div className="project-strip-label">
     My most recent work:
   </div>
   <ProjectStrip go={go} />
-</div>
 </div>
                   <p className="about-hero-intro">{ABOUT_SHORT}</p>
                   <p className="about-hero-intro about-hero-nudge">
@@ -1441,7 +1437,12 @@ function ProjectStrip({ go }) {
                 </div>
                             </div>
 
-              <ProjectStrip go={go} />
+           <div className="project-strip-desktop">
+  <div className="project-strip-label">
+    My most recent work:
+  </div>
+  <ProjectStrip go={go} />
+</div>
 
               <div className="about-full">
                 <SecHead eyebrow="About Me" title="The Good Stuff" />
@@ -3830,40 +3831,24 @@ function ProjectStrip({ go }) {
 
       const sortCerts = sortDocumentsNewestFirst;
 
-      // Robust PDF delivery: fixes premature-revoke bug and falls back to a new tab inside sandboxed iframes
-      function downloadBytes(bytes, filename) {
-        var url;
-        try {
-          var blob = new Blob([bytes], { type: "application/pdf" });
-          url = URL.createObjectURL(blob);
-          var a = document.createElement("a");
-          a.href = url;
-          a.download = filename;
-          a.style.display = "none";
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        } catch (e) {
-          console.error("download error", e);
-        }
-        // In the sandboxed preview, forced downloads may be blocked — open the PDF in a new tab as a fallback.
-        var inIframe = true;
-        try {
-          inIframe = window.self !== window.top;
-        } catch (e) {
-          inIframe = true;
-        }
-        if (inIframe && url) {
-          try {
-            window.open(url, "_blank");
-          } catch (e) {}
-        }
-        if (url) {
-          setTimeout(function () {
-            URL.revokeObjectURL(url);
-          }, 30000);
-        }
-      }
+      // PDF Viewer for docs
+function downloadBytes(bytes, filename) {
+  var url;
+
+  try {
+    var blob = new Blob([bytes], { type: "application/pdf" });
+    url = URL.createObjectURL(blob);
+
+    window.open(url, "_blank");
+
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+    }, 60000);
+  } catch (e) {
+    console.error("PDF open error", e);
+    alert("Could not open the PDF.");
+  }
+}
 
       // One-click, all-inclusive, expertly formatted résumé (everything, no picking)
       /* Top-2 impact bullets for the pre-2019 tours. GENERAL RESUME ONLY —
@@ -5453,7 +5438,7 @@ setTimeout(function () {
                     onClick={download}
                     disabled={building}
                   >
-                    {building ? "Building…" : "Download Tailored Package ↓"}
+                    {building ? "Building…" : "Open Tailored Package ↗"}
                   </button>
                 </div>
               </div>
@@ -6560,7 +6545,7 @@ setTimeout(function () {
               onClick={dl}
               disabled={st === "working"}
             >
-              {st === "working" ? "Preparing…" : "Download ↓"}
+              {st === "working" ? "Preparing…" : "Open PDF ↗"}
             </button>
           </div>
         );
@@ -6847,7 +6832,7 @@ setTimeout(function () {
                     onClick={() => download(f.name)}
                     disabled={busy === "dl:" + f.name}
                   >
-                    {busy === "dl:" + f.name ? "…" : "Download ↓"}
+                    {busy === "dl:" + f.name ? "…" : "Open PDF ↗"}
                   </button>
                   <button
                     className="btn btn-ghost btn-sm"
@@ -7100,7 +7085,7 @@ setTimeout(function () {
                       );
                     }}
                   >
-                    Download ↓
+                    Open PDF ↗
                   </button>
                   <button
                     className="cv-close"
