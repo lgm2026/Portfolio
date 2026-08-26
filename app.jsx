@@ -1394,13 +1394,14 @@ function ProjectStrip({ go }) {
                     <span className="hc-sep">•</span>
                     <a href={"mailto:" + SITE.email}>{SITE.email}</a>
                   </div>
-                  <div className="project-strip-mobile">
+
 <div className="project-strip-mobile">
   <div className="project-strip-label">
     My most recent work:
   </div>
   <ProjectStrip go={go} />
 </div>
+
                   <p className="about-hero-intro">{ABOUT_SHORT}</p>
                   <p className="about-hero-intro about-hero-nudge">
                     {ABOUT_NUDGE}
