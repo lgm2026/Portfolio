@@ -2838,6 +2838,36 @@
   display: block;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.project-strip-mobile {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.project-strip-mobile .project-strip {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.project-strip-window {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+
 @media (max-width: 600px) {
   .project-strip-mobile {
     display: block;
@@ -2863,6 +2893,15 @@
 
   .project-strip-img {
     height: 95px;
+  }
+
+    .about-hero-txt {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .project-strip-arrow {
+    display: none;
   }
 }
 
