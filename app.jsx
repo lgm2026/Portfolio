@@ -1892,18 +1892,21 @@ function ProjectStrip({ go }) {
                 </p>
               )}
 
-              <div className="ack-refs">
-                <p>
-                  Professional references are available on request, and can be
-                  included in a compiled résumé.
-                </p>
-                <a
-                  className="btn btn-gold btn-sm"
-                  href={"mailto:" + SITE.email + "?subject=Reference%20Request"}
-                >
-                  Request My References
-                </a>
-              </div>
+<div className="ack-refs">
+  <p>
+    Professional references are available below and can also be included
+    in a compiled résumé.
+  </p>
+
+  <a
+    className="btn btn-gold btn-sm"
+    href="assets/Dustin_Burich_References.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View My References ↗
+  </a>
+</div>
             </div>
           </div>
         );
