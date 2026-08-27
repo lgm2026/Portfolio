@@ -1408,19 +1408,23 @@ function ProjectStrip({ go }) {
                   </p>
                   <div className="hero-see">See My Experience</div>
                   <div className="hero-actions hero-actions-resume">
-                    <button
-                      className="btn btn-blue"
-                      style={{
-                        flex: 1,
-                        justifyContent: "center",
-                        padding: "13px 12px",
-                        fontSize: 13.5,
-                        letterSpacing: 1,
-                      }}
-                      onClick={generateGeneralResume}
-                    >
-                      General Résumé
-                    </button>
+
+<a
+  className="btn btn-blue"
+  href="assets/Dustin_Burich_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    flex: 1,
+    justifyContent: "center",
+    padding: "13px 12px",
+    fontSize: 13.5,
+    letterSpacing: 1,
+  }}
+>
+  General Résumé
+</a>
+
                     <button
                       className="btn btn-gold"
                       style={{
