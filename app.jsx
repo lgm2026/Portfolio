@@ -1670,23 +1670,25 @@ function ProjectStrip({ go }) {
                 </div>
               </div>
 
-              <div className="proj-sec">
-                <h2 className="proj-sec-title">Tunes</h2>
-                <div className="proj-cats">
-                  <div className="proj-cat">
-                    <h3>AI Generated Music by DL Peli</h3>
-                    <div className="sub">Original AI Assisted Tracks</div>
-                    <div>
-                      <button
-                        className="btn btn-gold btn-sm"
-                        onClick={() => go("tunes")}
-                      >
-                        Open the Player
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+{/*
+<div className="proj-sec">
+  <h2 className="proj-sec-title">Tunes</h2>
+  <div className="proj-cats">
+    <div className="proj-cat">
+      <h3>AI Generated Music by DL Peli</h3>
+      <div className="sub">Original AI Assisted Tracks</div>
+      <div>
+        <button
+          className="btn btn-gold btn-sm"
+          onClick={() => go("tunes")}
+        >
+          Open the Player
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+*/}
             </div>
           </div>
         );
