@@ -1583,9 +1583,16 @@ const proEntries = sortExperience(
 );
 
       
+
 const HOCKEY_EXP = EXPERIENCE.filter(
   (e) => e.type === "sports" && e.id !== "s1"
-).map(
+).map((e) => ({
+  title: e.title,
+  org: e.org,
+  period: e.period,
+  bullets: e.bullets,
+}));
+
 
 
       function Experience() {
