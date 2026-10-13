@@ -829,6 +829,11 @@
           sub: "A free tool to help with addiction, alcoholism, and clearing a tarnished background",
           url: "projects/app_library/SecondChance/",
         },
+          {
+    t: "Raging Knights Mobile Clubhouse",
+    sub: "Motorcycle Club Hub — Events, Ride Logs, Member Resources, Chat & Arcade Games 🔒",
+    url: "projects/app_library/mobile_clubhouse/",
+  },
       ];
       const TUNES = [];
 
