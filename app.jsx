@@ -1584,14 +1584,11 @@ const proEntries = sortExperience(
 
       
 
-const HOCKEY_EXP = EXPERIENCE.filter(
+
+const sportsEntries = EXPERIENCE.filter(
   (e) => e.type === "sports" && e.id !== "s1"
-).map((e) => ({
-  title: e.title,
-  org: e.org,
-  period: e.period,
-  bullets: e.bullets,
-}));
+);
+
 
 
 
@@ -1938,14 +1935,16 @@ const HOCKEY_EXP = EXPERIENCE.filter(
         );
       }
 
-      const HOCKEY_EXP = EXPERIENCE.filter((e) => e.type === "sports").map(
-        (e) => ({
-          title: e.title,
-          org: e.org,
-          dates: e.dates,
-          desc: e.bullets[0],
-        }),
-      );
+
+const HOCKEY_EXP = EXPERIENCE
+  .filter((e) => e.type === "sports" && e.id !== "s1")
+  .map((e) => ({
+    title: e.title,
+    org: e.org,
+    dates: e.dates,
+    desc: e.bullets[0],
+  }));
+
 
       function Hobbies() {
         const [showAll, setShowAll] = useState(false);
