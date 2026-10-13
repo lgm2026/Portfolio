@@ -1,6 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
+  
+<script>
+(function () {
+  const PASSWORD = "BATT7";
+  const STORAGE_KEY = "rk_clubhouse_unlocked";
+
+  if (sessionStorage.getItem(STORAGE_KEY) === "yes") {
+    return;
+  }
+
+  while (true) {
+    const entered = prompt(
+      "🔒 RAGING KNIGHTS MOBILE CLUBHOUSE\n\n" +
+      "Private Project — Enter Access Password:"
+    );
+
+    if (entered === null) {
+      window.location.replace("/");
+      return;
+    }
+
+    if (entered === PASSWORD) {
+      sessionStorage.setItem(STORAGE_KEY, "yes");
+      break;
+    }
+
+    alert("Incorrect password. Please try again.");
+  }
+})();
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover,interactive-widget=overlays-content">
 <meta name="theme-color" content="#0b0a10">
