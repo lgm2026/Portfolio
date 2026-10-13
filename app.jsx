@@ -1234,7 +1234,11 @@ function ProjectStrip({ go }) {
   const pauseUntilRef = useRef(0);
 
   const projectItems = [
-    ...APP_LIBRARY.filter((a) => a.url).map((a) => ({
+    
+...APP_LIBRARY
+  .filter((a) => a.url && a.t !== "Raging Knights Mobile Clubhouse")
+  .map((a) => ({
+
       ...a,
       img:
         "projects/app_library/project-images/" +
@@ -1573,8 +1577,16 @@ function ProjectStrip({ go }) {
           return B.start - A.start;
         });
       }
-      const proEntries = sortExperience(EXPERIENCE);
-      const sportsEntries = EXPERIENCE.filter((e) => e.type === "sports");
+      
+const proEntries = sortExperience(
+  EXPERIENCE.filter((e) => e.id !== "s1")
+);
+
+      
+const HOCKEY_EXP = EXPERIENCE.filter(
+  (e) => e.type === "sports" && e.id !== "s1"
+).map(
+
 
       function Experience() {
         const [showSummary, setShowSummary] = useState(false);
