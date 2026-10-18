@@ -1,0 +1,13 @@
+/* HypeTeen Flight Academy: fonts served from this app (no third-party request). All three families are SIL Open Font
+   License 1.1; the license texts are in assets/fonts/. Latin subset (covers English, Spanish and French place names).
+   Rubik: interface and canvas text. EB Garamond: e-reader body text (the same face as the print books).
+   Cormorant Garamond: display titles. */
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/rubik-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/rubik-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/rubik-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/rubik-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/eb-garamond-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/eb-garamond-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/eb-garamond-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/cormorant-garamond-latin-700-normal.woff2) format('woff2')}
