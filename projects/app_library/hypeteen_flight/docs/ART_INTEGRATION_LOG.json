@@ -1,0 +1,493 @@
+{
+ "delivery": "/home/claude/htfa/baseline/art_delivery/zip",
+ "log": [
+  {
+   "asset": "screen-title",
+   "action": "FIXED",
+   "note": "padded navy bottom blended (edge at row 1421); 409x512 source, stored 1000x1250"
+  },
+  {
+   "asset": "screen-hero",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft); stored 1500x562"
+  },
+  {
+   "asset": "wall-classroom",
+   "action": "FIXED",
+   "note": "512x219 source (soft); painted out, as plain wall continued row by row: the painted bookshelf (the app draws the library shelf); the painted projection screen and cork board (the app draws its board and patch wall); the outlets under the screen; stored 1560x360"
+  },
+  {
+   "asset": "wall-hangar",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft), on brief; stored 1680x390"
+  },
+  {
+   "asset": "wall-lounge",
+   "action": "FIXED",
+   "note": "512x219 source (soft); painted out, as plain wall continued row by row: the painted door (the app draws its own door here); the wainscot under it, continued with its own grain; the painted cork board (the app draws the crew board and Hangar News); the painted trophy case (the app draws the logbook case); stored 1560x360"
+  },
+  {
+   "asset": "wall-platform",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft), on brief; stored 2040x420"
+  },
+  {
+   "asset": "wall-ramp",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft), on brief; stored 2520x330"
+  },
+  {
+   "asset": "wall-tower",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft), on brief; stored 1560x450"
+  },
+  {
+   "asset": "wall-wash",
+   "action": "ACCEPTED",
+   "note": "512x219 source (soft), on brief; stored 1560x390"
+  },
+  {
+   "asset": "wall-gameroom",
+   "action": "FIXED",
+   "note": "the whole wall rebuilt from one clean panel of its own (period 342 px): the misspelled sign on the arcade machine, the chairs, the dartboard, the door behind the hoops and the corner print (an aircraft with no wing) are gone; the app draws its own door, darts, sign, hoops and score board; 6224-px source, stored 1800x360"
+  },
+  {
+   "asset": "floor-lounge",
+   "action": "ACCEPTED",
+   "note": "512x288 source (texture; fine at this size); stored 1040x560"
+  },
+  {
+   "asset": "floor-gameroom",
+   "action": "FIXED",
+   "note": "512x288 source; the busy white cross-hatch replaced by the plain carpet weave from its own clean bottom band, mirrored down the floor; stored 1200x600"
+  },
+  {
+   "asset": "floor-classroom",
+   "action": "ACCEPTED",
+   "note": "512x288 source (texture; fine at this size); stored 1040x560"
+  },
+  {
+   "asset": "floor-hangar",
+   "action": "ACCEPTED",
+   "note": "512x288 source (texture; fine at this size); stored 1120x580"
+  },
+  {
+   "asset": "floor-platform",
+   "action": "ACCEPTED",
+   "note": "512x288 source (texture; fine at this size); stored 960x440"
+  },
+  {
+   "asset": "floor-tower",
+   "action": "ACCEPTED",
+   "note": "512x288 source (texture; fine at this size); stored 1040x460"
+  },
+  {
+   "asset": "floor-wash",
+   "action": "FIXED",
+   "note": "512x288 source; the large white blotches (they read as stains, and repeated halfway across) reduced to the fine grain of wet concrete; stored 1040x540"
+  },
+  {
+   "asset": "tile-hangar",
+   "action": "ACCEPTED",
+   "note": "4704-px source; carries the brand name on the hangar, spelled correctly; aircraft geometry checked (high wing, struts, tricycle gear, two-blade prop); stored 800x600"
+  },
+  {
+   "asset": "tile-lounge",
+   "action": "ACCEPTED",
+   "note": "512-px source (soft); two biplanes outside, a blank world map; stored 800x600"
+  },
+  {
+   "asset": "tile-classroom",
+   "action": "FIXED",
+   "note": "512-px source (soft); a WWII-type fighter with code letters outside the left window removed (the field continues); the biplane outside the right window stays; stored 800x600"
+  },
+  {
+   "asset": "tile-tower",
+   "action": "ACCEPTED",
+   "note": "512-px source (soft); stored 800x600"
+  },
+  {
+   "asset": "tile-terminal",
+   "action": "FIXED",
+   "note": "4704-px source; brand name on the FBO, spelled correctly; the parked trainer's military star-and-bar roundel cloned out along its own stripes, and its extra tail wheel (a 172 has a nose wheel only) removed (fixed on the 4704-px original from the raw downloads); stored 800x600"
+  },
+  {
+   "asset": "tile-runway",
+   "action": "REJECTED",
+   "note": "letterboxed inside a 4:3 canvas; nonsense lettering painted on the runway; the app keeps its previous tile"
+  },
+  {
+   "asset": "tile-night",
+   "action": "REJECTED",
+   "note": "rendered inside a gold picture frame; nonsense runway numbers legible at the threshold; the app keeps its previous tile"
+  },
+  {
+   "asset": "icon-path",
+   "action": "ACCEPTED",
+   "note": "on brief (navy disc, gold glyph); 2048-px source; circular alpha cut; stored 256x256"
+  },
+  {
+   "asset": "icon-lounge",
+   "action": "ACCEPTED",
+   "note": "on brief (navy disc, gold glyph); 2048-px source; circular alpha cut; stored 256x256"
+  },
+  {
+   "asset": "icon-class",
+   "action": "ACCEPTED",
+   "note": "on brief (navy disc, gold glyph); 2048-px source; circular alpha cut; stored 256x256"
+  },
+  {
+   "asset": "icon-crewboard",
+   "action": "ACCEPTED",
+   "note": "on brief (navy disc, gold glyph); 2048-px source; circular alpha cut; stored 256x256"
+  },
+  {
+   "asset": "icon-hangar",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 2048-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-flightbag",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 512-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-map",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 512-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-tower",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 512-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-achievements",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 2048-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-settings",
+   "action": "FIXED",
+   "note": "delivered as a bare glyph; keyed and set on the brief's navy disc (rim copied from the delivered lounge disc); 2048-px source; stored 256x256"
+  },
+  {
+   "asset": "icon-profile",
+   "action": "REPLACED",
+   "note": "delivered with a face and the academy name lettered around the rim (brief: no text, no faces); replaced by a plain head-and-shoulders glyph in the delivered glyph gold on the same disc"
+  },
+  {
+   "asset": "badge-weather",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-radio",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-flightplanning",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-explorer",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-history",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; checkerboard keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-maintenance",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-jetops",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; checkerboard keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-mastercadet",
+   "action": "ACCEPTED",
+   "note": "on brief; 2048-px source; black keyed; stored 320x320"
+  },
+  {
+   "asset": "badge-firstflight",
+   "action": "DERIVED",
+   "note": "not delivered; built from the delivered navy-disc star badge with the disc recolored gold, per the brief (gold wings, gold disc, gold star)"
+  },
+  {
+   "asset": "badge-navigation",
+   "action": "FIXED",
+   "note": "the delivered badge carried lettering on its ring; the ring was refilled with its own blue (lettering and two dots removed); compass rose untouched"
+  },
+  {
+   "asset": "badge-groundschool",
+   "action": "ACCEPTED",
+   "note": "from the raw downloads (2048-px original, black keyed): gold wings with an open book and pencil (blank pages); serves GROUND SCHOOL STUDENT, PAGE ONE, BOOKWORM; stored 320x320"
+  },
+  {
+   "asset": "badge-laurel",
+   "action": "ACCEPTED",
+   "note": "from the raw downloads (2048-px original, black keyed): gold wings with a star in a laurel (no shield, not a service insignia); serves GREASED IT, GOLD WINGS, PRIVATE PILOT GRAD; stored 320x320"
+  },
+  {
+   "asset": "badge-airliner",
+   "action": "ACCEPTED",
+   "note": "from the raw downloads (2048-px original, black keyed): gold wings with a twin-jet airliner seen head-on; serves FREQUENT FLYER; stored 320x320"
+  },
+  {
+   "asset": "badge-biplane",
+   "action": "ACCEPTED",
+   "note": "from the raw downloads (2048-px original, black keyed): gold wings, green disc with a biplane (iconic view); serves SHARP EYES; stored 320x320"
+  },
+  {
+   "asset": "badge-jetliner",
+   "action": "ACCEPTED",
+   "note": "from the raw downloads (2048-px original, black keyed): gold wings, blue disc with a four-engine jet, plan view; serves GAME NIGHT REGULAR, CLUBHOUSE LEGEND; stored 320x320"
+  },
+  {
+   "asset": "wall-runway",
+   "action": "REPLACED",
+   "note": "from the raw downloads: the 6224-px dusk apron panorama, stitched from its two clean sides so the parked aircraft (military-style roundels) is left out; hangars at the left, a tree line at the right, the sun low at the right; nothing painted in; replaces the plain sky; stored 2520x330"
+  }
+ ],
+ "openart": [
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200380_01ac09a6",
+   "kind": "extra",
+   "decision": "USED",
+   "note": "gold wings with an open book and pencil, blank pages: badge art \"groundschool\""
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200382_69281530",
+   "kind": "extra",
+   "decision": "JUNK",
+   "note": "roundel lettered FLIGHT ACADEMY around a compass and mountains (lettering)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200385_742de040",
+   "kind": "extra",
+   "decision": "REJECTED",
+   "note": "wings with an aircraft whose propeller sits in the middle of the fuselage, behind a canard; not a real configuration"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200387_f388377d",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-maintenance (in the app)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200389_e3965d17",
+   "kind": "extra",
+   "decision": "USED",
+   "note": "gold wings with a twin-jet airliner seen head-on: badge art \"airliner\""
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200393_c9b4ea84",
+   "kind": "extra",
+   "decision": "USED",
+   "note": "gold wings with a star in a laurel: badge art \"laurel\""
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200599_3381a0ca",
+   "kind": "original",
+   "decision": "JUNK",
+   "note": "portrait medallion with a face and the academy name lettered twice (the delivered icon-profile, replaced)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200606_f3631260",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-settings glyph (in the app, on the navy disc)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200622_1926eba1",
+   "kind": "original",
+   "decision": "JUNK",
+   "note": "the runway tile: letterboxed, nonsense lettering on the runway (the rejected tile-runway)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200623_736a322b",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered tile-terminal; used to repair it at full resolution (military roundel and extra tail wheel removed)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200627_a6e19118",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered wall-gameroom (rebuilt from its own panels)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200643_af582433",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered tile-hangar (in the app)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200651_f17fe129",
+   "kind": "original",
+   "decision": "JUNK",
+   "note": "night runway inside a gold picture frame, nonsense runway numbers, white threshold lights (FAA: green and red)"
+  },
+  {
+   "zip": "openart-download.zip",
+   "file": "1792200654_db035e34",
+   "kind": "original",
+   "decision": "USED",
+   "note": "dusk apron panorama: the runway horizon, stitched so its aircraft with military-style roundels is left out"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207068_5f87a4d2",
+   "kind": "extra",
+   "decision": "JUNK",
+   "note": "runway disc with the academy name lettered below it"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207070_37031502",
+   "kind": "extra",
+   "decision": "JUNK",
+   "note": "house glyph with the academy name lettered below it"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207072_b31bcd74",
+   "kind": "extra",
+   "decision": "JUNK",
+   "note": "framed emblem lettered with the academy name twice"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207073_404077c9",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-hangar wrench (in the app)"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207078_4cc3a34f",
+   "kind": "extra",
+   "decision": "JUNK",
+   "note": "crew glyph inside a badge lettered with the academy name"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207080_cf936527",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-achievements trophy (a white corner, keyed out)"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207085_32c064e8",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-explorer"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207230_2373bf80",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-flightplanning"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207411_53a286ab",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-weather"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207414_9244efe2",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-radio"
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207418_2c5071cc",
+   "kind": "extra",
+   "decision": "USED",
+   "note": "gold wings, green disc with a biplane: badge art \"biplane\""
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207419_7daf362f",
+   "kind": "extra",
+   "decision": "USED",
+   "note": "gold wings, blue disc with a four-engine jet: badge art \"jetliner\""
+  },
+  {
+   "zip": "openart-download-1.zip",
+   "file": "1792207423_87c7f3d6",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-mastercadet"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208003_0c17fd65",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-path"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208007_6e66eefa",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-lounge"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208009_dddce2bf",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-class"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208012_d6a76b2e",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered icon-crewboard"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208019_f268c242",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-history (baked checkerboard, keyed out)"
+  },
+  {
+   "zip": "openart-download-2.zip",
+   "file": "1792208022_50634083",
+   "kind": "original",
+   "decision": "ORIGINAL",
+   "note": "of the delivered badge-jetops (baked checkerboard, keyed out)"
+  }
+ ]
+}

@@ -1,0 +1,1484 @@
+{
+ "generated": "2026-10-16",
+ "count": 46,
+ "license": {
+  "text": "Hype Learning Academies (own copy)",
+  "coordinates": "as cited per place",
+  "map": "Natural Earth, public domain",
+  "media": "none shipped"
+ },
+ "destinations": [
+  {
+   "id": "us-nasm",
+   "name": "National Air and Space Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "DC",
+   "city": "Washington",
+   "lat": 38.88833,
+   "lon": -77.02,
+   "summary": "The Smithsonian’s flagship aviation and space museum on the National Mall.",
+   "history": "It began in 1946 as the National Air Museum and opened its Mall building in 1976. It holds the Apollo 11 command module Columbia, John Glenn’s Friendship 7 capsule and the Spirit of St. Louis.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: National Air and Space Museum",
+     "u": "https://en.wikipedia.org/wiki/National_Air_and_Space_Museum"
+    },
+    {
+     "t": "Smithsonian National Air and Space Museum",
+     "u": "https://airandspace.si.edu"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-udvarhazy",
+   "name": "Steven F. Udvar-Hazy Center",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "VA",
+   "city": "Chantilly",
+   "lat": 38.91139,
+   "lon": -77.44417,
+   "summary": "The Smithsonian’s giant hangar museum beside Washington Dulles International Airport.",
+   "history": "Opened in December 2003. Its hangars hold the Space Shuttle Discovery, the B-29 Enola Gay and the Boeing 367-80, the prototype behind the 707.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Steven F. Udvar-Hazy Center",
+     "u": "https://en.wikipedia.org/wiki/Steven_F._Udvar-Hazy_Center"
+    },
+    {
+     "t": "Udvar-Hazy Center (Smithsonian)",
+     "u": "https://airandspace.si.edu/visit/udvar-hazy-center"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-nmusaf",
+   "name": "National Museum of the United States Air Force",
+   "cat": "museum",
+   "sclass": "base",
+   "country": "US",
+   "region": "OH",
+   "city": "Dayton (Wright-Patterson AFB)",
+   "lat": 39.78139,
+   "lon": -84.11056,
+   "summary": "The official museum of the U.S. Air Force, with hangar after hangar of aircraft.",
+   "history": "Founded in 1923, it is home to the B-17F Memphis Belle and the Apollo 15 command module Endeavour.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: National Museum of the United States Air Force",
+     "u": "https://en.wikipedia.org/wiki/National_Museum_of_the_United_States_Air_Force"
+    },
+    {
+     "t": "National Museum of the U.S. Air Force",
+     "u": "https://www.nationalmuseum.af.mil"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-wright-nm",
+   "name": "Wright Brothers National Memorial",
+   "cat": "field",
+   "sclass": "outdoor",
+   "country": "US",
+   "region": "NC",
+   "city": "Kill Devil Hills",
+   "lat": 36.0143,
+   "lon": -75.6679,
+   "summary": "The place where Wilbur and Orville Wright made the first powered, controlled airplane flights.",
+   "history": "On December 17, 1903, the Wrights made four flights near the base of Big Kill Devil Hill. A granite monument was completed on the hill in 1932, and the National Park Service has cared for the site since 1933.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "A National Park Service site. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Wide open dunes: bring water and sun protection, and stay on the paths.",
+   "src": [
+    {
+     "t": "Wikipedia: Wright Brothers National Memorial",
+     "u": "https://en.wikipedia.org/wiki/Wright_Brothers_National_Memorial"
+    },
+    {
+     "t": "National Park Service",
+     "u": "https://www.nps.gov/wrbr/index.htm"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-huffman",
+   "name": "Huffman Prairie Flying Field",
+   "cat": "field",
+   "sclass": "base",
+   "country": "US",
+   "region": "OH",
+   "city": "near Fairborn",
+   "lat": 39.80333,
+   "lon": -84.06583,
+   "summary": "The pasture where the Wright brothers learned to really fly, after Kitty Hawk.",
+   "history": "In 1904 and 1905 the Wrights made about 150 flights here and perfected the Wright Flyer III. Later the Wright Flying School trained more than 100 pilots on this field. It is part of Dayton Aviation Heritage National Historical Park.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "Inside Wright-Patterson Air Force Base, reached through a separate entrance. The park’s interpretive center is about 2 miles away on Wright Brothers Hill. Check the park website before you go.",
+   "safety": "An open prairie on an Air Force base: stay on the marked paths and in the public area.",
+   "src": [
+    {
+     "t": "Wikipedia: Huffman Prairie",
+     "u": "https://en.wikipedia.org/wiki/Huffman_Prairie"
+    },
+    {
+     "t": "National Park Service: Huffman Prairie Flying Field",
+     "u": "https://www.nps.gov/daav/learn/historyculture/huffman-prairie-flying-field.htm"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-museum-of-flight",
+   "name": "The Museum of Flight",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "WA",
+   "city": "Seattle (Tukwila)",
+   "lat": 47.518,
+   "lon": -122.297,
+   "summary": "A huge independent air and space museum at Boeing Field.",
+   "history": "Founded in 1965. You can walk through the first jet Air Force One (SAM 970) and see Concorde G-BOAG and the only surviving Lockheed M-21.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Museum of Flight",
+     "u": "https://en.wikipedia.org/wiki/Museum_of_Flight"
+    },
+    {
+     "t": "The Museum of Flight",
+     "u": "https://www.museumofflight.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-pima",
+   "name": "Pima Air & Space Museum",
+   "cat": "museum",
+   "sclass": "outdoor",
+   "country": "US",
+   "region": "AZ",
+   "city": "Tucson",
+   "lat": 32.138944,
+   "lon": -110.868694,
+   "summary": "One of the largest aircraft collections in the world, much of it outdoors in the desert.",
+   "history": "Opened to the public on May 8, 1976. Its main hangar holds an SR-71A Blackbird and an A-10; a flight-test Boeing 787 joined in 2015.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Much of the museum is outdoors in the desert: bring water, a hat and sunscreen.",
+   "src": [
+    {
+     "t": "Wikipedia: Pima Air & Space Museum",
+     "u": "https://en.wikipedia.org/wiki/Pima_Air_%26_Space_Museum"
+    },
+    {
+     "t": "Pima Air & Space Museum",
+     "u": "https://pimaair.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-eaa",
+   "name": "EAA Aviation Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "WI",
+   "city": "Oshkosh",
+   "lat": 43.98417,
+   "lon": -88.57833,
+   "summary": "The museum of the Experimental Aircraft Association, next to the field that hosts AirVenture.",
+   "history": "Opened in 1983 (first proposed in 1958). The collection includes a Curtiss Pusher, a Blériot XI and the Taylor Aerocar flying car.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: EAA Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/EAA_Aviation_Museum"
+    },
+    {
+     "t": "EAA Aviation Museum",
+     "u": "https://www.eaa.org/museum"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-naval-aviation",
+   "name": "National Naval Aviation Museum",
+   "cat": "museum",
+   "sclass": "base",
+   "country": "US",
+   "region": "FL",
+   "city": "Pensacola (NAS Pensacola)",
+   "lat": 30.34958,
+   "lon": -87.303582,
+   "summary": "The story of Navy, Marine Corps and Coast Guard aviation, at the Cradle of Naval Aviation.",
+   "history": "Established in 1962 and in its current home since 1974. It displays the Curtiss NC-4, the first aircraft to fly across the Atlantic (1919).",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "On Naval Air Station Pensacola, an active Navy base. It reopened to the general public on May 17, 2023; visitors must show a valid state-issued ID. Check the museum’s visitor rules before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: National Naval Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/National_Naval_Aviation_Museum"
+    },
+    {
+     "t": "National Naval Aviation Museum",
+     "u": "https://www.navalaviationmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-intrepid",
+   "name": "Intrepid Museum",
+   "cat": "museum",
+   "sclass": "ship",
+   "country": "US",
+   "region": "NY",
+   "city": "New York (Pier 86)",
+   "lat": 40.7646,
+   "lon": -73.9996,
+   "summary": "An aircraft carrier turned museum on the Hudson River, with aircraft on its flight deck.",
+   "history": "Opened as a museum on August 3, 1982. It shows the Space Shuttle Enterprise in a pavilion on the deck and Concorde G-BOAD.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Ships have steep ladders, high doorsills and narrow passageways. Watch your step and hold the rails.",
+   "src": [
+    {
+     "t": "Wikipedia: Intrepid Museum",
+     "u": "https://en.wikipedia.org/wiki/Intrepid_Museum"
+    },
+    {
+     "t": "Intrepid Museum",
+     "u": "https://www.intrepidmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-midway",
+   "name": "USS Midway Museum",
+   "cat": "museum",
+   "sclass": "ship",
+   "country": "US",
+   "region": "CA",
+   "city": "San Diego (Navy Pier)",
+   "lat": 32.71445,
+   "lon": -117.17315,
+   "summary": "A walk-through aircraft carrier with aircraft on the flight deck and in the hangar.",
+   "history": "Midway served from 1945 to 1992, the longest-serving U.S. aircraft carrier of the 20th century, and opened as a museum on June 7, 2004.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Ships have steep ladders, high doorsills and narrow passageways. Watch your step and hold the rails.",
+   "src": [
+    {
+     "t": "Wikipedia: USS Midway Museum",
+     "u": "https://en.wikipedia.org/wiki/USS_Midway_Museum"
+    },
+    {
+     "t": "USS Midway Museum",
+     "u": "https://www.midway.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-sdasm",
+   "name": "San Diego Air & Space Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "CA",
+   "city": "San Diego (Balboa Park)",
+   "lat": 32.7262,
+   "lon": -117.1543,
+   "summary": "A Balboa Park museum covering the whole story of flight.",
+   "history": "Established in 1961. Its collection includes the Apollo 9 command module Gumdrop, a Lockheed A-12 and a Supermarine Spitfire.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: San Diego Air & Space Museum",
+     "u": "https://en.wikipedia.org/wiki/San_Diego_Air_%26_Space_Museum"
+    },
+    {
+     "t": "San Diego Air & Space Museum",
+     "u": "https://sandiegoairandspace.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-evergreen",
+   "name": "Evergreen Aviation & Space Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "OR",
+   "city": "McMinnville",
+   "lat": 45.20389,
+   "lon": -123.14333,
+   "summary": "Home of the Hughes H-4 Hercules, the giant wooden flying boat nicknamed the Spruce Goose.",
+   "history": "Opened in 1991. Besides the H-4 it shows an SR-71 Blackbird and a Titan II rocket.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Evergreen Aviation & Space Museum",
+     "u": "https://en.wikipedia.org/wiki/Evergreen_Aviation_%26_Space_Museum"
+    },
+    {
+     "t": "Evergreen Aviation & Space Museum",
+     "u": "https://www.evergreenmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-ksc",
+   "name": "Kennedy Space Center Visitor Complex",
+   "cat": "space",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "FL",
+   "city": "Merritt Island",
+   "lat": 28.5233,
+   "lon": -80.6819,
+   "summary": "NASA’s launch site, where visitors see real rockets and spacecraft.",
+   "history": "Opened in 1967. It holds the Space Shuttle Atlantis, a Saturn V in the Apollo/Saturn V Center, and the Space Mirror Memorial, which honors astronauts who lost their lives.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "What would you need to fly to space that an airplane never needs? Which machine here would you most like to ride?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Kennedy Space Center Visitor Complex",
+     "u": "https://en.wikipedia.org/wiki/Kennedy_Space_Center_Visitor_Complex"
+    },
+    {
+     "t": "Kennedy Space Center Visitor Complex",
+     "u": "https://www.kennedyspacecenter.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-space-center-houston",
+   "name": "Space Center Houston",
+   "cat": "space",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "TX",
+   "city": "Houston",
+   "lat": 29.5518812,
+   "lon": -95.0983429,
+   "summary": "The visitor center for NASA’s Johnson Space Center, home of Mission Control.",
+   "history": "Opened in 1992. It shows Gordon Cooper’s Mercury capsule Faith 7, the Gemini 5 capsule and the Apollo 17 command module America.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "What would you need to fly to space that an airplane never needs? Which machine here would you most like to ride?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Space Center Houston",
+     "u": "https://en.wikipedia.org/wiki/Space_Center_Houston"
+    },
+    {
+     "t": "Space Center Houston",
+     "u": "https://spacecenter.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-ussrc",
+   "name": "U.S. Space & Rocket Center",
+   "cat": "space",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "AL",
+   "city": "Huntsville",
+   "lat": 34.71139,
+   "lon": -86.65417,
+   "summary": "The rocket museum of the Rocket City, and home of Space Camp.",
+   "history": "Opened on March 17, 1970. A full Saturn V test vehicle is displayed in the Davidson Center, and the Apollo 16 command module is on display.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "What would you need to fly to space that an airplane never needs? Which machine here would you most like to ride?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: U.S. Space & Rocket Center",
+     "u": "https://en.wikipedia.org/wiki/U.S._Space_%26_Rocket_Center"
+    },
+    {
+     "t": "U.S. Space & Rocket Center",
+     "u": "https://www.rocketcenter.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-cosmosphere",
+   "name": "Cosmosphere",
+   "cat": "space",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "KS",
+   "city": "Hutchinson",
+   "lat": 38.065304,
+   "lon": -97.921344,
+   "summary": "A space museum on the Kansas prairie with real flown spacecraft.",
+   "history": "Founded in 1962. It holds the Liberty Bell 7 Mercury capsule, the Apollo 13 command module Odyssey and an SR-71 Blackbird.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "What would you need to fly to space that an airplane never needs? Which machine here would you most like to ride?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Cosmosphere",
+     "u": "https://en.wikipedia.org/wiki/Cosmosphere"
+    },
+    {
+     "t": "Cosmosphere",
+     "u": "https://cosmo.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-armstrong",
+   "name": "Armstrong Air & Space Museum",
+   "cat": "space",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "OH",
+   "city": "Wapakoneta",
+   "lat": 40.56401,
+   "lon": -84.17119,
+   "summary": "A museum in Neil Armstrong’s hometown.",
+   "history": "Opened on July 20, 1972, three years to the day after the first Moon landing. It shows the Gemini 8 spacecraft, which made the first docking in space, and a Moon rock from Apollo 11.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "What would you need to fly to space that an airplane never needs? Which machine here would you most like to ride?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Armstrong Air & Space Museum",
+     "u": "https://en.wikipedia.org/wiki/Armstrong_Air_%26_Space_Museum"
+    },
+    {
+     "t": "Armstrong Air & Space Museum",
+     "u": "https://www.armstrongmuseum.org"
+    },
+    {
+     "t": "Mapcarta (coordinates)",
+     "u": "https://mapcarta.com/22673990"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-flight93",
+   "name": "Flight 93 National Memorial",
+   "cat": "memorial",
+   "sclass": "crash-memorial",
+   "country": "US",
+   "region": "PA",
+   "city": "Stonycreek Township (near Shanksville)",
+   "lat": 40.05667,
+   "lon": -78.90583,
+   "summary": "A National Park Service memorial to the 40 passengers and crew of United Flight 93 (September 11, 2001).",
+   "history": "Its first phase was dedicated on September 10, 2011, and the visitor center opened on September 10, 2015. The Wall of Names carries the names of the 40 passengers and crew, and the Tower of Voices holds 40 wind chimes, one for each of them.",
+   "learn": null,
+   "prompt": "Memorials help everyone remember. What would you want other visitors to understand about the people honored here?",
+   "access": "A National Park Service memorial with a visitor center. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "This memorial stands where the airplane came down. It is a quiet place for remembering, and the visit can bring up big feelings: talk it over with a parent or guardian before you go, and stay on the public paths.",
+   "src": [
+    {
+     "t": "Wikipedia: Flight 93 National Memorial",
+     "u": "https://en.wikipedia.org/wiki/Flight_93_National_Memorial"
+    },
+    {
+     "t": "National Park Service",
+     "u": "https://www.nps.gov/flni/index.htm"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-tuskegee",
+   "name": "Tuskegee Airmen National Historic Site",
+   "cat": "field",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "AL",
+   "city": "Tuskegee (Moton Field)",
+   "lat": 32.45917,
+   "lon": -85.68,
+   "summary": "Moton Field, where the Tuskegee Airmen learned to fly.",
+   "history": "Built between 1940 and 1942, Moton Field was the only primary flight-training field for African American pilot candidates in the Army Air Forces during World War II. The first class began on July 19, 1941, and included Captain Benjamin O. Davis Jr.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "A National Park Service site. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Tuskegee Airmen National Historic Site",
+     "u": "https://en.wikipedia.org/wiki/Tuskegee_Airmen_National_Historic_Site"
+    },
+    {
+     "t": "National Park Service",
+     "u": "https://www.nps.gov/tuai/"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-shuttle-memorials",
+   "name": "Space Shuttle Challenger and Columbia Memorials",
+   "cat": "memorial",
+   "sclass": "memorial",
+   "country": "US",
+   "region": "VA",
+   "city": "Arlington National Cemetery, Section 46",
+   "lat": 38.876695,
+   "lon": -77.07411,
+   "summary": "Two memorials, a few feet apart, to the crews of the Space Shuttles Challenger (1986) and Columbia (2003).",
+   "history": "The Challenger memorial was dedicated on March 21, 1987, and honors the seven crew members lost on January 28, 1986. The Columbia memorial was dedicated on February 2, 2004, and honors the seven crew members lost on February 1, 2003.",
+   "learn": null,
+   "prompt": "Memorials help everyone remember. What would you want other visitors to understand about the people honored here?",
+   "access": "Arlington National Cemetery is open daily, 8 a.m. to 5 p.m., according to the cemetery’s pages. The memorials are in Section 46, near the Memorial Amphitheater.",
+   "safety": "Arlington is a working national cemetery. Visit quietly and respectfully, and stay on the paths.",
+   "src": [
+    {
+     "t": "Arlington National Cemetery: Space Shuttle Challenger",
+     "u": "https://arlingtoncemetery.mil/Explore/Monuments-and-Memorials/Space-Shuttle-Challenger"
+    },
+    {
+     "t": "Arlington National Cemetery: Space Shuttle Columbia",
+     "u": "https://www.arlingtoncemetery.mil/Explore/Monuments-and-Memorials/Space-Shuttle-Columbia"
+    },
+    {
+     "t": "HMdb (coordinates)",
+     "u": "https://www.HMdb.org/m.asp?m=11147"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-college-park",
+   "name": "College Park Airport and Aviation Museum",
+   "cat": "field",
+   "sclass": "airfield",
+   "country": "US",
+   "region": "MD",
+   "city": "College Park",
+   "lat": 38.980583,
+   "lon": -76.922306,
+   "summary": "The world’s oldest continuously operated airport, with an aviation museum beside it.",
+   "history": "Founded in 1909, when Wilbur Wright taught two Army officers to fly here. One of them, Lieutenant Frederic Humphreys, became the first military pilot to solo in a government airplane. FAA identifier: CGS.",
+   "learn": {
+    "unit": "airports",
+    "t": "Airports"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "This is a working airport. Stay in the public areas, never go past a fence or onto the airfield, and watch for airplanes.",
+   "src": [
+    {
+     "t": "Wikipedia: College Park Airport",
+     "u": "https://en.wikipedia.org/wiki/College_Park_Airport"
+    },
+    {
+     "t": "College Park Aviation Museum",
+     "u": "https://collegeparkaviationmuseum.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-earhart",
+   "name": "Amelia Earhart Birthplace Museum",
+   "cat": "site",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "KS",
+   "city": "Atchison",
+   "lat": 39.563758,
+   "lon": -95.114486,
+   "summary": "The house where Amelia Earhart was born, high on a bluff over the Missouri River.",
+   "history": "Amelia Earhart was born here in 1897. The Ninety-Nines, the organization of women pilots she helped lead as its first president, has cared for the house since 1984.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "What did this person do as a kid that pointed them toward flying? What could you start doing now?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Amelia Earhart Birthplace",
+     "u": "https://en.wikipedia.org/wiki/Amelia_Earhart_Birthplace"
+    },
+    {
+     "t": "National Park Service: Amelia Earhart Birthplace",
+     "u": "https://home.nps.gov/articles/amelia-earhart-birthplace.htm"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-cradle",
+   "name": "Cradle of Aviation Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "NY",
+   "city": "Garden City (Long Island)",
+   "lat": 40.7286,
+   "lon": -73.5976,
+   "summary": "A Long Island museum on the fields where many famous flights began.",
+   "history": "Opened in 1980 and renovated in 2002. It shows Charles Lindbergh’s barnstorming Curtiss Jenny and Lunar Module LM-13, built for an Apollo mission that never flew.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Cradle of Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/Cradle_of_Aviation_Museum"
+    },
+    {
+     "t": "Cradle of Aviation Museum",
+     "u": "https://www.cradleofaviation.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-sullenberger",
+   "name": "Sullenberger Aviation Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "NC",
+   "city": "Charlotte",
+   "lat": 35.22472,
+   "lon": -80.93306,
+   "summary": "Home of the Airbus A320 from the “Miracle on the Hudson”, when everyone aboard survived a water landing.",
+   "history": "Founded in 1991 as the Carolinas Aviation Museum, renamed in 2022 and reopened on June 1, 2024. US Airways Flight 1549 is shown as it was recovered from the river.",
+   "learn": {
+    "unit": "emergency",
+    "t": "When Things Go Wrong"
+   },
+   "prompt": "The crew of Flight 1549 had only minutes to decide. What do pilots practice ahead of time so they can choose quickly and calmly?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Sullenberger Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/Sullenberger_Aviation_Museum"
+    },
+    {
+     "t": "Sullenberger Aviation Museum",
+     "u": "https://www.sullenbergeraviation.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-patriots-point",
+   "name": "Patriots Point Naval & Maritime Museum",
+   "cat": "museum",
+   "sclass": "ship",
+   "country": "US",
+   "region": "SC",
+   "city": "Mount Pleasant",
+   "lat": 32.790377,
+   "lon": -79.90821,
+   "summary": "The aircraft carrier USS Yorktown and dozens of aircraft, across the harbor from Charleston.",
+   "history": "Opened in 1976. Yorktown, an Essex-class carrier commissioned in 1943, carries aircraft such as an F-14A Tomcat and an F-8K Crusader, and the Medal of Honor Museum aboard reopened in 2024.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Ships have steep ladders, high doorsills and narrow passageways. Watch your step and hold the rails.",
+   "src": [
+    {
+     "t": "Wikipedia: Patriots Point",
+     "u": "https://en.wikipedia.org/wiki/Patriots_Point"
+    },
+    {
+     "t": "Patriots Point",
+     "u": "https://www.patriotspoint.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-warbird-park",
+   "name": "Warbird Park",
+   "cat": "display",
+   "sclass": "outdoor",
+   "country": "US",
+   "region": "SC",
+   "city": "Myrtle Beach (Market Common)",
+   "lat": 33.662033,
+   "lon": -78.927935,
+   "summary": "An outdoor park with jets on display on the grounds of the former Myrtle Beach Air Force Base.",
+   "history": "The base closed in 1993 and part of it became this park and memorial, with an A-7D Corsair II, an A-10 Thunderbolt II and an F-100 Super Sabre, and a wall listing people who served there.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Find the oldest and the newest aircraft here. What changed between them, and why?",
+   "access": "A public outdoor park.",
+   "safety": "Outdoors: dress for the weather, and do not climb on the aircraft.",
+   "src": [
+    {
+     "t": "Atlas Obscura: Warbird Park",
+     "u": "https://atlasobscura.com/places/warbird-park"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-pearl-harbor-aviation",
+   "name": "Pearl Harbor Aviation Museum",
+   "cat": "museum",
+   "sclass": "base",
+   "country": "US",
+   "region": "HI",
+   "city": "Honolulu (Ford Island)",
+   "lat": 21.36,
+   "lon": -157.9617,
+   "summary": "World War II hangars on Ford Island that still show the marks of December 7, 1941.",
+   "history": "Opened on December 7, 2006, in Hangars 37 and 79. Hangar 79’s windows still have bullet holes from the attack.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "On Ford Island, inside an active base: visitors who are not military buy tickets through Pearl Harbor Historic Sites and ride a tour bus onto the island. Check before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Pearl Harbor Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/Pearl_Harbor_Aviation_Museum"
+    },
+    {
+     "t": "Pearl Harbor Aviation Museum",
+     "u": "https://www.pearlharboraviationmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-wasp",
+   "name": "National WASP WWII Museum",
+   "cat": "field",
+   "sclass": "airfield",
+   "country": "US",
+   "region": "TX",
+   "city": "Sweetwater (Avenger Field)",
+   "lat": 32.4586,
+   "lon": -100.4642,
+   "summary": "The story of the Women Airforce Service Pilots, at the field where they trained.",
+   "history": "Avenger Field trained the WASP during World War II. The museum was established in 2003 and opened in 2005.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: National WASP WWII Museum",
+     "u": "https://en.wikipedia.org/wiki/National_WASP_WWII_Museum"
+    },
+    {
+     "t": "National WASP WWII Museum",
+     "u": "https://www.waspmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-robins",
+   "name": "Museum of Aviation",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "GA",
+   "city": "Warner Robins",
+   "lat": 32.59,
+   "lon": -83.58778,
+   "summary": "The U.S. Air Force’s second-largest museum, next to Robins Air Force Base.",
+   "history": "Opened in 1984. Its SR-71 Blackbird (61-7958) set an absolute speed record on July 28, 1976, that still stands.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Admission is free, according to its Wikipedia article. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Museum of Aviation (Warner Robins)",
+     "u": "https://en.wikipedia.org/wiki/Museum_of_Aviation_(Warner_Robins)"
+    },
+    {
+     "t": "Museum of Aviation",
+     "u": "https://www.museumofaviation.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-sac",
+   "name": "Strategic Air Command & Aerospace Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "NE",
+   "city": "near Ashland",
+   "lat": 41.018026,
+   "lon": -96.320478,
+   "summary": "Cold War bombers, spy planes and spacecraft beside Interstate 80 between Omaha and Lincoln.",
+   "history": "In its current building since 1998. It shows an SR-71A Blackbird and an Apollo command module (CSM-009).",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Strategic Air Command & Aerospace Museum",
+     "u": "https://en.wikipedia.org/wiki/Strategic_Air_Command_%26_Aerospace_Museum"
+    },
+    {
+     "t": "SAC Museum",
+     "u": "https://www.sacmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-wings-rockies",
+   "name": "Wings Over the Rockies Air & Space Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "CO",
+   "city": "Denver (Lowry)",
+   "lat": 39.721,
+   "lon": -104.8957,
+   "summary": "An air and space museum in a historic hangar of the former Lowry Air Force Base.",
+   "history": "Opened in 1994 in Hangar 1. Its aircraft include an F-14A Tomcat.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Wings Over the Rockies Air and Space Museum",
+     "u": "https://en.wikipedia.org/wiki/Wings_Over_the_Rockies_Air_and_Space_Museum"
+    },
+    {
+     "t": "Wings Over the Rockies",
+     "u": "https://wingsmuseum.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-planes-of-fame",
+   "name": "Planes of Fame Air Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "CA",
+   "city": "Chino",
+   "lat": 33.98139,
+   "lon": -117.63972,
+   "summary": "A museum of historic aircraft, many of which still fly.",
+   "history": "Founded in 1957. About 30 of its roughly 150 aircraft are flyable, including the only authentic airworthy Mitsubishi A6M Zero.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Planes of Fame Air Museum",
+     "u": "https://en.wikipedia.org/wiki/Planes_of_Fame_Air_Museum"
+    },
+    {
+     "t": "Planes of Fame",
+     "u": "https://www.planesoffame.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-lindbergh",
+   "name": "Charles A. Lindbergh House and Museum",
+   "cat": "site",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "MN",
+   "city": "Little Falls",
+   "lat": 45.9574389,
+   "lon": -94.3897889,
+   "summary": "Charles Lindbergh’s boyhood home on the Mississippi River.",
+   "history": "Lindbergh grew up here before his 1927 solo flight across the Atlantic. The Minnesota Historical Society runs the house and museum, beside Charles A. Lindbergh State Park.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "What did this person do as a kid that pointed them toward flying? What could you start doing now?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Charles A. Lindbergh State Park",
+     "u": "https://en.wikipedia.org/wiki/Charles_A._Lindbergh_State_Park"
+    },
+    {
+     "t": "Minnesota Historical Society: Lindbergh House",
+     "u": "https://www.mnhs.org/lindbergh"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "us-ninety-nines",
+   "name": "Ninety-Nines Museum of Women Pilots",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "US",
+   "region": "OK",
+   "city": "Oklahoma City",
+   "lat": 35.40573,
+   "lon": -97.59756,
+   "summary": "A museum of women in aviation at the headquarters of the Ninety-Nines.",
+   "history": "The Ninety-Nines were founded in 1929 by 99 women pilots and moved their headquarters to Oklahoma City in 1955; the museum opened in 1999.",
+   "learn": {
+    "unit": "careers",
+    "t": "Aviation Careers"
+   },
+   "prompt": "What did this person do as a kid that pointed them toward flying? What could you start doing now?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: The Ninety-Nines Museum of Women Pilots",
+     "u": "https://en.wikipedia.org/wiki/The_Ninety-Nines_Museum_of_Women_Pilots"
+    },
+    {
+     "t": "Museum of Women Pilots",
+     "u": "https://www.museumofwomenpilots.org"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-casm",
+   "name": "Canada Aviation and Space Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "ON",
+   "city": "Ottawa",
+   "lat": 45.457723,
+   "lon": -75.642929,
+   "summary": "Canada’s national aviation museum, beside the Rockcliffe airport.",
+   "history": "Established in 1964. It keeps surviving parts of the Avro Arrow, a replica of the Silver Dart, and the Canadarm flown on the Space Shuttle Endeavour.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Canada Aviation and Space Museum",
+     "u": "https://en.wikipedia.org/wiki/Canada_Aviation_and_Space_Museum"
+    },
+    {
+     "t": "Ingenium: Canada Aviation and Space Museum",
+     "u": "https://ingeniumcanada.org/aviation"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-cwhm",
+   "name": "Canadian Warplane Heritage Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "ON",
+   "city": "Mount Hope (Hamilton)",
+   "lat": 43.15972,
+   "lon": -79.925,
+   "summary": "A flying museum at Hamilton’s airport, home of one of only two airworthy Avro Lancasters.",
+   "history": "Its founders moved their first aircraft into a hangar at Hamilton’s airport in 1972. Its Lancaster, the Mynarski Memorial Lancaster, crossed the Atlantic in 2014 to fly beside the Royal Air Force’s Lancaster.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Canadian Warplane Heritage Museum",
+     "u": "https://en.wikipedia.org/wiki/Canadian_Warplane_Heritage_Museum"
+    },
+    {
+     "t": "Canadian Warplane Heritage Museum",
+     "u": "https://www.warplane.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-ram",
+   "name": "Royal Aviation Museum of Western Canada",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "MB",
+   "city": "Winnipeg",
+   "lat": 49.90125,
+   "lon": -97.22464,
+   "summary": "Western Canada’s aviation museum, in a new building at Winnipeg’s airport.",
+   "history": "Founded in 1974; its new building was completed in 2021. It shows a replica of the Avrocar and the “Ghost of Charron Lake,” a Fokker shown as it was found at the bottom of a lake.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Royal Aviation Museum of Western Canada",
+     "u": "https://en.wikipedia.org/wiki/Royal_Aviation_Museum_of_Western_Canada"
+    },
+    {
+     "t": "Royal Aviation Museum",
+     "u": "https://www.royalaviationmuseum.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-bushplane",
+   "name": "Canadian Bushplane Heritage Centre",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "ON",
+   "city": "Sault Ste. Marie",
+   "lat": 46.50472,
+   "lon": -84.32444,
+   "summary": "Bush planes and water bombers on the St. Marys River.",
+   "history": "Opened in 1987 at a site the Ontario Provincial Air Service first used in 1924. It shows firefighting aircraft such as the Canadair CL-215.",
+   "learn": {
+    "unit": "special",
+    "t": "Special Flying"
+   },
+   "prompt": "Bush pilots land on lakes, snow and gravel. What would you need to know before landing somewhere with no runway?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Canadian Bushplane Heritage Centre",
+     "u": "https://en.wikipedia.org/wiki/Canadian_Bushplane_Heritage_Centre"
+    },
+    {
+     "t": "Canadian Bushplane Heritage Centre",
+     "u": "https://www.bushplane.com"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-bell-nhs",
+   "name": "Alexander Graham Bell National Historic Site",
+   "cat": "field",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "NS",
+   "city": "Baddeck",
+   "lat": 46.1054,
+   "lon": -60.7436,
+   "summary": "The museum where Bell and his team built aircraft, near the bay where Canada’s first powered flight took place.",
+   "history": "On February 23, 1909, J.A.D. McCurdy flew the Silver Dart over the ice of Baddeck Bay, the first controlled powered flight in Canada. A full-scale replica is on display, along with the hull of the HD-4 hydrofoil, which set a world water-speed record in 1919.",
+   "learn": {
+    "unit": "history",
+    "t": "Aviation History"
+   },
+   "prompt": "The first flights here were short and wobbly. What problem did these pioneers have to solve first, and how did they test it?",
+   "access": "A Parks Canada site. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Alexander Graham Bell National Historic Site",
+     "u": "https://en.wikipedia.org/wiki/Alexander_Graham_Bell_National_Historic_Site"
+    },
+    {
+     "t": "Wikipedia: AEA Silver Dart",
+     "u": "https://en.wikipedia.org/wiki/AEA_Silver_Dart"
+    },
+    {
+     "t": "Parks Canada",
+     "u": "https://www.pc.gc.ca/en/lhn-nhs/ns/grahambell"
+    },
+    {
+     "t": "Wikipedia: List of historic places in Victoria County, Nova Scotia (coordinates)",
+     "u": "https://en.wikipedia.org/wiki/List_of_historic_places_in_Victoria_County,_Nova_Scotia"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-cmf",
+   "name": "Canadian Museum of Flight",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "BC",
+   "city": "Langley",
+   "lat": 49.099394,
+   "lon": -122.626068,
+   "summary": "A British Columbia museum of flying and restored aircraft.",
+   "history": "Founded in 1977. It has the last surviving Handley Page Hampden. In 2024 it agreed to move to Pitt Meadows Regional Airport.",
+   "learn": {
+    "unit": "types",
+    "t": "Types of Aircraft"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "The museum plans to move to Pitt Meadows Regional Airport: check its website for where it is open now.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Canadian Museum of Flight",
+     "u": "https://en.wikipedia.org/wiki/Canadian_Museum_of_Flight"
+    },
+    {
+     "t": "Canadian Museum of Flight",
+     "u": "https://www.canadianmuseumofflight.ca"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-nafmc",
+   "name": "National Air Force Museum of Canada",
+   "cat": "museum",
+   "sclass": "base",
+   "country": "CA",
+   "region": "ON",
+   "city": "Trenton (Quinte West)",
+   "lat": 44.1156556,
+   "lon": -77.5506583,
+   "summary": "The Royal Canadian Air Force’s museum, at the edge of CFB Trenton.",
+   "history": "Opened on April 1, 1984. It holds a Handley Page Halifax bomber (NA337), a restoration project the museum took on in 1995.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Beside an active air force base. Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: National Air Force Museum of Canada",
+     "u": "https://en.wikipedia.org/wiki/National_Air_Force_Museum_of_Canada"
+    },
+    {
+     "t": "National Air Force Museum of Canada",
+     "u": "https://www.airforcemuseum.ca"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "ca-naam",
+   "name": "North Atlantic Aviation Museum",
+   "cat": "museum",
+   "sclass": "indoor",
+   "country": "CA",
+   "region": "NL",
+   "city": "Gander",
+   "lat": 48.952423,
+   "lon": -54.622791,
+   "summary": "The story of Gander, once called the Crossroads of the World.",
+   "history": "Gander’s airport opened in 1938 and became a key refueling stop for flights across the Atlantic. On September 11, 2001, the town welcomed about 6,700 passengers from diverted flights. The museum opened in 1996.",
+   "learn": {
+    "unit": "xc",
+    "t": "Cross-Country Flying"
+   },
+   "prompt": "Gander was the last stop before the ocean. Why did early airliners need a fuel stop there, and what changed?",
+   "access": "Open to the public. Check opening hours, admission and rules on the official website before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: North Atlantic Aviation Museum",
+     "u": "https://en.wikipedia.org/wiki/North_Atlantic_Aviation_Museum"
+    },
+    {
+     "t": "North Atlantic Aviation Museum",
+     "u": "https://northatlanticaviationmuseum.com/"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "mx-museo-aviacion",
+   "name": "Museo Militar de Aviación (Mexican Air Force Museum)",
+   "cat": "museum",
+   "sclass": "base",
+   "country": "MX",
+   "region": "MEX",
+   "city": "Santa Lucía, Estado de México",
+   "lat": 19.7427,
+   "lon": -98.9869,
+   "summary": "The Mexican Air Force’s museum, inside Santa Lucía Air Base No. 1 next to Felipe Ángeles International Airport.",
+   "history": "Inaugurated on February 10, 2022. It shows a P-47 Thunderbolt of Squadron 201, which fought in World War II, the DC-3 “El Mexicano,” Mexico’s first presidential airplane, and a Mil Mi-26, the Air Force’s largest helicopter.",
+   "learn": {
+    "unit": "mil",
+    "t": "Military + Space"
+   },
+   "prompt": "Pick one aircraft you saw. What job was it built to do, and what about its shape helps it do that job?",
+   "access": "Inside an air base. The airport’s visitor page lists free entry, Tuesday to Sunday, 9:00 to 16:00, open to the general public. Check before you go.",
+   "safety": "Visit with a parent or guardian. Stay behind the barriers and follow the staff.",
+   "src": [
+    {
+     "t": "Wikipedia: Mexican Air Force Museum",
+     "u": "https://en.wikipedia.org/wiki/Mexican_Air_Force_Museum"
+    },
+    {
+     "t": "AIFA: Military Aviation Museum",
+     "u": "https://vuelaaifa.mx/en/cultural-corridor/military-aviation-museum/"
+    },
+    {
+     "t": "SEDENA: Museo Militar de Aviación",
+     "u": "https://www.gob.mx/sedena/acciones-y-programas/atencion-al-publico-museo-militar-de-aviacion-b-a-m-no-1-sta-lucia-edo-mex"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "mx-squadron201-cdmx",
+   "name": "Squadron 201 Monument, Chapultepec Park",
+   "cat": "memorial",
+   "sclass": "memorial",
+   "country": "MX",
+   "region": "CMX",
+   "city": "Mexico City (Bosque de Chapultepec)",
+   "lat": 19.419483,
+   "lon": -99.18105,
+   "summary": "A monument and historical marker in Chapultepec Park honoring Mexico’s World War II fighter squadron.",
+   "history": "Squadron 201 of the Mexican Expeditionary Air Force flew P-47 Thunderbolts over the Philippines in 1945. The monument names 31 of its pilots.",
+   "learn": null,
+   "prompt": "Memorials help everyone remember. What would you want other visitors to understand about the people honored here?",
+   "access": "In the first section of Chapultepec Park, on Calzada del Rey. Park hours apply; a 2022 city guide lists other Squadron 201 places to visit. Check before you go.",
+   "safety": "This is a memorial. Visit quietly and respectfully, with a parent or guardian.",
+   "src": [
+    {
+     "t": "HMdb: The Mexican Expeditionary Air Force and Squadron 201",
+     "u": "https://www.hmdb.org/m.asp?m=141464"
+    },
+    {
+     "t": "Chilango: places to learn the history of Squadron 201 (2022)",
+     "u": "https://www.chilango.com/agenda/otros/museos-y-lugares-para-conocer-la-historia-del-escuadron-201/"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  },
+  {
+   "id": "mx-squadron201-cozumel",
+   "name": "Tribute to Squadron 201, Cozumel",
+   "cat": "memorial",
+   "sclass": "memorial",
+   "country": "MX",
+   "region": "ROO",
+   "city": "San Miguel de Cozumel",
+   "lat": 20.52111,
+   "lon": -86.94304,
+   "summary": "A roadside tribute to the “Aztec Eagles” of Squadron 201, with a T-28 Trojan trainer on display.",
+   "history": "It honors the squadron that flew P-47s in the Philippines in 1945, names five pilots who died in combat, and shows a T-28 Trojan used on Cozumel from 1961 to 1980.",
+   "learn": null,
+   "prompt": "Memorials help everyone remember. What would you want other visitors to understand about the people honored here?",
+   "access": "On Avenida Rafael E. Melgar, outside the entrance to Military Air Base No. 4. Viewable from the public street; do not enter the base.",
+   "safety": "Beside a road and a military gate: stay on the sidewalk with a parent or guardian.",
+   "src": [
+    {
+     "t": "HMdb: Tribute to the 201st Squadron",
+     "u": "https://www.hmdb.org/m.asp?m=100885"
+    }
+   ],
+   "checked": "2026-10-16",
+   "media": "none"
+  }
+ ]
+}
