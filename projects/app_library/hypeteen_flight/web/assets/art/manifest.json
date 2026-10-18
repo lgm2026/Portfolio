@@ -1,0 +1,95 @@
+{
+ "_note": "HypeTeen Flight Academy r7.3: production plates from the illustrator's delivery and raw downloads (docs/ART_GENERATION_BRIEF.pdf; integration log docs/ART_INTEGRATION_LOG.json), each at its slot's exact aspect. fit:'cover' with (fx,fy) crops if a slot's size differs. Floors: room:<id>:floor plates are laid into the floor plane by the engine (ramp and runway stay code-drawn for their FAA markings). Icons: assets/art/icons/<name>.webp (icon:<name>); badges: assets/art/badges/<name>.webp (badge:<name>). Replace any file at a higher resolution with no code change.",
+ "screen:title": "assets/art/landing.webp",
+ "screen:hero": "assets/art/hero-strip.webp",
+ "room:lounge:wall": {
+  "src": "assets/art/lounge-wall.webp",
+  "fit": "cover"
+ },
+ "room:classroom:wall": {
+  "src": "assets/art/classroom-wall.webp",
+  "fit": "cover"
+ },
+ "room:hangar:wall": {
+  "src": "assets/art/hangar-wall.webp",
+  "fit": "cover"
+ },
+ "room:gameroom:wall": {
+  "src": "assets/art/gameroom-wall.webp",
+  "fit": "cover"
+ },
+ "room:wash:wall": {
+  "src": "assets/art/wash-wall.webp",
+  "fit": "cover"
+ },
+ "room:platform:wall": {
+  "src": "assets/art/platform-sky.webp",
+  "fit": "cover"
+ },
+ "room:tower:wall": {
+  "src": "assets/art/tower-sky.webp",
+  "fit": "cover"
+ },
+ "room:ramp:wall": {
+  "src": "assets/art/ramp-sky.webp",
+  "fit": "cover"
+ },
+ "room:runway:wall": {
+  "src": "assets/art/runway-sky.webp",
+  "fit": "cover"
+ },
+ "room:lounge:floor": {
+  "src": "assets/art/floors/lounge.webp",
+  "fit": "cover"
+ },
+ "room:gameroom:floor": {
+  "src": "assets/art/floors/gameroom.webp",
+  "fit": "cover"
+ },
+ "room:classroom:floor": {
+  "src": "assets/art/floors/classroom.webp",
+  "fit": "cover"
+ },
+ "room:hangar:floor": {
+  "src": "assets/art/floors/hangar.webp",
+  "fit": "cover"
+ },
+ "room:platform:floor": {
+  "src": "assets/art/floors/platform.webp",
+  "fit": "cover"
+ },
+ "room:tower:floor": {
+  "src": "assets/art/floors/tower.webp",
+  "fit": "cover"
+ },
+ "room:wash:floor": {
+  "src": "assets/art/floors/wash.webp",
+  "fit": "cover"
+ },
+ "icon:path": "assets/art/icons/path.webp",
+ "icon:lounge": "assets/art/icons/lounge.webp",
+ "icon:class": "assets/art/icons/class.webp",
+ "icon:hangar": "assets/art/icons/hangar.webp",
+ "icon:flightbag": "assets/art/icons/flightbag.webp",
+ "icon:map": "assets/art/icons/map.webp",
+ "icon:tower": "assets/art/icons/tower.webp",
+ "icon:crewboard": "assets/art/icons/crewboard.webp",
+ "icon:profile": "assets/art/icons/profile.webp",
+ "icon:achievements": "assets/art/icons/achievements.webp",
+ "icon:settings": "assets/art/icons/settings.webp",
+ "badge:firstflight": "assets/art/badges/firstflight.webp",
+ "badge:navigation": "assets/art/badges/navigation.webp",
+ "badge:weather": "assets/art/badges/weather.webp",
+ "badge:radio": "assets/art/badges/radio.webp",
+ "badge:flightplanning": "assets/art/badges/flightplanning.webp",
+ "badge:explorer": "assets/art/badges/explorer.webp",
+ "badge:history": "assets/art/badges/history.webp",
+ "badge:maintenance": "assets/art/badges/maintenance.webp",
+ "badge:jetops": "assets/art/badges/jetops.webp",
+ "badge:mastercadet": "assets/art/badges/mastercadet.webp",
+ "badge:groundschool": "assets/art/badges/groundschool.webp",
+ "badge:laurel": "assets/art/badges/laurel.webp",
+ "badge:airliner": "assets/art/badges/airliner.webp",
+ "badge:biplane": "assets/art/badges/biplane.webp",
+ "badge:jetliner": "assets/art/badges/jetliner.webp"
+}
