@@ -1,0 +1,686 @@
+{
+  "count": 44,
+  "required": 46,
+  "missing": [
+    "badge-firstflight.png",
+    "badge-navigation.png"
+  ],
+  "records": [
+    {
+      "asset": "screen-title.png",
+      "status": "EXPORTED",
+      "target": [
+        1600,
+        2000
+      ],
+      "source_dimensions": [
+        409,
+        512
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "screen-hero.png",
+      "status": "EXPORTED",
+      "target": [
+        2400,
+        900
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-lounge.png",
+      "status": "EXPORTED",
+      "target": [
+        3120,
+        720
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-gameroom.png",
+      "status": "EXPORTED",
+      "target": [
+        3600,
+        720
+      ],
+      "source_dimensions": [
+        6224,
+        2664
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "wall-classroom.png",
+      "status": "EXPORTED",
+      "target": [
+        3120,
+        720
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-hangar.png",
+      "status": "EXPORTED",
+      "target": [
+        3360,
+        780
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-platform.png",
+      "status": "EXPORTED",
+      "target": [
+        4080,
+        840
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-tower.png",
+      "status": "EXPORTED",
+      "target": [
+        3120,
+        900
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-ramp.png",
+      "status": "EXPORTED",
+      "target": [
+        5040,
+        660
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-wash.png",
+      "status": "EXPORTED",
+      "target": [
+        3120,
+        780
+      ],
+      "source_dimensions": [
+        512,
+        219
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "wall-runway.png",
+      "status": "EXPORTED",
+      "target": [
+        5040,
+        660
+      ],
+      "source_dimensions": [
+        6224,
+        2664
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-path.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-lounge.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-class.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-hangar.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-flightbag.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        512,
+        512
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "icon-map.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        512,
+        512
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "icon-tower.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        512,
+        512
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "icon-crewboard.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-profile.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-achievements.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "icon-settings.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-firstflight.png",
+      "status": "MISSING",
+      "target": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "asset": "badge-navigation.png",
+      "status": "MISSING",
+      "target": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "asset": "badge-weather.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-radio.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-flightplanning.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-explorer.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-history.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-maintenance.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-jetops.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-2.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "badge-mastercadet.png",
+      "status": "EXPORTED",
+      "target": [
+        1024,
+        1024
+      ],
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "source": "openart-download-1.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "tile-runway.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        4704,
+        3528
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "tile-hangar.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        4704,
+        3528
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "tile-lounge.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        512,
+        384
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "tile-classroom.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        512,
+        384
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "tile-tower.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        512,
+        384
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "tile-terminal.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        4704,
+        3528
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "tile-night.png",
+      "status": "EXPORTED",
+      "target": [
+        1280,
+        960
+      ],
+      "source_dimensions": [
+        4704,
+        3528
+      ],
+      "source": "openart-download.zip",
+      "alpha": true,
+      "upscaled": false
+    },
+    {
+      "asset": "floor-lounge.png",
+      "status": "EXPORTED",
+      "target": [
+        2080,
+        1120
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-gameroom.png",
+      "status": "EXPORTED",
+      "target": [
+        2400,
+        1200
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-classroom.png",
+      "status": "EXPORTED",
+      "target": [
+        2080,
+        1120
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-hangar.png",
+      "status": "EXPORTED",
+      "target": [
+        2240,
+        1160
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-platform.png",
+      "status": "EXPORTED",
+      "target": [
+        1920,
+        880
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-tower.png",
+      "status": "EXPORTED",
+      "target": [
+        2080,
+        920
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    },
+    {
+      "asset": "floor-wash.png",
+      "status": "EXPORTED",
+      "target": [
+        2080,
+        1080
+      ],
+      "source_dimensions": [
+        512,
+        288
+      ],
+      "source": "WebP preview",
+      "alpha": true,
+      "upscaled": true
+    }
+  ]
+}
