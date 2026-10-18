@@ -1,0 +1,12 @@
+{
+  "name": "htfa-tools",
+  "private": true,
+  "description": "Build-time tools for HypeTeen Flight Academy. Nothing here ships in the app. Run `npm install` in this folder before using build_basemap.js or import_book.js.",
+  "devDependencies": {
+    "d3-geo": "3.1.1",
+    "topojson-client": "3.1.0",
+    "sane-topojson": "4.0.0",
+    "topojson-simplify": "3.0.3",
+    "esbuild": "0.25.0"
+  }
+}
