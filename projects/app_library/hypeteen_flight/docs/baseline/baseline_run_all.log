@@ -1,0 +1,20 @@
+ok   structure   OK
+
+ok   content     OK
+
+ok   arch        19/19 passed    11s
+ok   smoke       38/38 passed    68s
+ok   games       52/52 passed    45s
+FAIL r4          failed          8s
+FAIL r5          37/38 passed    30s
+       FAIL G24 Hangar Hoops: a shot long of the hoop misses
+ok   r6          88/88 passed    34s
+ok   e2e         100 / 100 passed204s
+ok   lessons(500)32/32 passed    886s
+
+2 failing: r4, r5
+
+real	15m56.370s
+user	1m8.088s
+sys	0m11.746s
+exit=1
