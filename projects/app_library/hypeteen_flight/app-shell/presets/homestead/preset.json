@@ -1,0 +1,31 @@
+{
+  "id": "homestead",
+  "name": "HOMESTEAD HUB",
+  "subtitle": "PANTRY + GARDEN",
+  "tagline": ["GROW", "PUT UP", "SHARE"],
+  "blurb": "Notes, swaps and how-tos for the family pantry.",
+  "welcome": ["**No sign-in.** Open it and go."],
+  "startLabel": "► OPEN THE PANTRY",
+  "pageTitle": "Homestead Hub",
+  "theme": {
+    "bg": "#0c110c", "bgGlow": "#17251a",
+    "card": "rgba(24,33,26,.96)", "cardPress": "#2a3a2d",
+    "ink": "#eef3e8", "sub": "#c6d2bf", "dim": "#8fa088", "faint": "#66745f",
+    "accent": "#5fbf55", "accentHi": "#8fdc6e", "accentLo": "#3f9a3a", "accentText": "#a6e48c",
+    "onAccent": "#0b1a08", "title": "#f2d36b"
+  },
+  "font": { "family": "Nunito", "google": "Nunito:wght@500;700;800;900" },
+  "accounts": { "enabled": false },
+  "cards": [
+    { "id": "board", "label": "SWAP BOARD", "sub": "TRADE JARS + SEEDS", "icon": "chat", "scene": "board" },
+    { "id": "guide", "label": "SAFETY BASICS", "sub": "READ FIRST", "icon": "docs", "page": "guide" },
+    { "id": "about", "label": "ABOUT", "sub": "WHO WE ARE", "icon": "info", "page": "about" }
+  ],
+  "pages": {
+    "guide": { "title": "SAFETY BASICS", "body": ["# START HERE", "Put your tested guidance here."],
+               "links": [{ "label": "NCHFP", "sub": "nchfp.uga.edu", "href": "https://nchfp.uga.edu" }] },
+    "about": { "title": "ABOUT", "body": ["A family pantry hub built from the app shell."] }
+  },
+  "board": { "title": "SWAP BOARD", "collection": "swaps", "post": null },
+  "_modules": ["mod_board.js"]
+}

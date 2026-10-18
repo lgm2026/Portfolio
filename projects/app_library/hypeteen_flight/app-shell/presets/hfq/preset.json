@@ -1,0 +1,124 @@
+{
+  "id": "hfq",
+  "name": "FLIGHT QUARTERS",
+  "subtitle": "HYPETEEN",
+  "tagline": ["LEARN", "EXPLORE", "FLY"],
+  "blurb": "The Flight Club Intro Academy: ground school, aircraft, airports and runway games for cadets 10–14.",
+  "welcome": [
+    "**Cadets** enroll with a made-up call sign and a 4-digit PIN.",
+    "**Parents:** enroll first. The first cadet on a device is the Family Lead."
+  ],
+  "startLabel": "► CLEARED TO ENTER",
+  "readyText": "READY ON THE RAMP.",
+  "pageTitle": "HypeTeen Flight Quarters",
+  "theme": {
+    "bg": "#0a0f1a", "bgGlow": "#16243c",
+    "panel": "rgba(16,22,36,.97)", "card": "rgba(22,30,48,.96)", "cardPress": "#2a3858",
+    "ink": "#f2f5fa", "sub": "#c3cde0", "dim": "#8a97ad", "faint": "#5f6b80",
+    "accent": "#ffc21a", "accentHi": "#ffd24d", "accentLo": "#f0a800", "accentText": "#ffd24d",
+    "onAccent": "#141008", "title": "#8fd8ff",
+    "good": "#7dffa8", "bad": "#ff7a60", "info": "#8fd8ff", "warn": "#ffd27a"
+  },
+  "assets": [ { "name": "logo", "src": "assets/hfq_logo.svg" } ],
+  "logo": "logo",
+  "accounts": { "enabled": true, "guest": true, "photo": false, "nameLabel": "YOUR CALL SIGN", "nameMax": 16 },
+  "homeScene": "world",
+  "words": {
+    "login": "SIGN IN", "loginSub": "CALL SIGN + PIN",
+    "signup": "ENROLL", "signupSub": "NEW CADETS START HERE",
+    "guest": "VISIT AS GUEST", "guestSub": "LOOK AROUND FIRST",
+    "pickName": "WHO’S FLYING TODAY?", "newAccount": "+ ENROLL A NEW CADET",
+    "nameHint": "MAKE ONE UP - NOT YOUR REAL NAME",
+    "suggest": "SUGGEST A CALL SIGN",
+    "welcome": "WELCOME ABOARD, ", "welcomeBack": "WELCOME BACK, ",
+    "logout": "SIGN OUT", "loggedOut": "SIGNED OUT - BLUE SKIES", "deleteAcct": "REMOVE THIS CADET",
+    "owner": "FAMILY LEAD", "points": "XP", "guestName": "GUEST CADET", "exit": "EXIT"
+  },
+  "dashTitle": "FLIGHT BAG",
+  "cards": [
+    { "id": "gs", "label": "GROUND SCHOOL", "sub": "13 UNITS", "icon": "docs", "scene": "groundschool" },
+    { "id": "logbook", "label": "MY LOGBOOK", "sub": "RANK + BADGES", "icon": "trophy", "scene": "logbook" },
+    { "id": "locker", "label": "MY LOCKER", "sub": "YOUR LOOK", "icon": "user", "scene": "locker" },
+    { "id": "board", "label": "HANGAR NEWS", "sub": "ANNOUNCEMENTS", "icon": "megaphone", "scene": "board" },
+    { "id": "aircraft", "label": "AIRCRAFT", "sub": "THE GALLERY", "icon": "plane", "page": "aircraft" },
+    { "id": "radio", "label": "TOWER RADIO", "sub": "ALFA BRAVO…", "icon": "chat", "page": "radio" },
+    { "id": "squadron", "label": "SQUADRON", "sub": "ON THIS DEVICE", "icon": "roster", "scene": "squadron" },
+    { "id": "runway", "label": "RUNWAY GAMES", "sub": "COMING SOON", "icon": "flag", "scene": "world", "args": { "room": "runway" } },
+    { "id": "about", "label": "ABOUT", "sub": "FOR FAMILIES", "icon": "info", "page": "about" }
+  ],
+  "pages": {
+    "about": { "title": "ABOUT", "body": [
+      "# FLIGHT QUARTERS",
+      "HypeTeen Flight Quarters is the Flight Club Intro Academy, a companion to the HypeTeen Flight Academy books. Cadets explore an airfield, meet the crew and work through ground school.",
+      "# FOR FAMILIES",
+      "Everything stays on this device. Cadets enroll with a made-up call sign and a 4-digit PIN. No real names, emails or photos are asked for.",
+      "The first cadet enrolled on a device becomes the FAMILY LEAD, who can reset a forgotten PIN in Settings and post Hangar News.",
+      "# HOW TO PLAY",
+      "Tap the floor to walk. Tap people and signs to use them. The bar at the bottom jumps between the Lounge, the Hangar, the Viewing Platform and the Runway. FLIGHT BAG opens everything as a list."
+    ] },
+    "aircraft": { "title": "AIRCRAFT GALLERY", "body": [
+      "# KINDS OF AIRCRAFT",
+      "Pilots sort aircraft into categories. These are the ones on a pilot certificate:",
+      "# AIRPLANE",
+      "Fixed wings and an engine. Most student pilots learn in a small airplane like the trainer in our hangar.",
+      "# ROTORCRAFT",
+      "Spinning blades make the lift. Helicopters are rotorcraft, and so are gyroplanes.",
+      "# GLIDER",
+      "No engine needed once it’s flying. Gliders ride rising air to stay up.",
+      "# LIGHTER-THAN-AIR",
+      "Hot-air balloons and airships float because they’re lighter than the air around them.",
+      "# POWERED-LIFT",
+      "Takes off like a helicopter and flies like an airplane. Tiltrotors are powered-lift.",
+      "# POWERED PARACHUTE + WEIGHT-SHIFT",
+      "Two kinds of light aircraft. One hangs under a parachute-style wing. The other is steered by shifting weight, like a hang glider with an engine.",
+      "# COMING NEXT",
+      "Classes inside each category (single-engine, multi-engine, land and sea) arrive with Ground School."
+    ] },
+    "radio": { "title": "TOWER RADIO", "body": [
+      "# THE PHONETIC ALPHABET",
+      "Pilots spell with words so letters never get mixed up over a scratchy radio.",
+      "A  ALFA  •  B  BRAVO  •  C  CHARLIE  •  D  DELTA",
+      "E  ECHO  •  F  FOXTROT  •  G  GOLF  •  H  HOTEL",
+      "I  INDIA  •  J  JULIETT  •  K  KILO  •  L  LIMA",
+      "M  MIKE  •  N  NOVEMBER  •  O  OSCAR  •  P  PAPA",
+      "Q  QUEBEC  •  R  ROMEO  •  S  SIERRA  •  T  TANGO",
+      "U  UNIFORM  •  V  VICTOR  •  W  WHISKEY  •  X  X-RAY",
+      "Y  YANKEE  •  Z  ZULU",
+      "# NUMBERS",
+      "Numbers are said one digit at a time, and nine is said NINER.",
+      "# RADIO WORDS",
+      "ROGER: I heard you.",
+      "WILCO: I will comply.",
+      "SAY AGAIN: please repeat that.",
+      "AFFIRMATIVE: yes.  NEGATIVE: no."
+    ] },
+    "windsock": { "title": "THE WINDSOCK", "body": [
+      "A windsock shows two things at a glance: which way the wind is blowing, and roughly how strong it is.",
+      "# DIRECTION",
+      "Wind blows into the big open end and out the small end, so the sock points the way the wind is going.",
+      "# STRENGTH",
+      "A limp sock means calm air. The fatter and straighter it flies, the stronger the wind.",
+      "# WHY PILOTS CARE",
+      "Airplanes take off and land into the wind. A headwind slows the airplane over the ground, so it needs less runway."
+    ] }
+  },
+  "board": { "title": "HANGAR NEWS", "collection": "news", "post": "owner", "max": 280 },
+  "badges": [
+    { "id": "enrolled", "n": "ENROLLED", "d": "JOINED THE ACADEMY" },
+    { "id": "styled", "n": "LOCKER READY", "d": "SUITED UP IN YOUR LOCKER" },
+    { "id": "explorer", "n": "AIRFIELD EXPLORER", "d": "VISITED ALL FOUR PLACES" },
+    { "id": "crew", "n": "MET THE CREW", "d": "TALKED TO EVERY CREW MEMBER" },
+    { "id": "student", "n": "GROUND SCHOOL STUDENT", "d": "OPENED YOUR FIRST UNIT" },
+    { "id": "newsreader", "n": "IN THE KNOW", "d": "READ HANGAR NEWS" }
+  ],
+  "audio": { "menuMusic": "theme", "radio": [] },
+  "_files": {
+    "assets/hfq_logo.svg": "hfq_logo.svg",
+    "js/hfq_data.js": "hfq_data.js",
+    "js/hfq_cadet.js": "hfq_cadet.js",
+    "js/hfq_groundschool.js": "hfq_groundschool.js",
+    "js/hfq_logbook.js": "hfq_logbook.js"
+  },
+  "_modules": ["mod_board.js", "mod_blank.js", "mod_world.js"],
+  "_scripts": ["mod_world.js", "hfq_data.js", "hfq_cadet.js", "hfq_groundschool.js", "hfq_logbook.js"]
+}

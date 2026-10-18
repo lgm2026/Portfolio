@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <!-- HypeTeen Flight Quarters placeholder emblem: pilot wings around a propeller badge. Swap for final art. -->
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2b0"/><stop offset=".45" stop-color="#ffd24d"/><stop offset="1" stop-color="#d99400"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5fa8e8"/><stop offset="1" stop-color="#1d4f8f"/>
+    </linearGradient>
+  </defs>
+  <!-- left wing -->
+  <g fill="url(#gold)">
+    <path d="M200 132 C150 118 90 92 18 96 C40 108 70 116 104 122 C76 124 48 126 26 132 C58 140 92 142 122 142 C98 148 74 154 56 164 C96 168 132 164 166 156 C150 166 134 176 124 188 C160 186 190 172 206 160 Z"/>
+    <!-- right wing (mirror) -->
+    <path d="M280 132 C330 118 390 92 462 96 C440 108 410 116 376 122 C404 124 432 126 454 132 C422 140 388 142 358 142 C382 148 406 154 424 164 C384 168 348 164 314 156 C330 166 346 176 356 188 C320 186 290 172 274 160 Z"/>
+  </g>
+  <g stroke="#a86e00" stroke-width="2.5" fill="none" opacity=".55">
+    <path d="M104 122 C140 128 170 134 200 140"/><path d="M122 142 C150 146 176 150 202 152"/>
+    <path d="M376 122 C340 128 310 134 280 140"/><path d="M358 142 C330 146 304 150 278 152"/>
+  </g>
+  <!-- badge -->
+  <circle cx="240" cy="146" r="66" fill="url(#gold)"/>
+  <circle cx="240" cy="146" r="56" fill="url(#sky)"/>
+  <!-- runway at the bottom of the badge -->
+  <clipPath id="b"><circle cx="240" cy="146" r="56"/></clipPath>
+  <g clip-path="url(#b)">
+    <rect x="170" y="168" width="140" height="40" fill="#4f8a3a"/>
+    <path d="M222 210 L232 168 L248 168 L258 210 Z" fill="#33363c"/>
+    <path d="M239 172 h2 v6 h-2z M239 184 h2 v8 h-2z M238.6 198 h2.8 v10 h-2.8z" fill="#f2f2f2"/>
+  </g>
+  <!-- propeller -->
+  <g fill="#f4f6fa">
+    <ellipse cx="240" cy="116" rx="7" ry="27"/>
+    <ellipse cx="240" cy="116" rx="7" ry="27" transform="rotate(120 240 132)"/>
+    <ellipse cx="240" cy="116" rx="7" ry="27" transform="rotate(240 240 132)"/>
+  </g>
+  <circle cx="240" cy="132" r="9" fill="url(#gold)"/>
+  <!-- star on top -->
+  <path d="M240 44 L247 62 L266 62 L251 73 L257 91 L240 80 L223 91 L229 73 L214 62 L233 62 Z" fill="url(#gold)" stroke="#a86e00" stroke-width="2"/>
+</svg>
