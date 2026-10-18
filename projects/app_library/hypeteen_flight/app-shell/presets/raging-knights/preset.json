@@ -1,0 +1,37 @@
+{
+  "id": "rkshell",
+  "name": "RAGING KNIGHTS",
+  "subtitle": "MOBILE CLUBHOUSE",
+  "tagline": ["FRIENDS", "FUN", "FAMILY"],
+  "blurb": "Club resources, ride logs, photo dumps & more.",
+  "welcome": ["**Members** sign in with their road name and PIN.", "**Everyone** is invited to look around."],
+  "startLabel": "► KICKSTANDS UP",
+  "readyText": "READY. HELMETS ON.",
+  "pageTitle": "RKFFMC Mobile Clubhouse",
+  "theme": {
+    "bg": "#0b0a10", "bgGlow": "#1d1410",
+    "panel": "rgba(22,22,32,.97)", "card": "rgba(29,27,39,.96)", "cardPress": "#2c2a3a",
+    "ink": "#f4ede2", "sub": "#cfc4b0", "dim": "#9a8f80", "faint": "#6f665c",
+    "accent": "#f07818", "accentHi": "#ffa648", "accentLo": "#ec7010", "accentText": "#ffb060",
+    "onAccent": "#16100a", "title": "#ffd060"
+  },
+  "assets": [
+    { "name": "logo", "src": "assets/crest.png" },
+    { "name": "bg", "src": "assets/bg_dining.png" }
+  ],
+  "backdrop": "bg",
+  "accounts": { "nameLabel": "YOUR ROAD NAME" },
+  "cards": [
+    { "id": "board", "label": "ANNOUNCEMENTS", "sub": "CLUB NEWS", "icon": "megaphone", "scene": "board" },
+    { "id": "about", "label": "THE CLUB", "sub": "WHO WE ARE", "icon": "info", "page": "about" },
+    { "id": "events", "label": "ON THE HORIZON", "sub": "COMING SOON", "icon": "cal", "scene": "blank" },
+    { "id": "photos", "label": "PHOTO ALBUM", "sub": "COMING SOON", "icon": "cam", "scene": "blank", "need": "member" },
+    { "id": "rides", "label": "RIDE LOG", "sub": "COMING SOON", "icon": "gauge", "scene": "blank", "need": "member" },
+    { "id": "shop", "label": "CLUB SHOP", "sub": "GEAR", "icon": "bag", "href": "https://example.com" }
+  ],
+  "pages": {
+    "about": { "title": "THE CLUB", "body": ["# WHO WE ARE", "Replace this with the club's story."] }
+  },
+  "board": { "title": "ANNOUNCEMENTS", "collection": "ann", "post": "owner" },
+  "_files": { "assets/crest.png": "crest.png", "assets/bg_dining.png": "bg_dining.png" }
+}
