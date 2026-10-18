@@ -1,0 +1,31 @@
+ok   structure   OK
+
+ok   content     OK
+
+ok   byline      OK
+
+build mvcuz3fl-e13k4h v7.4.0: 2 bundles, 53 content files + 8 lazy files shipped as data (no eval), 93 files precached, 2233 KB -> 4704 KB
+ok   arch        28/28 passed    17s
+ok   smoke       38/38 passed    57s
+ok   games       52/52 passed    37s
+ok   r4          54/54 passed    74s
+ok   r5          38/38 passed    21s
+ok   r6          88/88 passed    30s
+ok   e2e         100 / 100 passed210s
+ok   r7 parity   41/41 passed    81s
+ok   r7 backup   28/28 passed    19s
+ok   r7 explorer 36/36 passed    28s
+ok   r7.4 aircraft6 / 6 passed    1s
+ok   r7.4 round  52/52 passed    68s
+FAIL lessons(512)failed          706s
+ok   offline on dist13/13 passed    15s
+ok   parity on dist41/41 passed    79s
+ok   e2e on dist 100 / 100 passed211s
+ok   arch on dist28/28 passed    16s
+ok   dist parity 3/3 passed      1s
+
+1 failing: lessons(512)
+exit 1
+
+--- lessons(512) rerun alone, same build (node qa/hfq_lessons_smoke.js):
+32/32 passed

@@ -1,0 +1,19 @@
+ok   structure   OK
+
+ok   content     OK
+
+ok   byline      OK
+
+ok   arch        19/19 passed    9s
+ok   smoke       38/38 passed    57s
+ok   games       52/52 passed    37s
+ok   r4          54/54 passed    72s
+ok   r5          38/38 passed    20s
+ok   r6          88/88 passed    28s
+ok   e2e         100 / 100 passed198s
+ok   r7 parity   41/41 passed    73s
+ok   r7 backup   28/28 passed    18s
+ok   r7 explorer 36/36 passed    30s
+
+all green
+then on the r7.1 build: byline guard OK, dist parity 3/3, offline on dist 13/13

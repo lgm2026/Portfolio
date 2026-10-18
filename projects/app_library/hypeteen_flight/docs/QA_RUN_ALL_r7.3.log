@@ -1,0 +1,19 @@
+ok   structure   OK
+
+ok   content     OK
+
+ok   byline      OK
+
+ok   arch        19/19 passed    10s
+ok   smoke       38/38 passed    63s
+ok   games       52/52 passed    38s
+ok   r4          54/54 passed    79s
+ok   r5          38/38 passed    23s
+ok   r6          88/88 passed    32s
+ok   e2e         100 / 100 passed211s
+ok   r7 parity   41/41 passed    79s
+ok   r7 backup   28/28 passed    20s
+ok   r7 explorer 36/36 passed    31s
+
+all green
+EXIT 0
