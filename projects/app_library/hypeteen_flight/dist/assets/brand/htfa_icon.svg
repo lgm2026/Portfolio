@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs><radialGradient id="bg" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#1D4A73"/><stop offset=".7" stop-color="#10263D"/><stop offset="1" stop-color="#0B1A2B"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g transform="translate(46,56) scale(1.3933)"><defs>
+ <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D28A"/><stop offset=".5" stop-color="#C49B46"/><stop offset="1" stop-color="#8C6822"/></linearGradient>
+ <radialGradient id="navy" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#235580"/><stop offset="1" stop-color="#0D2135"/></radialGradient>
+</defs>
+<g fill="url(#brass)" stroke="#5B4313" stroke-width="1.5" stroke-linejoin="round"><g><path d="M183.9,125.8 Q248.0,101.9 295.6,96.9 L305.4,99.5 Q259.8,120.4 188.1,140.2 Z"/><path d="M184.9,138.1 Q246.1,123.4 290.1,124.3 L298.7,127.9 Q254.8,141.9 187.1,151.9 Z"/><path d="M185.8,150.5 Q241.1,144.0 279.7,149.8 L287.0,154.1 Q246.8,162.0 186.2,163.5 Z"/><path d="M186.5,162.0 Q234.0,162.0 266.0,171.4 L271.6,176.1 Q236.8,179.1 185.5,174.0 Z"/><path d="M187.1,172.6 Q224.5,176.6 248.5,187.9 L252.4,192.7 Q224.7,192.4 184.9,183.4 Z"/></g><g transform="translate(300,0) scale(-1,1)"><g><path d="M183.9,125.8 Q248.0,101.9 295.6,96.9 L305.4,99.5 Q259.8,120.4 188.1,140.2 Z"/><path d="M184.9,138.1 Q246.1,123.4 290.1,124.3 L298.7,127.9 Q254.8,141.9 187.1,151.9 Z"/><path d="M185.8,150.5 Q241.1,144.0 279.7,149.8 L287.0,154.1 Q246.8,162.0 186.2,163.5 Z"/><path d="M186.5,162.0 Q234.0,162.0 266.0,171.4 L271.6,176.1 Q236.8,179.1 185.5,174.0 Z"/><path d="M187.1,172.6 Q224.5,176.6 248.5,187.9 L252.4,192.7 Q224.7,192.4 184.9,183.4 Z"/></g></g></g>
+<circle cx="150" cy="150" r="44" fill="url(#navy)" stroke="url(#brass)" stroke-width="8"/>
+<circle cx="150" cy="150" r="35" fill="none" stroke="#F0D28A" stroke-opacity=".45" stroke-width="1.5"/>
+<path d="M150.0,128.0 L155.9,143.9 L172.8,144.6 L159.5,155.1 L164.1,171.4 L150.0,162.0 L135.9,171.4 L140.5,155.1 L127.2,144.6 L144.1,143.9 Z" fill="#F2E7CB" stroke="#B88C35" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>
