@@ -1,0 +1,4496 @@
+{
+ "base": "http://localhost:42199/",
+ "profiles": {
+  "phone390": {
+   "requests": 106,
+   "thirdParty": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap"
+   ],
+   "errors": [
+    "ERROR: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "--- scene settings",
+    "--- scene dash",
+    "--- scene page",
+    "--- scene board",
+    "--- scene map",
+    "--- scene radio",
+    "--- scene locker",
+    "--- scene termsRead",
+    "--- scene fleet",
+    "--- scene groundschool",
+    "--- scene logbook",
+    "--- scene route",
+    "--- scene games",
+    "--- scene flightlog",
+    "--- scene logflight",
+    "--- scene crew",
+    "--- scene library",
+    "--- scene book",
+    "--- scene path",
+    "--- scene practice",
+    "--- game landing",
+    "--- game marshal",
+    "--- game paper",
+    "--- game bags",
+    "--- game golf",
+    "--- game pong",
+    "--- game pool",
+    "--- game cargo",
+    "--- game spot",
+    "--- game metar",
+    "--- game wx",
+    "--- game lightgun",
+    "--- game depart",
+    "--- game arrive",
+    "--- game taxi",
+    "--- game preflight",
+    "--- game wash",
+    "--- game cloud",
+    "--- game pairs",
+    "--- game gauges",
+    "--- game words",
+    "--- game darts",
+    "--- game hockey",
+    "--- game radar4",
+    "--- game skee",
+    "--- game bowling",
+    "--- game hoops"
+   ],
+   "scenes": {
+    "settings": {
+     "now": "settings",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "dash": {
+     "now": "dash",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "page": {
+     "now": "page",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "board": {
+     "now": "board",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "map": {
+     "now": "map",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "radio": {
+     "now": "radio",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "locker": {
+     "now": "locker",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "termsRead": {
+     "now": "termsRead",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "fleet": {
+     "now": "fleet",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "groundschool": {
+     "now": "groundschool",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logbook": {
+     "now": "logbook",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "route": {
+     "now": "route",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "games": {
+     "now": "games",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "flightlog": {
+     "now": "flightlog",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logflight": {
+     "now": "logflight",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "crew": {
+     "now": "crew",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "library": {
+     "now": "library",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "book": {
+     "now": "book",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "path": {
+     "now": "path",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "practice": {
+     "now": "practice",
+     "badFrames": 0,
+     "errs": 0
+    }
+   },
+   "rooms": {
+    "lounge": {
+     "scene": "world",
+     "room": "lounge",
+     "stations": 11
+    },
+    "gameroom": {
+     "scene": "world",
+     "room": "gameroom",
+     "stations": 14
+    },
+    "classroom": {
+     "scene": "world",
+     "room": "classroom",
+     "stations": 10
+    },
+    "hangar": {
+     "scene": "world",
+     "room": "hangar",
+     "stations": 8
+    },
+    "platform": {
+     "scene": "world",
+     "room": "platform",
+     "stations": 7
+    },
+    "tower": {
+     "scene": "world",
+     "room": "tower",
+     "stations": 8
+    },
+    "ramp": {
+     "scene": "world",
+     "room": "ramp",
+     "stations": 6
+    },
+    "wash": {
+     "scene": "world",
+     "room": "wash",
+     "stations": 3
+    },
+    "runway": {
+     "scene": "world",
+     "room": "runway",
+     "stations": 6
+    }
+   },
+   "games": {
+    "landing": {
+     "scene": "g_landing",
+     "errs": 0
+    },
+    "marshal": {
+     "scene": "g_marshal",
+     "errs": 0
+    },
+    "paper": {
+     "scene": "g_paper",
+     "errs": 0
+    },
+    "bags": {
+     "scene": "g_bags",
+     "errs": 0
+    },
+    "golf": {
+     "scene": "g_golf",
+     "errs": 0
+    },
+    "pong": {
+     "scene": "g_pong",
+     "errs": 0
+    },
+    "pool": {
+     "scene": "g_pool",
+     "errs": 0
+    },
+    "cargo": {
+     "scene": "g_cargo",
+     "errs": 0
+    },
+    "spot": {
+     "scene": "g_spot",
+     "errs": 0
+    },
+    "metar": {
+     "scene": "g_metar",
+     "errs": 0
+    },
+    "wx": {
+     "scene": "g_wx",
+     "errs": 0
+    },
+    "lightgun": {
+     "scene": "g_lightgun",
+     "errs": 0
+    },
+    "depart": {
+     "scene": "g_depart",
+     "errs": 0
+    },
+    "arrive": {
+     "scene": "g_arrive",
+     "errs": 0
+    },
+    "taxi": {
+     "scene": "g_taxi",
+     "errs": 0
+    },
+    "preflight": {
+     "scene": "g_preflight",
+     "errs": 0
+    },
+    "wash": {
+     "scene": "g_wash",
+     "errs": 0
+    },
+    "cloud": {
+     "scene": "g_cloud",
+     "errs": 0
+    },
+    "pairs": {
+     "scene": "g_pairs",
+     "errs": 0
+    },
+    "gauges": {
+     "scene": "g_gauges",
+     "errs": 0
+    },
+    "words": {
+     "scene": "g_words",
+     "errs": 0
+    },
+    "darts": {
+     "scene": "g_darts",
+     "errs": 0
+    },
+    "hockey": {
+     "scene": "g_hockey",
+     "errs": 0
+    },
+    "radar4": {
+     "scene": "g_radar4",
+     "errs": 0
+    },
+    "skee": {
+     "scene": "g_skee",
+     "errs": 0
+    },
+    "bowling": {
+     "scene": "g_bowling",
+     "errs": 0
+    },
+    "hoops": {
+     "scene": "g_hoops",
+     "errs": 0
+    }
+   },
+   "back": {
+    "settings": [
+     "world:runway"
+    ],
+    "dash": [
+     "world:runway"
+    ],
+    "page": [
+     "world:runway"
+    ],
+    "board": [
+     "world:runway"
+    ],
+    "map": [
+     "world:runway"
+    ],
+    "radio": [
+     "world:runway"
+    ],
+    "locker": [
+     "world:runway"
+    ],
+    "termsRead": [
+     "settings",
+     "world:runway"
+    ],
+    "fleet": [
+     "world:runway"
+    ],
+    "groundschool": [
+     "world:runway"
+    ],
+    "logbook": [
+     "world:runway"
+    ],
+    "route": [
+     "world:runway"
+    ],
+    "games": [
+     "world:runway"
+    ],
+    "flightlog": [
+     "logbook",
+     "world:runway"
+    ],
+    "logflight": [
+     "flightlog",
+     "logbook",
+     "world:runway"
+    ],
+    "crew": [
+     "world:runway"
+    ],
+    "library": [
+     "world:runway"
+    ],
+    "book": [
+     "library",
+     "world:runway"
+    ],
+    "path": [
+     "world:runway"
+    ],
+    "practice": [
+     "world:runway"
+    ]
+   },
+   "checks": {
+    "readyMs": 483,
+    "tabFocus": "BODY",
+    "a11yTree": "{\"role\":\"WebArea\",\"name\":\"HypeTeen Flight Quarters\"}",
+    "canvasAria": {
+     "role": null,
+     "label": null,
+     "tabindex": null,
+     "liveRegions": 0
+    },
+    "termsScene": "terms",
+    "afterEnroll": "trainer",
+    "afterTrainer": "placement",
+    "saveBytes": {
+     "keys": [
+      "hfq_localdb_v1",
+      "hfq_acct_mvbc5lim06bn2z",
+      "hfq_roster_v1"
+     ],
+     "bytes": 2037
+    },
+    "tocRowHeightAt30": {
+     "rowHeightUnits": 13.466666666666667,
+     "rowHeightCssPx": 19.451851851851853
+    },
+    "reducedMotion": {
+     "appSetting": false,
+     "mediaQuery": false,
+     "gRm": false
+    },
+    "offlineSupport": {
+     "sw": false,
+     "manifest": false
+    },
+    "offlineReload": "reload failed: page.reload: net::ERR_INTERNET_DISCONNECTED"
+   },
+   "text": {
+    "title": {
+     "n": 160,
+     "lt9": 20,
+     "lt11": 100,
+     "min": 8.377777777777778,
+     "samples": [
+      "DATA: THIS DEVICE ONLY @8.4px",
+      "DATA: THIS DEVICE ONLY @8.4px",
+      "DATA: THIS DEVICE ONLY @8.4px",
+      "DATA: THIS DEVICE ONLY @8.4px",
+      "DATA: THIS DEVICE ONLY @8.4px",
+      "DATA: THIS DEVICE ONLY @8.4px"
+     ]
+    },
+    "terms": {
+     "n": 192,
+     "lt9": 32,
+     "lt11": 128,
+     "min": 8.666666666666666,
+     "samples": [
+      "TERMS \u2022 VERSION 1.0 @8.7px",
+      "TERMS \u2022 VERSION 1.0 @8.7px",
+      "TERMS \u2022 VERSION 1.0 @8.7px",
+      "TERMS \u2022 VERSION 1.0 @8.7px",
+      "TERMS \u2022 VERSION 1.0 @8.7px",
+      "TERMS \u2022 VERSION 1.0 @8.7px"
+     ]
+    },
+    "signup": {
+     "n": 1282,
+     "lt9": 146,
+     "lt11": 396,
+     "min": 8.666666666666666,
+     "samples": [
+      "STEP 1 OF 3 @8.7px",
+      "STEP 1 OF 3 @8.7px",
+      "STEP 1 OF 3 @8.7px",
+      "STEP 1 OF 3 @8.7px",
+      "STEP 1 OF 3 @8.7px",
+      "STEP 1 OF 3 @8.7px"
+     ]
+    },
+    "locker": {
+     "n": 2788,
+     "lt9": 1957,
+     "lt11": 2452,
+     "min": 8.377777777777778,
+     "samples": [
+      "BALANCE BEFORE CONTROL II @8.7px",
+      "FLIGHT SUIT @8.7px",
+      "SKIN @8.7px",
+      "HAIR COLOR @8.7px",
+      "HAIR STYLE @8.7px",
+      "SHORT @8.4px"
+     ]
+    },
+    "trainer": {
+     "n": 1232,
+     "lt9": 770,
+     "lt11": 1001,
+     "min": 7.800000000000001,
+     "samples": [
+      "TRAINER \u2022 4 SEATS @8.4px",
+      "The most-built airplane in history: more @9.0px",
+      "been made than any other airplane. @9.0px",
+      "CESSNA 172 @7.8px",
+      "CESSNA 152 @7.8px",
+      "PIPER PA-28 WARRIOR @7.8px"
+     ]
+    },
+    "placement": {
+     "n": 773,
+     "lt9": 54,
+     "lt11": 665,
+     "min": 8.666666666666666,
+     "samples": [
+      "ONE QUESTION BEFORE YOU START @8.7px",
+      "ONE QUESTION BEFORE YOU START @8.7px",
+      "ONE QUESTION BEFORE YOU START @8.7px",
+      "ONE QUESTION BEFORE YOU START @8.7px",
+      "ONE QUESTION BEFORE YOU START @8.7px",
+      "ONE QUESTION BEFORE YOU START @8.7px"
+     ]
+    },
+    "world:classroom": {
+     "n": 1860,
+     "lt9": 1302,
+     "lt11": 1767,
+     "min": 5.488888888888889,
+     "samples": [
+      "GROUND SCHOOL @8.7px",
+      "GROUND SCHOOL @7.8px",
+      "PATCH WALL @7.8px",
+      "MY DESK: KEEP LEARNING @7.8px",
+      "WORD HUNT @7.8px",
+      "INSTRUCTOR @7.8px"
+     ]
+    },
+    "world:lounge": {
+     "n": 1134,
+     "lt9": 840,
+     "lt11": 1092,
+     "min": 5.488888888888889,
+     "samples": [
+      "CREW BOARD @7.2px",
+      "15:03 @7.2px",
+      "AUDITOR @6.4px",
+      "EARNED THE MY TRAINER  @6.4px",
+      "AUDITOR @6.4px",
+      "STEPPED UP TO BALANCE  @6.4px"
+     ]
+    },
+    "world:gameroom": {
+     "n": 1326,
+     "lt9": 969,
+     "lt11": 1224,
+     "min": 5.2,
+     "samples": [
+      "N @7.2px",
+      "HIGH SCORES @7.2px",
+      "PLAY A GAME! @6.6px",
+      "CARGO @6.1px",
+      "RADAR @6.1px",
+      "SKEE-BALL @5.2px"
+     ]
+    },
+    "world:hangar": {
+     "n": 969,
+     "lt9": 663,
+     "lt11": 918,
+     "min": 5.2,
+     "samples": [
+      "OIL @5.2px",
+      "OIL @5.2px",
+      "AIRCRAFT GALLERY @7.8px",
+      "OUT TO THE RUNWAY @7.8px",
+      "TO THE LOUNGE @7.8px",
+      "MAP @5.5px"
+     ]
+    },
+    "world:platform": {
+     "n": 1155,
+     "lt9": 715,
+     "lt11": 1100,
+     "min": 5.488888888888889,
+     "samples": [
+      "PLANE SPOTTER @7.8px",
+      "CLOUD SPOTTER @7.8px",
+      "PAPER PLANE TOSS @7.8px",
+      "DOWN TO THE LOUNGE @7.8px",
+      "PLANE SPOTTER @7.8px",
+      "MAP @5.5px"
+     ]
+    },
+    "world:tower": {
+     "n": 1316,
+     "lt9": 1034,
+     "lt11": 1269,
+     "min": 5.488888888888889,
+     "samples": [
+      "METAR @7.2px",
+      "KHFQ 161953Z @7.2px",
+      "34013G26KT @7.2px",
+      "10SM SCT163 @7.2px",
+      "VFR? @7.8px",
+      "GND @6.6px"
+     ]
+    },
+    "world:ramp": {
+     "n": 966,
+     "lt9": 506,
+     "lt11": 782,
+     "min": 5.488888888888889,
+     "samples": [
+      "100LL @8.7px",
+      "TAXI OUT TO THE RUNWAY @7.8px",
+      "PREFLIGHT RACE @7.8px",
+      "MAP @5.5px",
+      "TOWER @5.5px",
+      "PATH @7.8px"
+     ]
+    },
+    "world:wash": {
+     "n": 882,
+     "lt9": 588,
+     "lt11": 833,
+     "min": 4.622222222222223,
+     "samples": [
+      "WASH RACK @7.5px",
+      "COVER PITOT + STATIC PORTS FIRST @7.5px",
+      "REMOVE @4.6px",
+      "WASH DAY @7.8px",
+      "MAP @5.5px",
+      "TOWER @5.5px"
+     ]
+    },
+    "world:runway": {
+     "n": 7643,
+     "lt9": 3872,
+     "lt11": 6587,
+     "min": 5.488888888888889,
+     "samples": [
+      "TAXI MAZE @7.8px",
+      "DEPARTURE (RADIO) @7.8px",
+      "AIRPORT OPS @7.8px",
+      "MAP @5.5px",
+      "TOWER @5.5px",
+      "PATH @7.8px"
+     ]
+    },
+    "settings": {
+     "n": 1098,
+     "lt9": 0,
+     "lt11": 426,
+     "min": 9.244444444444445,
+     "samples": []
+    },
+    "dash": {
+     "n": 2271,
+     "lt9": 1080,
+     "lt11": 2211,
+     "min": 7.800000000000001,
+     "samples": [
+      "UNIT 1 OF 55 @8.4px",
+      "0 / 500 LESSONS @8.4px",
+      "FLASHCARDS \u2022 @7.8px",
+      "TRIVIA \u2022 DRILLS @7.8px",
+      "0 / 32 READ @8.4px",
+      "3 / 33 BADGES @8.4px"
+     ]
+    },
+    "page": {
+     "n": 174,
+     "lt9": 0,
+     "lt11": 116,
+     "min": 10.4,
+     "samples": []
+    },
+    "board": {
+     "n": 354,
+     "lt9": 59,
+     "lt11": 236,
+     "min": 8.666666666666666,
+     "samples": [
+      "THIS DEVICE ONLY @8.7px",
+      "THIS DEVICE ONLY @8.7px",
+      "THIS DEVICE ONLY @8.7px",
+      "THIS DEVICE ONLY @8.7px",
+      "THIS DEVICE ONLY @8.7px",
+      "THIS DEVICE ONLY @8.7px"
+     ]
+    },
+    "map": {
+     "n": 1410,
+     "lt9": 960,
+     "lt11": 1230,
+     "min": 4.9111111111111105,
+     "samples": [
+      "TAXI MAZE @7.8px",
+      "DEPARTURE (RADIO) @7.8px",
+      "AIRPORT OPS @7.8px",
+      "MAP @5.5px",
+      "TOWER @5.5px",
+      "PATH @7.8px"
+     ]
+    },
+    "radio": {
+     "n": 1178,
+     "lt9": 744,
+     "lt11": 992,
+     "min": 6.644444444444444,
+     "samples": [
+      "COM 1 @7.2px",
+      "PICK A FREQUENCY @6.6px",
+      "ATIS @8.1px",
+      "GROUND @8.1px",
+      "TOWER @8.1px",
+      "INFORMATION PAPA \u2022 RUNWAY 27 IN USE @8.7px"
+     ]
+    },
+    "termsRead": {
+     "n": 183,
+     "lt9": 61,
+     "lt11": 122,
+     "min": 8.666666666666666,
+     "samples": [
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.7px"
+     ]
+    },
+    "fleet": {
+     "n": 1458,
+     "lt9": 756,
+     "lt11": 1350,
+     "min": 6.933333333333333,
+     "samples": [
+      "TRAINER \u2022 PICK AT ENROLLMENT @7.8px",
+      "\u2713 MY AIRCRAFT @7.8px",
+      "TRAINER \u2022 PICK AT ENROLLMENT @7.8px",
+      "UNLOCKED @7.8px",
+      "TRAINER \u2022 PICK AT ENROLLMENT @7.8px",
+      "UNLOCKED @7.8px"
+     ]
+    },
+    "groundschool": {
+     "n": 2379,
+     "lt9": 1464,
+     "lt11": 1708,
+     "min": 5.2,
+     "samples": [
+      "FLIGHT DAYS @6.9px",
+      "TODAY\u2019S PLAN @6.9px",
+      "UNIT PATCHES @6.9px",
+      "1 @5.2px",
+      "LIFT, WEIGHT, THRUST + DRAG @8.1px",
+      "2 @5.2px"
+     ]
+    },
+    "logbook": {
+     "n": 8856,
+     "lt9": 7128,
+     "lt11": 7884,
+     "min": 4.333333333333333,
+     "samples": [
+      "PHASE 2 OF 6 @7.2px",
+      "90 XP TO CROSSWIND DECISIONS III @7.2px",
+      "FLIGHTS @7.2px",
+      "0:00 TRAINING \u2022 0 LDG @6.9px",
+      "SIM SESSIONS @7.2px",
+      "0:00 SIM TIME \u2022 0 LDG @6.9px"
+     ]
+    },
+    "route": {
+     "n": 1711,
+     "lt9": 944,
+     "lt11": 1593,
+     "min": 5.488888888888889,
+     "samples": [
+      "LESSON 1 @7.8px",
+      "LESSON 2 @7.8px",
+      "LESSON 3 @7.8px",
+      "LESSON 4 @7.8px",
+      "1 @6.9px",
+      "CHECKRIDE @7.8px"
+     ]
+    },
+    "games": {
+     "n": 23119,
+     "lt9": 14025,
+     "lt11": 22558,
+     "min": 7.222222222222222,
+     "samples": [
+      "THE GAME ROOM @7.8px",
+      "NEW @8.7px",
+      "Cornhole with a crosswind: read the wind @7.2px",
+      "THE GAME ROOM @7.8px",
+      "NEW @8.7px",
+      "Six holes around propellers, hangar door @7.2px"
+     ]
+    },
+    "flightlog": {
+     "n": 2247,
+     "lt9": 1044,
+     "lt11": 1638,
+     "min": 6.21111111111111,
+     "samples": [
+      "FLIGHTS @6.2px",
+      "TRAINING TIME @6.2px",
+      "LANDINGS @6.2px",
+      "AIRPORTS @6.2px",
+      "AIRCRAFT @6.2px",
+      "0 AS A PASSENGER \u2022 0 AS A STUDENT PILOT @7.5px"
+     ]
+    },
+    "logflight": {
+     "n": 1003,
+     "lt9": 767,
+     "lt11": 826,
+     "min": 8.088888888888889,
+     "samples": [
+      "An airliner, a charter, a ride @8.7px",
+      "in a small airplane. Where @8.7px",
+      "did you go? What did you @8.7px",
+      "see? @8.7px",
+      "TAP TO START \u25b8 @8.1px",
+      "A lesson with an instructor, @8.7px"
+     ]
+    },
+    "crew": {
+     "n": 2257,
+     "lt9": 1159,
+     "lt11": 2196,
+     "min": 6.933333333333333,
+     "samples": [
+      "What every cadet on this board has been  @8.7px",
+      "to cheer someone on. @8.7px",
+      "JUST NOW @6.9px",
+      "\u2606 KUDOS @6.9px",
+      "JUST NOW @6.9px",
+      "\u2606 KUDOS @6.9px"
+     ]
+    },
+    "library": {
+     "n": 3956,
+     "lt9": 1892,
+     "lt11": 3096,
+     "min": 6.933333333333333,
+     "samples": [
+      "BOOKS READ @6.9px",
+      "QUIZZES PASSED @6.9px",
+      "ACED @6.9px",
+      "Lift, weight, thrust and drag: the tug-o @7.2px",
+      "6 MIN \u2022 8 SECTIONS @6.9px",
+      "NEW @7.8px"
+     ]
+    },
+    "book": {
+     "n": 1652,
+     "lt9": 413,
+     "lt11": 1534,
+     "min": 6.933333333333333,
+     "samples": [
+      "Lift, weight, thrust and drag: the @8.1px",
+      "tug-of-war that is flight @8.1px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @6.9px",
+      "\u25c0 BACK @8.7px",
+      "CONTENTS @8.7px",
+      "NEXT \u25b6 @8.7px"
+     ]
+    },
+    "path": {
+     "n": 2610,
+     "lt9": 1914,
+     "lt11": 1972,
+     "min": 5.2,
+     "samples": [
+      "FLIGHT DAYS @6.6px",
+      "TODAY\u2019S PLAN @6.6px",
+      "XP @6.6px",
+      "DISCOVERY @6.9px",
+      "0 / 14 PATCHES @5.2px",
+      "STUDENT @6.9px"
+     ]
+    },
+    "practice": {
+     "n": 1881,
+     "lt9": 513,
+     "lt11": 1026,
+     "min": 8.666666666666666,
+     "samples": [
+      "10 MIXED QUESTIONS, 10S EACH \u2022 BEST 0 @8.7px",
+      "NO MISSED QUESTIONS @8.7px",
+      "0 OF 32 BOOKS READ @8.7px",
+      "42 CARDS @8.7px",
+      "69 CARDS @8.7px",
+      "60 CARDS @8.7px"
+     ]
+    },
+    "g_landing": {
+     "n": 1008,
+     "lt9": 567,
+     "lt11": 882,
+     "min": 6.933333333333333,
+     "samples": [
+      "PAPI @7.8px",
+      "TOO HIGH @6.9px",
+      "POWER @6.9px",
+      "THEN WATCH THE PAPI LIGHTS @8.1px",
+      "TOWER: AUDITOR, RUNWAY 27, CLEARED TO LA @8.4px",
+      "CALM. @8.4px"
+     ]
+    },
+    "g_marshal": {
+     "n": 1612,
+     "lt9": 780,
+     "lt11": 1508,
+     "min": 7.222222222222222,
+     "samples": [
+      "SIGNALS @7.8px",
+      "SIGNAL 1 OF 10 @8.7px",
+      "THE MARSHALLER FACES YOU: THEIR RIGHT AR @7.2px",
+      "Both arms bent, wands bobbing up and dow @8.4px",
+      "chest to head. @8.4px",
+      "Their right arm (on YOUR left) points ou @8.4px"
+     ]
+    },
+    "g_paper": {
+     "n": 744,
+     "lt9": 558,
+     "lt11": 682,
+     "min": 7.222222222222222,
+     "samples": [
+      "0 FT @7.2px",
+      "50 FT @7.2px",
+      "100 FT @7.2px",
+      "150 FT @7.2px",
+      "HEADWIND 4 KT @8.1px",
+      "THROW 1 OF 3 @8.7px"
+     ]
+    },
+    "g_bags": {
+     "n": 512,
+     "lt9": 256,
+     "lt11": 448,
+     "min": 7.800000000000001,
+     "samples": [
+      "PUSHING RIGHT \u25b8 @7.8px",
+      "ROUND 1 OF 3 \u2022 BAG 1 OF 4 @8.1px",
+      "Pull down to throw, sideways to aim. Rea @9.0px",
+      "aim into the wind. @9.0px",
+      "PUSHING RIGHT \u25b8 @7.8px",
+      "ROUND 1 OF 3 \u2022 BAG 1 OF 4 @8.1px"
+     ]
+    },
+    "g_golf": {
+     "n": 536,
+     "lt9": 335,
+     "lt11": 402,
+     "min": 8.088888888888889,
+     "samples": [
+      "HOLE 1: RUNWAY 1 \u2022 PAR 2 @8.4px",
+      "STROKE 0 @8.4px",
+      "HOLE 1 OF 6 @8.1px",
+      "Pull back from anywhere and let go to pu @9.0px",
+      "propeller, the doors and the cart. @9.0px",
+      "HOLE 1: RUNWAY 1 \u2022 PAR 2 @8.4px"
+     ]
+    },
+    "g_pong": {
+     "n": 468,
+     "lt9": 172,
+     "lt11": 253,
+     "min": 7.800000000000001,
+     "samples": [
+      "CREW CHIEF @7.8px",
+      "FIRST TO 7 @8.1px",
+      "Drag to move your yellow paddle. Hit wit @9.0px",
+      "angle the ball. @9.0px",
+      "CREW CHIEF @7.8px",
+      "FIRST TO 7 @8.1px"
+     ]
+    },
+    "g_pool": {
+     "n": 406,
+     "lt9": 348,
+     "lt11": 377,
+     "min": 6.933333333333333,
+     "samples": [
+      "A @7.2px",
+      "B @7.2px",
+      "C @7.2px",
+      "D @7.2px",
+      "E @7.2px",
+      "F @7.2px"
+     ]
+    },
+    "g_cargo": {
+     "n": 992,
+     "lt9": 496,
+     "lt11": 558,
+     "min": 6.644444444444444,
+     "samples": [
+      "NEXT @8.1px",
+      "ROWS @8.1px",
+      "LEVEL @8.1px",
+      "BALANCE @8.1px",
+      "BALANCED @6.6px",
+      "LOAD THE CARGO HOLD @8.1px"
+     ]
+    },
+    "g_spot": {
+     "n": 693,
+     "lt9": 315,
+     "lt11": 630,
+     "min": 7.222222222222222,
+     "samples": [
+      "AIRCRAFT 1 OF 8 @8.7px",
+      "LOOK FOR\u2026 (\u00bd PTS) @7.2px",
+      "NAME WHAT FLIES PAST @8.1px",
+      "Name each aircraft as it flies by. Quick @9.0px",
+      "more. New ones join your hangar! @9.0px",
+      "AIRCRAFT 1 OF 8 @8.7px"
+     ]
+    },
+    "g_metar": {
+     "n": 2665,
+     "lt9": 1170,
+     "lt11": 2015,
+     "min": 7.800000000000001,
+     "samples": [
+      "REPORT 1 OF 10 @8.7px",
+      "CARD @7.8px",
+      "METAR @7.8px",
+      "KHFQ 131553Z 27010G18KT 10SM BKN025 24/1 @8.7px",
+      "The airport. K = United States. @8.4px",
+      "Day 13, 15:53 Zulu (UTC) time. @8.4px"
+     ]
+    },
+    "g_wx": {
+     "n": 2006,
+     "lt9": 1062,
+     "lt11": 1416,
+     "min": 6.933333333333333,
+     "samples": [
+      "CALL 1 OF 10 @8.7px",
+      "RULES @7.8px",
+      "FEW 17,800 FT @7.2px",
+      "VISUAL: GOOD WEATHER @6.9px",
+      "MARGINAL VISUAL @6.9px",
+      "INSTRUMENT @6.9px"
+     ]
+    },
+    "g_lightgun": {
+     "n": 2622,
+     "lt9": 2109,
+     "lt11": 2451,
+     "min": 7.222222222222222,
+     "samples": [
+      "SIGNAL 1 OF 12 @8.7px",
+      "CHART @7.8px",
+      "ON THE GROUND @8.7px",
+      "SIGNAL @7.2px",
+      "ON THE GROUND @7.2px",
+      "IN THE AIR @7.2px"
+     ]
+    },
+    "g_depart": {
+     "n": 1220,
+     "lt9": 854,
+     "lt11": 1098,
+     "min": 6.644444444444444,
+     "samples": [
+      "COM 1 @7.2px",
+      "PICK A FREQUENCY @6.6px",
+      "ATIS @8.1px",
+      "GROUND @8.1px",
+      "TOWER @8.1px",
+      "1. ATIS: GET THE WEATHER + LETTER @8.4px"
+     ]
+    },
+    "g_arrive": {
+     "n": 1216,
+     "lt9": 832,
+     "lt11": 1088,
+     "min": 6.644444444444444,
+     "samples": [
+      "COM 1 @7.2px",
+      "PICK A FREQUENCY @6.6px",
+      "ATIS @8.1px",
+      "GROUND @8.1px",
+      "TOWER @8.1px",
+      "1. ATIS: GET THE WEATHER + LETTER @8.4px"
+     ]
+    },
+    "g_taxi": {
+     "n": 1500,
+     "lt9": 1260,
+     "lt11": 1440,
+     "min": 4.9111111111111105,
+     "samples": [
+      "PARKING STAND @6.4px",
+      "HANGAR @6.4px",
+      "27-9 @4.9px",
+      "27-9 @4.9px",
+      "27-9 @4.9px",
+      "27-9 @4.9px"
+     ]
+    },
+    "g_preflight": {
+     "n": 986,
+     "lt9": 232,
+     "lt11": 928,
+     "min": 8.088888888888889,
+     "samples": [
+      "TIME 0s @8.7px",
+      "WALK AROUND YOUR AIRPLANE @8.1px",
+      "Tap each glowing spot. Is it good to go, @9.0px",
+      "squawk it? Find all the problems, fast! @9.0px",
+      "TIME 0s @8.7px",
+      "WALK AROUND YOUR AIRPLANE @8.1px"
+     ]
+    },
+    "g_wash": {
+     "n": 1080,
+     "lt9": 780,
+     "lt11": 1020,
+     "min": 7.222222222222222,
+     "samples": [
+      "PITOT @7.2px",
+      "STATIC @7.2px",
+      "Tap the PITOT TUBE and the STATIC PORT t @9.0px",
+      "Tap again to take the covers off. @9.0px",
+      "COVERS @8.4px",
+      "BUG REMOVER @8.4px"
+     ]
+    },
+    "g_cloud": {
+     "n": 671,
+     "lt9": 244,
+     "lt11": 549,
+     "min": 8.088888888888889,
+     "samples": [
+      "CLOUD 1 OF 8 @8.7px",
+      "NAME THE CLOUDS @8.1px",
+      "Name the cloud, then say what it means f @9.0px",
+      "answers score more. @9.0px",
+      "CLOUD 1 OF 8 @8.7px",
+      "NAME THE CLOUDS @8.1px"
+     ]
+    },
+    "g_pairs": {
+     "n": 441,
+     "lt9": 252,
+     "lt11": 378,
+     "min": 8.088888888888889,
+     "samples": [
+      "MOVES 0 \u2022 0 / 8 \u2022 0s @8.1px",
+      "ALFA, BRAVO, CHARLIE\u2026 @8.1px",
+      "Flip two cards. Match the letter with it @9.0px",
+      "moves, more points. @9.0px",
+      "MOVES 0 \u2022 0 / 8 \u2022 0s @8.1px",
+      "ALFA, BRAVO, CHARLIE\u2026 @8.1px"
+     ]
+    },
+    "g_gauges": {
+     "n": 1240,
+     "lt9": 806,
+     "lt11": 1178,
+     "min": 6.8755555555555565,
+     "samples": [
+      "40 @8.1px",
+      "60 @8.1px",
+      "80 @8.1px",
+      "100 @8.1px",
+      "120 @8.1px",
+      "140 @8.1px"
+     ]
+    },
+    "g_words": {
+     "n": 4740,
+     "lt9": 720,
+     "lt11": 840,
+     "min": 7.222222222222222,
+     "samples": [
+      "0s @7.8px",
+      "HINT (\u221220) @7.2px",
+      "BEACON @8.1px",
+      "COMPASS @8.1px",
+      "PITOT @8.1px",
+      "YOKE @8.1px"
+     ]
+    },
+    "g_darts": {
+     "n": 1102,
+     "lt9": 696,
+     "lt11": 812,
+     "min": 7.222222222222222,
+     "samples": [
+      "3 @7.2px",
+      "6 @7.2px",
+      "12 @7.2px",
+      "15 @7.2px",
+      "21 @7.2px",
+      "24 @7.2px"
+     ]
+    },
+    "g_hockey": {
+     "n": 287,
+     "lt9": 123,
+     "lt11": 164,
+     "min": 8.088888888888889,
+     "samples": [
+      "FIRST TO 5 @8.1px",
+      "Drag your yellow mallet on the bottom ha @9.0px",
+      "puck into the crew\u2019s goal. @9.0px",
+      "FIRST TO 5 @8.1px",
+      "Drag your yellow mallet on the bottom ha @9.0px",
+      "puck into the crew\u2019s goal. @9.0px"
+     ]
+    },
+    "g_radar4": {
+     "n": 496,
+     "lt9": 248,
+     "lt11": 372,
+     "min": 7.800000000000001,
+     "samples": [
+      "YOU \u25cf GOLD    CREW \u25cf BLUE @7.8px",
+      "FOUR IN A ROW @8.1px",
+      "Drop your gold contacts. Get four in a r @9.0px",
+      "or diagonal before the crew does. @9.0px",
+      "YOU \u25cf GOLD    CREW \u25cf BLUE @7.8px",
+      "FOUR IN A ROW @8.1px"
+     ]
+    },
+    "g_skee": {
+     "n": 429,
+     "lt9": 351,
+     "lt11": 390,
+     "min": 6.644444444444444,
+     "samples": [
+      "10 @7.2px",
+      "20 @7.2px",
+      "30 @7.2px",
+      "40 @7.2px",
+      "50 @6.6px",
+      "BALL 1 OF 9 @8.1px"
+     ]
+    },
+    "g_bowling": {
+     "n": 896,
+     "lt9": 504,
+     "lt11": 560,
+     "min": 8.088888888888889,
+     "samples": [
+      "FRAME 1 \u2022 ROLL 1 @8.1px",
+      "TEN CONES, FIVE FRAMES @8.1px",
+      "Pull back from the ball and let go. Aim  @9.0px",
+      "to take out the whole rack. @9.0px",
+      "FRAME 1 \u2022 ROLL 1 @8.1px",
+      "TEN CONES, FIVE FRAMES @8.1px"
+     ]
+    },
+    "g_hoops": {
+     "n": 522,
+     "lt9": 290,
+     "lt11": 464,
+     "min": 0,
+     "samples": [
+      "3 PT @6.9px",
+      "45 SECOND SHOOTOUT @8.1px",
+      "Pull back and let go. Pull farther for a @9.0px",
+      "hoop at the 3 mark for 3. @9.0px",
+      "3 PT @6.9px",
+      "45 SECOND SHOOTOUT @8.1px"
+     ]
+    }
+   },
+   "gErrors": []
+  },
+  "phone360": {
+   "requests": 106,
+   "thirdParty": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap"
+   ],
+   "errors": [
+    "ERROR: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "--- scene settings",
+    "--- scene dash",
+    "--- scene page",
+    "--- scene board",
+    "--- scene map",
+    "--- scene radio",
+    "--- scene locker",
+    "--- scene termsRead",
+    "--- scene fleet",
+    "--- scene groundschool",
+    "--- scene logbook",
+    "--- scene route",
+    "--- scene games",
+    "--- scene flightlog",
+    "--- scene logflight",
+    "--- scene crew",
+    "--- scene library",
+    "--- scene book",
+    "--- scene path",
+    "--- scene practice",
+    "--- game landing",
+    "--- game marshal",
+    "--- game paper",
+    "--- game bags",
+    "--- game golf",
+    "--- game pong",
+    "--- game pool",
+    "--- game cargo",
+    "--- game spot",
+    "--- game metar",
+    "--- game wx",
+    "--- game lightgun",
+    "--- game depart",
+    "--- game arrive",
+    "--- game taxi",
+    "--- game preflight",
+    "--- game wash",
+    "--- game cloud",
+    "--- game pairs",
+    "--- game gauges",
+    "--- game words",
+    "--- game darts",
+    "--- game hockey",
+    "--- game radar4",
+    "--- game skee",
+    "--- game bowling",
+    "--- game hoops"
+   ],
+   "scenes": {
+    "settings": {
+     "now": "settings",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "dash": {
+     "now": "dash",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "page": {
+     "now": "page",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "board": {
+     "now": "board",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "map": {
+     "now": "map",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "radio": {
+     "now": "radio",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "locker": {
+     "now": "locker",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "termsRead": {
+     "now": "termsRead",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "fleet": {
+     "now": "fleet",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "groundschool": {
+     "now": "groundschool",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logbook": {
+     "now": "logbook",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "route": {
+     "now": "route",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "games": {
+     "now": "games",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "flightlog": {
+     "now": "flightlog",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logflight": {
+     "now": "logflight",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "crew": {
+     "now": "crew",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "library": {
+     "now": "library",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "book": {
+     "now": "book",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "path": {
+     "now": "path",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "practice": {
+     "now": "practice",
+     "badFrames": 0,
+     "errs": 0
+    }
+   },
+   "rooms": {
+    "lounge": {
+     "scene": "world",
+     "room": "lounge",
+     "stations": 11
+    },
+    "gameroom": {
+     "scene": "world",
+     "room": "gameroom",
+     "stations": 14
+    },
+    "classroom": {
+     "scene": "world",
+     "room": "classroom",
+     "stations": 10
+    },
+    "hangar": {
+     "scene": "world",
+     "room": "hangar",
+     "stations": 8
+    },
+    "platform": {
+     "scene": "world",
+     "room": "platform",
+     "stations": 7
+    },
+    "tower": {
+     "scene": "world",
+     "room": "tower",
+     "stations": 8
+    },
+    "ramp": {
+     "scene": "world",
+     "room": "ramp",
+     "stations": 6
+    },
+    "wash": {
+     "scene": "world",
+     "room": "wash",
+     "stations": 3
+    },
+    "runway": {
+     "scene": "world",
+     "room": "runway",
+     "stations": 6
+    }
+   },
+   "games": {
+    "landing": {
+     "scene": "g_landing",
+     "errs": 0
+    },
+    "marshal": {
+     "scene": "g_marshal",
+     "errs": 0
+    },
+    "paper": {
+     "scene": "g_paper",
+     "errs": 0
+    },
+    "bags": {
+     "scene": "g_bags",
+     "errs": 0
+    },
+    "golf": {
+     "scene": "g_golf",
+     "errs": 0
+    },
+    "pong": {
+     "scene": "g_pong",
+     "errs": 0
+    },
+    "pool": {
+     "scene": "g_pool",
+     "errs": 0
+    },
+    "cargo": {
+     "scene": "g_cargo",
+     "errs": 0
+    },
+    "spot": {
+     "scene": "g_spot",
+     "errs": 0
+    },
+    "metar": {
+     "scene": "g_metar",
+     "errs": 0
+    },
+    "wx": {
+     "scene": "g_wx",
+     "errs": 0
+    },
+    "lightgun": {
+     "scene": "g_lightgun",
+     "errs": 0
+    },
+    "depart": {
+     "scene": "g_depart",
+     "errs": 0
+    },
+    "arrive": {
+     "scene": "g_arrive",
+     "errs": 0
+    },
+    "taxi": {
+     "scene": "g_taxi",
+     "errs": 0
+    },
+    "preflight": {
+     "scene": "g_preflight",
+     "errs": 0
+    },
+    "wash": {
+     "scene": "g_wash",
+     "errs": 0
+    },
+    "cloud": {
+     "scene": "g_cloud",
+     "errs": 0
+    },
+    "pairs": {
+     "scene": "g_pairs",
+     "errs": 0
+    },
+    "gauges": {
+     "scene": "g_gauges",
+     "errs": 0
+    },
+    "words": {
+     "scene": "g_words",
+     "errs": 0
+    },
+    "darts": {
+     "scene": "g_darts",
+     "errs": 0
+    },
+    "hockey": {
+     "scene": "g_hockey",
+     "errs": 0
+    },
+    "radar4": {
+     "scene": "g_radar4",
+     "errs": 0
+    },
+    "skee": {
+     "scene": "g_skee",
+     "errs": 0
+    },
+    "bowling": {
+     "scene": "g_bowling",
+     "errs": 0
+    },
+    "hoops": {
+     "scene": "g_hoops",
+     "errs": 0
+    }
+   },
+   "back": {
+    "settings": [
+     "world:runway"
+    ],
+    "dash": [
+     "world:runway"
+    ],
+    "page": [
+     "world:runway"
+    ],
+    "board": [
+     "world:runway"
+    ],
+    "map": [
+     "world:runway"
+    ],
+    "radio": [
+     "world:runway"
+    ],
+    "locker": [
+     "world:runway"
+    ],
+    "termsRead": [
+     "settings",
+     "world:runway"
+    ],
+    "fleet": [
+     "world:runway"
+    ],
+    "groundschool": [
+     "world:runway"
+    ],
+    "logbook": [
+     "world:runway"
+    ],
+    "route": [
+     "world:runway"
+    ],
+    "games": [
+     "world:runway"
+    ],
+    "flightlog": [
+     "logbook",
+     "world:runway"
+    ],
+    "logflight": [
+     "flightlog",
+     "logbook",
+     "world:runway"
+    ],
+    "crew": [
+     "world:runway"
+    ],
+    "library": [
+     "world:runway"
+    ],
+    "book": [
+     "library",
+     "world:runway"
+    ],
+    "path": [
+     "world:runway"
+    ],
+    "practice": [
+     "world:runway"
+    ]
+   },
+   "checks": {
+    "readyMs": 352,
+    "tabFocus": "BODY",
+    "a11yTree": "{\"role\":\"WebArea\",\"name\":\"HypeTeen Flight Quarters\"}",
+    "canvasAria": {
+     "role": null,
+     "label": null,
+     "tabindex": null,
+     "liveRegions": 0
+    },
+    "termsScene": "terms",
+    "afterEnroll": "trainer",
+    "afterTrainer": "placement",
+    "saveBytes": {
+     "keys": [
+      "hfq_acct_mvbc7gbma8lv20",
+      "hfq_localdb_v1",
+      "hfq_roster_v1"
+     ],
+     "bytes": 2037
+    },
+    "tocRowHeightAt30": {
+     "rowHeightUnits": 11,
+     "rowHeightCssPx": 14.666666666666666
+    },
+    "reducedMotion": {
+     "appSetting": false,
+     "mediaQuery": false,
+     "gRm": false
+    },
+    "offlineSupport": {
+     "sw": false,
+     "manifest": false
+    },
+    "offlineReload": "reload failed: page.reload: net::ERR_INTERNET_DISCONNECTED"
+   },
+   "text": {
+    "title": {
+     "n": 144,
+     "lt9": 72,
+     "lt11": 90,
+     "min": 7.7333333333333325,
+     "samples": [
+      "HYPETEEN @8.8px",
+      "NEW CADETS START HERE @8.7px",
+      "LOOK AROUND FIRST @8.7px",
+      "DATA: THIS DEVICE ONLY @7.7px",
+      "HYPETEEN @8.8px",
+      "NEW CADETS START HERE @8.7px"
+     ]
+    },
+    "terms": {
+     "n": 180,
+     "lt9": 60,
+     "lt11": 120,
+     "min": 8,
+     "samples": [
+      "TERMS \u2022 VERSION 1.0 @8.0px",
+      "SCROLL TO THE END TO CONTINUE @8.5px",
+      "TERMS \u2022 VERSION 1.0 @8.0px",
+      "SCROLL TO THE END TO CONTINUE @8.5px",
+      "TERMS \u2022 VERSION 1.0 @8.0px",
+      "SCROLL TO THE END TO CONTINUE @8.5px"
+     ]
+    },
+    "signup": {
+     "n": 1261,
+     "lt9": 174,
+     "lt11": 496,
+     "min": 8,
+     "samples": [
+      "STEP 1 OF 3 @8.0px",
+      "ONE WORD, LIKE A REAL CALL SIGN. MAKE IT @8.8px",
+      "STEP 1 OF 3 @8.0px",
+      "ONE WORD, LIKE A REAL CALL SIGN. MAKE IT @8.8px",
+      "STEP 1 OF 3 @8.0px",
+      "ONE WORD, LIKE A REAL CALL SIGN. MAKE IT @8.8px"
+     ]
+    },
+    "locker": {
+     "n": 2846,
+     "lt9": 1994,
+     "lt11": 2618,
+     "min": 7.7333333333333325,
+     "samples": [
+      "BALANCE BEFORE CONTROL II @8.0px",
+      "FLIGHT SUIT @8.0px",
+      "SKIN @8.0px",
+      "HAIR COLOR @8.0px",
+      "HAIR STYLE @8.0px",
+      "SHORT @7.7px"
+     ]
+    },
+    "trainer": {
+     "n": 1216,
+     "lt9": 760,
+     "lt11": 988,
+     "min": 7.2,
+     "samples": [
+      "TRAINER \u2022 4 SEATS @7.7px",
+      "The most-built airplane in history: more @8.3px",
+      "been made than any other airplane. @8.3px",
+      "CESSNA 172 @7.2px",
+      "CESSNA 152 @7.2px",
+      "PIPER PA-28 WARRIOR @7.2px"
+     ]
+    },
+    "placement": {
+     "n": 786,
+     "lt9": 432,
+     "lt11": 678,
+     "min": 8,
+     "samples": [
+      "ONE QUESTION BEFORE YOU START @8.0px",
+      "The FLIGHT PATH takes you through 55 uni @8.8px",
+      "stages, from your first look at flying t @8.8px",
+      "private pilot certificate, lesson by les @8.8px",
+      "already know some of it, a quick 12-ques @8.8px",
+      "placement check can skip you past the fi @8.8px"
+     ]
+    },
+    "world:classroom": {
+     "n": 2100,
+     "lt9": 1470,
+     "lt11": 1995,
+     "min": 5.066666666666666,
+     "samples": [
+      "GROUND SCHOOL @8.0px",
+      "GROUND SCHOOL @7.2px",
+      "PATCH WALL @7.2px",
+      "MY DESK: KEEP LEARNING @7.2px",
+      "WORD HUNT @7.2px",
+      "INSTRUCTOR @7.2px"
+     ]
+    },
+    "world:lounge": {
+     "n": 1404,
+     "lt9": 1040,
+     "lt11": 1352,
+     "min": 5.066666666666666,
+     "samples": [
+      "CREW BOARD @6.7px",
+      "15:04 @6.7px",
+      "AUDITOR @5.9px",
+      "EARNED THE MY TRAINER  @5.9px",
+      "AUDITOR @5.9px",
+      "STEPPED UP TO BALANCE  @5.9px"
+     ]
+    },
+    "world:gameroom": {
+     "n": 1248,
+     "lt9": 912,
+     "lt11": 1152,
+     "min": 4.8,
+     "samples": [
+      "N @6.7px",
+      "HIGH SCORES @6.7px",
+      "PLAY A GAME! @6.1px",
+      "CARGO @5.6px",
+      "RADAR @5.6px",
+      "SKEE-BALL @4.8px"
+     ]
+    },
+    "world:hangar": {
+     "n": 931,
+     "lt9": 637,
+     "lt11": 882,
+     "min": 4.8,
+     "samples": [
+      "OIL @4.8px",
+      "OIL @4.8px",
+      "AIRCRAFT GALLERY @7.2px",
+      "OUT TO THE RUNWAY @7.2px",
+      "TO THE LOUNGE @7.2px",
+      "MAP @5.1px"
+     ]
+    },
+    "world:platform": {
+     "n": 1029,
+     "lt9": 637,
+     "lt11": 980,
+     "min": 5.066666666666666,
+     "samples": [
+      "PLANE SPOTTER @7.2px",
+      "CLOUD SPOTTER @7.2px",
+      "PAPER PLANE TOSS @7.2px",
+      "DOWN TO THE LOUNGE @7.2px",
+      "PLANE SPOTTER @7.2px",
+      "MAP @5.1px"
+     ]
+    },
+    "world:tower": {
+     "n": 1372,
+     "lt9": 1078,
+     "lt11": 1323,
+     "min": 5.066666666666666,
+     "samples": [
+      "METAR @6.7px",
+      "KHFQ 161953Z @6.7px",
+      "34013G26KT @6.7px",
+      "10SM SCT163 @6.7px",
+      "VFR? @7.2px",
+      "GND @6.1px"
+     ]
+    },
+    "world:ramp": {
+     "n": 987,
+     "lt9": 517,
+     "lt11": 940,
+     "min": 5.066666666666666,
+     "samples": [
+      "100LL @8.0px",
+      "TAXI OUT TO THE RUNWAY @7.2px",
+      "PREFLIGHT RACE @7.2px",
+      "MAP @5.1px",
+      "TOWER @5.1px",
+      "PATH @7.2px"
+     ]
+    },
+    "world:wash": {
+     "n": 900,
+     "lt9": 600,
+     "lt11": 850,
+     "min": 4.266666666666667,
+     "samples": [
+      "WASH RACK @6.9px",
+      "COVER PITOT + STATIC PORTS FIRST @6.9px",
+      "REMOVE @4.3px",
+      "WASH DAY @7.2px",
+      "MAP @5.1px",
+      "TOWER @5.1px"
+     ]
+    },
+    "world:runway": {
+     "n": 8197,
+     "lt9": 4147,
+     "lt11": 7066,
+     "min": 5.066666666666666,
+     "samples": [
+      "TAXI MAZE @7.2px",
+      "DEPARTURE (RADIO) @7.2px",
+      "AIRPORT OPS @7.2px",
+      "MAP @5.1px",
+      "TOWER @5.1px",
+      "PATH @7.2px"
+     ]
+    },
+    "settings": {
+     "n": 1098,
+     "lt9": 84,
+     "lt11": 1014,
+     "min": 8.533333333333333,
+     "samples": [
+      "SHARED DATA @8.5px",
+      "SHARED DATA @8.5px",
+      "SHARED DATA @8.5px",
+      "SHARED DATA @8.5px",
+      "SHARED DATA @8.5px",
+      "SHARED DATA @8.5px"
+     ]
+    },
+    "dash": {
+     "n": 2124,
+     "lt9": 1003,
+     "lt11": 2065,
+     "min": 7.7333333333333325,
+     "samples": [
+      "UNIT 1 OF 55 @7.7px",
+      "0 / 500 LESSONS @7.7px",
+      "FLASHCARDS \u2022 TRIVIA \u2022 DRILLS @7.7px",
+      "0 / 32 READ @7.7px",
+      "3 / 33 BADGES @7.7px",
+      "0 FLIGHTS \u2022 0 SIM @7.7px"
+     ]
+    },
+    "page": {
+     "n": 171,
+     "lt9": 0,
+     "lt11": 114,
+     "min": 9.6,
+     "samples": []
+    },
+    "board": {
+     "n": 354,
+     "lt9": 177,
+     "lt11": 295,
+     "min": 8,
+     "samples": [
+      "NOTHING POSTED YET. @8.5px",
+      "BE THE FIRST. @8.5px",
+      "THIS DEVICE ONLY @8.0px",
+      "NOTHING POSTED YET. @8.5px",
+      "BE THE FIRST. @8.5px",
+      "THIS DEVICE ONLY @8.0px"
+     ]
+    },
+    "map": {
+     "n": 1927,
+     "lt9": 1312,
+     "lt11": 1722,
+     "min": 4.533333333333333,
+     "samples": [
+      "TAXI MAZE @7.2px",
+      "DEPARTURE (RADIO) @7.2px",
+      "AIRPORT OPS @7.2px",
+      "MAP @5.1px",
+      "TOWER @5.1px",
+      "PATH @7.2px"
+     ]
+    },
+    "radio": {
+     "n": 1121,
+     "lt9": 708,
+     "lt11": 944,
+     "min": 6.133333333333333,
+     "samples": [
+      "COM 1 @6.7px",
+      "PICK A FREQUENCY @6.1px",
+      "ATIS @7.5px",
+      "GROUND @7.5px",
+      "TOWER @7.5px",
+      "INFORMATION PAPA \u2022 RUNWAY 27 IN USE @8.0px"
+     ]
+    },
+    "termsRead": {
+     "n": 183,
+     "lt9": 61,
+     "lt11": 122,
+     "min": 8,
+     "samples": [
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px",
+      "VERSION 1.0 \u2022 October 14, 2026 @8.0px"
+     ]
+    },
+    "fleet": {
+     "n": 1232,
+     "lt9": 784,
+     "lt11": 1120,
+     "min": 6.3999999999999995,
+     "samples": [
+      "7 / 17 UNLOCKED @8.8px",
+      "Pick from the six trainers when you enro @8.5px",
+      "phase unlocks new aircraft, all the way  @8.5px",
+      "helicopters. @8.5px",
+      "TRAINER \u2022 PICK AT ENROLLMENT @7.2px",
+      "\u2713 MY AIRCRAFT @7.2px"
+     ]
+    },
+    "groundschool": {
+     "n": 2065,
+     "lt9": 1298,
+     "lt11": 1829,
+     "min": 4.8,
+     "samples": [
+      "FLIGHT DAYS @6.4px",
+      "TODAY\u2019S PLAN @6.4px",
+      "UNIT PATCHES @6.4px",
+      "1 @4.8px",
+      "LIFT, WEIGHT, THRUST + DRAG @7.5px",
+      "START @8.8px"
+     ]
+    },
+    "logbook": {
+     "n": 9430,
+     "lt9": 8050,
+     "lt11": 8625,
+     "min": 4,
+     "samples": [
+      "CROSSWIND DECISIONS II \u2022 230 XP @8.5px",
+      "PHASE 2 OF 6 @6.7px",
+      "90 XP TO CROSSWIND DECISIONS III @6.7px",
+      "TAP A BOOK @8.8px",
+      "FLIGHTS @6.7px",
+      "0:00 TRAINING \u2022 0 LDG @6.4px"
+     ]
+    },
+    "route": {
+     "n": 1711,
+     "lt9": 1357,
+     "lt11": 1593,
+     "min": 5.066666666666666,
+     "samples": [
+      "LESSON 1 @7.2px",
+      "THE FOUR FORCES @8.5px",
+      "LESSON 2 @7.2px",
+      "HOW A WING @8.5px",
+      "MAKES LIFT @8.5px",
+      "LESSON 3 @7.2px"
+     ]
+    },
+    "games": {
+     "n": 20727,
+     "lt9": 15039,
+     "lt11": 20170,
+     "min": 6.666666666666666,
+     "samples": [
+      "The just-for-fun games fill the Game Roo @8.5px",
+      "games live where they belong on the airf @8.5px",
+      "or play from here. Game XP is capped eac @8.5px",
+      "stays the fastest way up. @8.5px",
+      "11 GAMES @8.8px",
+      "THE GAME ROOM @7.2px"
+     ]
+    },
+    "flightlog": {
+     "n": 2230,
+     "lt9": 1462,
+     "lt11": 1628,
+     "min": 5.7333333333333325,
+     "samples": [
+      "FLIGHTS @8.8px",
+      "SIM SESSIONS @8.8px",
+      "FLIGHTS @5.7px",
+      "TRAINING TIME @5.7px",
+      "LANDINGS @5.7px",
+      "AIRPORTS @5.7px"
+     ]
+    },
+    "logflight": {
+     "n": 1003,
+     "lt9": 767,
+     "lt11": 826,
+     "min": 7.466666666666666,
+     "samples": [
+      "An airliner, a charter, a ride @8.0px",
+      "in a small airplane. Where @8.0px",
+      "did you go? What did you @8.0px",
+      "see? @8.0px",
+      "TAP TO START \u25b8 @7.5px",
+      "A lesson with an instructor, @8.0px"
+     ]
+    },
+    "crew": {
+     "n": 2006,
+     "lt9": 1888,
+     "lt11": 1947,
+     "min": 6.3999999999999995,
+     "samples": [
+      "ACTIVITY @8.8px",
+      "CADETS @8.8px",
+      "What every cadet on this board has been  @8.0px",
+      "to cheer someone on. @8.0px",
+      "AUDITOR earned the GROUND SCHOOL @8.8px",
+      "STUDENT badge @8.8px"
+     ]
+    },
+    "library": {
+     "n": 3444,
+     "lt9": 2016,
+     "lt11": 2688,
+     "min": 6.3999999999999995,
+     "samples": [
+      "BOOKS READ @6.4px",
+      "QUIZZES PASSED @6.4px",
+      "ACED @6.4px",
+      "Real ground school, written for cadets.  @8.5px",
+      "take its quiz. Passing counts toward GOL @8.5px",
+      "Path; every book goes with a unit. @8.5px"
+     ]
+    },
+    "book": {
+     "n": 1624,
+     "lt9": 870,
+     "lt11": 1508,
+     "min": 6.3999999999999995,
+     "samples": [
+      "LIFT @8.5px",
+      "WEIGHT @8.5px",
+      "THRUST @8.5px",
+      "DRAG @8.5px",
+      "Lift, weight, thrust and drag: the @7.5px",
+      "tug-of-war that is flight @7.5px"
+     ]
+    },
+    "path": {
+     "n": 2610,
+     "lt9": 1914,
+     "lt11": 1972,
+     "min": 4.8,
+     "samples": [
+      "FLIGHT DAYS @6.1px",
+      "TODAY\u2019S PLAN @6.1px",
+      "XP @6.1px",
+      "DISCOVERY @6.4px",
+      "0 / 14 PATCHES @4.8px",
+      "STUDENT @6.4px"
+     ]
+    },
+    "practice": {
+     "n": 1539,
+     "lt9": 741,
+     "lt11": 1254,
+     "min": 8,
+     "samples": [
+      "Affirm what you know, any way you like:  @8.5px",
+      "flashcards, play a timed trivia round, o @8.5px",
+      "Nothing here needs the escort of a lesso @8.5px",
+      "10 MIXED QUESTIONS, 10S EACH \u2022 BEST 0 @8.0px",
+      "NEW @8.5px",
+      "NO MISSED QUESTIONS @8.0px"
+     ]
+    },
+    "g_landing": {
+     "n": 976,
+     "lt9": 793,
+     "lt11": 915,
+     "min": 6.3999999999999995,
+     "samples": [
+      "ALT 177 FT @8.5px",
+      "VS -340 FPM @8.5px",
+      "SPEED 65 KT @8.5px",
+      "PAPI @7.2px",
+      "TOO HIGH @6.4px",
+      "HOLD FOR POWER \u2022 LET GO TO DESCEND @8.8px"
+     ]
+    },
+    "g_marshal": {
+     "n": 1860,
+     "lt9": 1320,
+     "lt11": 1740,
+     "min": 6.666666666666666,
+     "samples": [
+      "STRAIGHT AHEAD @8.5px",
+      "TURN LEFT @8.5px",
+      "TURN RIGHT @8.5px",
+      "SLOW DOWN @8.5px",
+      "STOP @8.5px",
+      "CUT ENGINES @8.5px"
+     ]
+    },
+    "g_paper": {
+     "n": 744,
+     "lt9": 558,
+     "lt11": 682,
+     "min": 6.666666666666666,
+     "samples": [
+      "0 FT @6.7px",
+      "50 FT @6.7px",
+      "100 FT @6.7px",
+      "150 FT @6.7px",
+      "HEADWIND 2 KT @7.5px",
+      "THROW 1 OF 3 @8.0px"
+     ]
+    },
+    "g_bags": {
+     "n": 496,
+     "lt9": 372,
+     "lt11": 434,
+     "min": 7.2,
+     "samples": [
+      "WIND 10 KT @8.5px",
+      "PUSHING RIGHT \u25b8 @7.2px",
+      "PULL DOWN AND LET GO \u2022 SIDEWAYS TO AIM @8.5px",
+      "ROUND 1 OF 3 \u2022 BAG 1 OF 4 @7.5px",
+      "Pull down to throw, sideways to aim. Rea @8.3px",
+      "aim into the wind. @8.3px"
+     ]
+    },
+    "g_golf": {
+     "n": 552,
+     "lt9": 345,
+     "lt11": 414,
+     "min": 7.466666666666666,
+     "samples": [
+      "HOLE 1: RUNWAY 1 \u2022 PAR 2 @7.7px",
+      "STROKE 0 @7.7px",
+      "HOLE 1 OF 6 @7.5px",
+      "Pull back from anywhere and let go to pu @8.3px",
+      "propeller, the doors and the cart. @8.3px",
+      "HOLE 1: RUNWAY 1 \u2022 PAR 2 @7.7px"
+     ]
+    },
+    "g_pong": {
+     "n": 693,
+     "lt9": 252,
+     "lt11": 378,
+     "min": 7.2,
+     "samples": [
+      "CREW CHIEF @7.2px",
+      "FIRST TO 7 @7.5px",
+      "Drag to move your yellow paddle. Hit wit @8.3px",
+      "angle the ball. @8.3px",
+      "CREW CHIEF @7.2px",
+      "FIRST TO 7 @7.5px"
+     ]
+    },
+    "g_pool": {
+     "n": 574,
+     "lt9": 492,
+     "lt11": 533,
+     "min": 6.3999999999999995,
+     "samples": [
+      "A @6.7px",
+      "B @6.7px",
+      "C @6.7px",
+      "D @6.7px",
+      "E @6.7px",
+      "F @6.7px"
+     ]
+    },
+    "g_cargo": {
+     "n": 960,
+     "lt9": 480,
+     "lt11": 540,
+     "min": 6.133333333333333,
+     "samples": [
+      "NEXT @7.5px",
+      "ROWS @7.5px",
+      "LEVEL @7.5px",
+      "BALANCE @7.5px",
+      "BALANCED @6.1px",
+      "LOAD THE CARGO HOLD @7.5px"
+     ]
+    },
+    "g_spot": {
+     "n": 682,
+     "lt9": 310,
+     "lt11": 620,
+     "min": 6.666666666666666,
+     "samples": [
+      "AIRCRAFT 1 OF 8 @8.0px",
+      "LOOK FOR\u2026 (\u00bd PTS) @6.7px",
+      "NAME WHAT FLIES PAST @7.5px",
+      "Name each aircraft as it flies by. Quick @8.3px",
+      "more. New ones join your hangar! @8.3px",
+      "AIRCRAFT 1 OF 8 @8.0px"
+     ]
+    },
+    "g_metar": {
+     "n": 2400,
+     "lt9": 1680,
+     "lt11": 1800,
+     "min": 7.2,
+     "samples": [
+      "REPORT 1 OF 10 @8.0px",
+      "CARD @7.2px",
+      "METAR @7.2px",
+      "KHFQ 131553Z 27010G18KT 10SM BKN025 24/1 @8.0px",
+      "KHFQ @8.8px",
+      "The airport. K = United States. @7.7px"
+     ]
+    },
+    "g_wx": {
+     "n": 2170,
+     "lt9": 1364,
+     "lt11": 1550,
+     "min": 6.3999999999999995,
+     "samples": [
+      "CALL 1 OF 10 @8.0px",
+      "RULES @7.2px",
+      "BKN 2,800 FT @6.7px",
+      "OVC 6,600 FT @6.7px",
+      "VISUAL: GOOD WEATHER @6.4px",
+      "MARGINAL VISUAL @6.4px"
+     ]
+    },
+    "g_lightgun": {
+     "n": 2898,
+     "lt9": 2394,
+     "lt11": 2772,
+     "min": 6.666666666666666,
+     "samples": [
+      "SIGNAL 1 OF 12 @8.0px",
+      "CHART @7.2px",
+      "ON THE GROUND @8.0px",
+      "SIGNAL @6.7px",
+      "ON THE GROUND @6.7px",
+      "IN THE AIR @6.7px"
+     ]
+    },
+    "g_depart": {
+     "n": 1220,
+     "lt9": 915,
+     "lt11": 1098,
+     "min": 6.133333333333333,
+     "samples": [
+      "COM 1 @6.7px",
+      "PICK A FREQUENCY @6.1px",
+      "ATIS @7.5px",
+      "GROUND @7.5px",
+      "TOWER @7.5px",
+      "YOUR FLIGHT: PARKING STAND TO TAKEOFF @8.8px"
+     ]
+    },
+    "g_arrive": {
+     "n": 1159,
+     "lt9": 854,
+     "lt11": 1037,
+     "min": 6.133333333333333,
+     "samples": [
+      "COM 1 @6.7px",
+      "PICK A FREQUENCY @6.1px",
+      "ATIS @7.5px",
+      "GROUND @7.5px",
+      "TOWER @7.5px",
+      "YOUR FLIGHT: BACK TO QUARTERS FIELD @8.8px"
+     ]
+    },
+    "g_taxi": {
+     "n": 1475,
+     "lt9": 1357,
+     "lt11": 1416,
+     "min": 4.533333333333333,
+     "samples": [
+      "9 @8.5px",
+      "27 @8.5px",
+      "PARKING STAND @5.9px",
+      "HANGAR @5.9px",
+      "27-9 @4.5px",
+      "27-9 @4.5px"
+     ]
+    },
+    "g_preflight": {
+     "n": 1003,
+     "lt9": 295,
+     "lt11": 944,
+     "min": 7.466666666666666,
+     "samples": [
+      "10 CHECKS LEFT \u2022 TAP A GLOWING SPOT @8.5px",
+      "TIME 0s @8.0px",
+      "WALK AROUND YOUR AIRPLANE @7.5px",
+      "Tap each glowing spot. Is it good to go, @8.3px",
+      "squawk it? Find all the problems, fast! @8.3px",
+      "10 CHECKS LEFT \u2022 TAP A GLOWING SPOT @8.5px"
+     ]
+    },
+    "g_wash": {
+     "n": 1098,
+     "lt9": 915,
+     "lt11": 1037,
+     "min": 6.666666666666666,
+     "samples": [
+      "PITOT @6.7px",
+      "STATIC @6.7px",
+      "CLEAN 0% @8.5px",
+      "TIME 0s @8.5px",
+      "Tap the PITOT TUBE and the STATIC PORT t @8.3px",
+      "Tap again to take the covers off. @8.3px"
+     ]
+    },
+    "g_cloud": {
+     "n": 671,
+     "lt9": 244,
+     "lt11": 610,
+     "min": 7.466666666666666,
+     "samples": [
+      "CLOUD 1 OF 8 @8.0px",
+      "NAME THE CLOUDS @7.5px",
+      "Name the cloud, then say what it means f @8.3px",
+      "answers score more. @8.3px",
+      "CLOUD 1 OF 8 @8.0px",
+      "NAME THE CLOUDS @7.5px"
+     ]
+    },
+    "g_pairs": {
+     "n": 420,
+     "lt9": 240,
+     "lt11": 360,
+     "min": 7.466666666666666,
+     "samples": [
+      "MOVES 0 \u2022 0 / 8 \u2022 0s @7.5px",
+      "ALFA, BRAVO, CHARLIE\u2026 @7.5px",
+      "Flip two cards. Match the letter with it @8.3px",
+      "moves, more points. @8.3px",
+      "MOVES 0 \u2022 0 / 8 \u2022 0s @7.5px",
+      "ALFA, BRAVO, CHARLIE\u2026 @7.5px"
+     ]
+    },
+    "g_gauges": {
+     "n": 1220,
+     "lt9": 793,
+     "lt11": 1159,
+     "min": 6.346666666666668,
+     "samples": [
+      "40 @7.5px",
+      "60 @7.5px",
+      "80 @7.5px",
+      "100 @7.5px",
+      "120 @7.5px",
+      "140 @7.5px"
+     ]
+    },
+    "g_words": {
+     "n": 4740,
+     "lt9": 780,
+     "lt11": 840,
+     "min": 6.666666666666666,
+     "samples": [
+      "FIND 6 AVIATION WORDS @8.5px",
+      "0s @7.2px",
+      "HINT (\u221220) @6.7px",
+      "BEACON @7.5px",
+      "TAXIWAY @7.5px",
+      "COMPASS @7.5px"
+     ]
+    },
+    "g_darts": {
+     "n": 1254,
+     "lt9": 792,
+     "lt11": 1188,
+     "min": 6.666666666666666,
+     "samples": [
+      "3 @6.7px",
+      "6 @6.7px",
+      "12 @6.7px",
+      "15 @6.7px",
+      "21 @6.7px",
+      "24 @6.7px"
+     ]
+    },
+    "g_hockey": {
+     "n": 385,
+     "lt9": 165,
+     "lt11": 220,
+     "min": 7.466666666666666,
+     "samples": [
+      "FIRST TO 5 @7.5px",
+      "Drag your yellow mallet on the bottom ha @8.3px",
+      "puck into the crew\u2019s goal. @8.3px",
+      "FIRST TO 5 @7.5px",
+      "Drag your yellow mallet on the bottom ha @8.3px",
+      "puck into the crew\u2019s goal. @8.3px"
+     ]
+    },
+    "g_radar4": {
+     "n": 504,
+     "lt9": 252,
+     "lt11": 378,
+     "min": 7.2,
+     "samples": [
+      "YOU \u25cf GOLD    CREW \u25cf BLUE @7.2px",
+      "FOUR IN A ROW @7.5px",
+      "Drop your gold contacts. Get four in a r @8.3px",
+      "or diagonal before the crew does. @8.3px",
+      "YOU \u25cf GOLD    CREW \u25cf BLUE @7.2px",
+      "FOUR IN A ROW @7.5px"
+     ]
+    },
+    "g_skee": {
+     "n": 715,
+     "lt9": 585,
+     "lt11": 650,
+     "min": 6.133333333333333,
+     "samples": [
+      "10 @6.7px",
+      "20 @6.7px",
+      "30 @6.7px",
+      "40 @6.7px",
+      "50 @6.1px",
+      "BALL 1 OF 9 @7.5px"
+     ]
+    },
+    "g_bowling": {
+     "n": 944,
+     "lt9": 531,
+     "lt11": 885,
+     "min": 7.466666666666666,
+     "samples": [
+      "FRAME 1 \u2022 ROLL 1 @7.5px",
+      "TEN CONES, FIVE FRAMES @7.5px",
+      "Pull back from the ball and let go. Aim  @8.3px",
+      "to take out the whole rack. @8.3px",
+      "FRAME 1 \u2022 ROLL 1 @7.5px",
+      "TEN CONES, FIVE FRAMES @7.5px"
+     ]
+    },
+    "g_hoops": {
+     "n": 558,
+     "lt9": 310,
+     "lt11": 496,
+     "min": 0,
+     "samples": [
+      "3 PT @6.4px",
+      "45 SECOND SHOOTOUT @7.5px",
+      "Pull back and let go. Pull farther for a @8.3px",
+      "hoop at the 3 mark for 3. @8.3px",
+      "3 PT @6.4px",
+      "45 SECOND SHOOTOUT @7.5px"
+     ]
+    }
+   },
+   "gErrors": []
+  },
+  "tablet820": {
+   "requests": 106,
+   "thirdParty": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap"
+   ],
+   "errors": [
+    "ERROR: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "--- scene settings",
+    "--- scene dash",
+    "--- scene page",
+    "--- scene board",
+    "--- scene map",
+    "--- scene radio",
+    "--- scene locker",
+    "--- scene termsRead",
+    "--- scene fleet",
+    "--- scene groundschool",
+    "--- scene logbook",
+    "--- scene route",
+    "--- scene games",
+    "--- scene flightlog",
+    "--- scene logflight",
+    "--- scene crew",
+    "--- scene library",
+    "--- scene book",
+    "--- scene path",
+    "--- scene practice",
+    "--- game landing",
+    "--- game marshal",
+    "--- game paper",
+    "--- game bags",
+    "--- game golf",
+    "--- game pong",
+    "--- game pool",
+    "--- game cargo",
+    "--- game spot",
+    "--- game metar",
+    "--- game wx",
+    "--- game lightgun",
+    "--- game depart",
+    "--- game arrive",
+    "--- game taxi",
+    "--- game preflight",
+    "--- game wash",
+    "--- game cloud",
+    "--- game pairs",
+    "--- game gauges",
+    "--- game words",
+    "--- game darts",
+    "--- game hockey",
+    "--- game radar4",
+    "--- game skee",
+    "--- game bowling",
+    "--- game hoops"
+   ],
+   "scenes": {
+    "settings": {
+     "now": "settings",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "dash": {
+     "now": "dash",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "page": {
+     "now": "page",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "board": {
+     "now": "board",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "map": {
+     "now": "map",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "radio": {
+     "now": "radio",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "locker": {
+     "now": "locker",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "termsRead": {
+     "now": "termsRead",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "fleet": {
+     "now": "fleet",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "groundschool": {
+     "now": "groundschool",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logbook": {
+     "now": "logbook",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "route": {
+     "now": "route",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "games": {
+     "now": "games",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "flightlog": {
+     "now": "flightlog",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logflight": {
+     "now": "logflight",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "crew": {
+     "now": "crew",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "library": {
+     "now": "library",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "book": {
+     "now": "book",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "path": {
+     "now": "path",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "practice": {
+     "now": "practice",
+     "badFrames": 0,
+     "errs": 0
+    }
+   },
+   "rooms": {
+    "lounge": {
+     "scene": "world",
+     "room": "lounge",
+     "stations": 11
+    },
+    "gameroom": {
+     "scene": "world",
+     "room": "gameroom",
+     "stations": 14
+    },
+    "classroom": {
+     "scene": "world",
+     "room": "classroom",
+     "stations": 10
+    },
+    "hangar": {
+     "scene": "world",
+     "room": "hangar",
+     "stations": 8
+    },
+    "platform": {
+     "scene": "world",
+     "room": "platform",
+     "stations": 7
+    },
+    "tower": {
+     "scene": "world",
+     "room": "tower",
+     "stations": 8
+    },
+    "ramp": {
+     "scene": "world",
+     "room": "ramp",
+     "stations": 6
+    },
+    "wash": {
+     "scene": "world",
+     "room": "wash",
+     "stations": 3
+    },
+    "runway": {
+     "scene": "world",
+     "room": "runway",
+     "stations": 6
+    }
+   },
+   "games": {
+    "landing": {
+     "scene": "g_landing",
+     "errs": 0
+    },
+    "marshal": {
+     "scene": "g_marshal",
+     "errs": 0
+    },
+    "paper": {
+     "scene": "g_paper",
+     "errs": 0
+    },
+    "bags": {
+     "scene": "g_bags",
+     "errs": 0
+    },
+    "golf": {
+     "scene": "g_golf",
+     "errs": 0
+    },
+    "pong": {
+     "scene": "g_pong",
+     "errs": 0
+    },
+    "pool": {
+     "scene": "g_pool",
+     "errs": 0
+    },
+    "cargo": {
+     "scene": "g_cargo",
+     "errs": 0
+    },
+    "spot": {
+     "scene": "g_spot",
+     "errs": 0
+    },
+    "metar": {
+     "scene": "g_metar",
+     "errs": 0
+    },
+    "wx": {
+     "scene": "g_wx",
+     "errs": 0
+    },
+    "lightgun": {
+     "scene": "g_lightgun",
+     "errs": 0
+    },
+    "depart": {
+     "scene": "g_depart",
+     "errs": 0
+    },
+    "arrive": {
+     "scene": "g_arrive",
+     "errs": 0
+    },
+    "taxi": {
+     "scene": "g_taxi",
+     "errs": 0
+    },
+    "preflight": {
+     "scene": "g_preflight",
+     "errs": 0
+    },
+    "wash": {
+     "scene": "g_wash",
+     "errs": 0
+    },
+    "cloud": {
+     "scene": "g_cloud",
+     "errs": 0
+    },
+    "pairs": {
+     "scene": "g_pairs",
+     "errs": 0
+    },
+    "gauges": {
+     "scene": "g_gauges",
+     "errs": 0
+    },
+    "words": {
+     "scene": "g_words",
+     "errs": 0
+    },
+    "darts": {
+     "scene": "g_darts",
+     "errs": 0
+    },
+    "hockey": {
+     "scene": "g_hockey",
+     "errs": 0
+    },
+    "radar4": {
+     "scene": "g_radar4",
+     "errs": 0
+    },
+    "skee": {
+     "scene": "g_skee",
+     "errs": 0
+    },
+    "bowling": {
+     "scene": "g_bowling",
+     "errs": 0
+    },
+    "hoops": {
+     "scene": "g_hoops",
+     "errs": 0
+    }
+   },
+   "back": {
+    "settings": [
+     "world:runway"
+    ],
+    "dash": [
+     "world:runway"
+    ],
+    "page": [
+     "world:runway"
+    ],
+    "board": [
+     "world:runway"
+    ],
+    "map": [
+     "world:runway"
+    ],
+    "radio": [
+     "world:runway"
+    ],
+    "locker": [
+     "world:runway"
+    ],
+    "termsRead": [
+     "settings",
+     "world:runway"
+    ],
+    "fleet": [
+     "world:runway"
+    ],
+    "groundschool": [
+     "world:runway"
+    ],
+    "logbook": [
+     "world:runway"
+    ],
+    "route": [
+     "world:runway"
+    ],
+    "games": [
+     "world:runway"
+    ],
+    "flightlog": [
+     "logbook",
+     "world:runway"
+    ],
+    "logflight": [
+     "flightlog",
+     "logbook",
+     "world:runway"
+    ],
+    "crew": [
+     "world:runway"
+    ],
+    "library": [
+     "world:runway"
+    ],
+    "book": [
+     "library",
+     "world:runway"
+    ],
+    "path": [
+     "world:runway"
+    ],
+    "practice": [
+     "world:runway"
+    ]
+   },
+   "checks": {
+    "readyMs": 372,
+    "tabFocus": "BODY",
+    "a11yTree": "{\"role\":\"WebArea\",\"name\":\"HypeTeen Flight Quarters\"}",
+    "canvasAria": {
+     "role": null,
+     "label": null,
+     "tabindex": null,
+     "liveRegions": 0
+    },
+    "termsScene": "terms",
+    "afterEnroll": "trainer",
+    "afterTrainer": "placement",
+    "saveBytes": {
+     "keys": [
+      "hfq_localdb_v1",
+      "hfq_roster_v1",
+      "hfq_acct_mvbc98k1u8uoop"
+     ],
+     "bytes": 2037
+    },
+    "tocRowHeightAt30": {
+     "rowHeightUnits": 11,
+     "rowHeightCssPx": 27.05185185185185
+    },
+    "reducedMotion": {
+     "appSetting": false,
+     "mediaQuery": false,
+     "gRm": false
+    },
+    "offlineSupport": {
+     "sw": false,
+     "manifest": false
+    },
+    "offlineReload": "reload failed: page.reload: net::ERR_INTERNET_DISCONNECTED"
+   },
+   "text": {
+    "title": {
+     "n": 208,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.263703703703703,
+     "samples": []
+    },
+    "terms": {
+     "n": 210,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "signup": {
+     "n": 1275,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "locker": {
+     "n": 2765,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.263703703703703,
+     "samples": []
+    },
+    "trainer": {
+     "n": 928,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.280000000000001,
+     "samples": []
+    },
+    "placement": {
+     "n": 759,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "world:classroom": {
+     "n": 1630,
+     "lt9": 0,
+     "lt11": 164,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "world:lounge": {
+     "n": 1215,
+     "lt9": 0,
+     "lt11": 360,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "world:gameroom": {
+     "n": 988,
+     "lt9": 38,
+     "lt11": 190,
+     "min": 8.853333333333333,
+     "samples": [
+      "SKEE-BALL @8.9px",
+      "SKEE-BALL @8.9px",
+      "SKEE-BALL @8.9px",
+      "SKEE-BALL @8.9px",
+      "SKEE-BALL @8.9px",
+      "SKEE-BALL @8.9px"
+     ]
+    },
+    "world:hangar": {
+     "n": 601,
+     "lt9": 66,
+     "lt11": 132,
+     "min": 8.853333333333333,
+     "samples": [
+      "OIL @8.9px",
+      "OIL @8.9px",
+      "OIL @8.9px",
+      "OIL @8.9px",
+      "OIL @8.9px",
+      "OIL @8.9px"
+     ]
+    },
+    "world:platform": {
+     "n": 798,
+     "lt9": 0,
+     "lt11": 76,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "world:tower": {
+     "n": 1288,
+     "lt9": 0,
+     "lt11": 92,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "world:ramp": {
+     "n": 746,
+     "lt9": 0,
+     "lt11": 72,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "world:wash": {
+     "n": 714,
+     "lt9": 40,
+     "lt11": 120,
+     "min": 7.86962962962963,
+     "samples": [
+      "REMOVE @7.9px",
+      "REMOVE @7.9px",
+      "REMOVE @7.9px",
+      "REMOVE @7.9px",
+      "REMOVE @7.9px",
+      "REMOVE @7.9px"
+     ]
+    },
+    "world:runway": {
+     "n": 6998,
+     "lt9": 0,
+     "lt11": 644,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "settings": {
+     "n": 1184,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 15.73925925925926,
+     "samples": []
+    },
+    "dash": {
+     "n": 2205,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.263703703703703,
+     "samples": []
+    },
+    "page": {
+     "n": 189,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 17.706666666666667,
+     "samples": []
+    },
+    "board": {
+     "n": 360,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "map": {
+     "n": 1410,
+     "lt9": 150,
+     "lt11": 240,
+     "min": 8.361481481481482,
+     "samples": [
+      "MAP LEGEND @8.9px",
+      "RUNWAY @8.4px",
+      "TAXIWAY @8.4px",
+      "APRON / STAND @8.4px",
+      "BUILDINGS @8.4px",
+      "MAP LEGEND @8.9px"
+     ]
+    },
+    "radio": {
+     "n": 1102,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.312592592592592,
+     "samples": []
+    },
+    "termsRead": {
+     "n": 186,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "fleet": {
+     "n": 924,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "groundschool": {
+     "n": 2240,
+     "lt9": 384,
+     "lt11": 384,
+     "min": 8.853333333333333,
+     "samples": [
+      "1 @8.9px",
+      "2 @8.9px",
+      "3 @8.9px",
+      "4 @8.9px",
+      "5 @8.9px",
+      "6 @8.9px"
+     ]
+    },
+    "logbook": {
+     "n": 9430,
+     "lt9": 6325,
+     "lt11": 6325,
+     "min": 7.377777777777778,
+     "samples": [
+      "1 @7.4px",
+      "2 @7.4px",
+      "3 @7.4px",
+      "4 @7.4px",
+      "5 @7.4px",
+      "6 @7.4px"
+     ]
+    },
+    "route": {
+     "n": 1653,
+     "lt9": 0,
+     "lt11": 57,
+     "min": 9.345185185185185,
+     "samples": []
+    },
+    "games": {
+     "n": 21105,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "flightlog": {
+     "n": 2151,
+     "lt9": 0,
+     "lt11": 425,
+     "min": 10.574814814814815,
+     "samples": []
+    },
+    "logflight": {
+     "n": 1037,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "crew": {
+     "n": 2176,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "library": {
+     "n": 3731,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "book": {
+     "n": 1736,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "path": {
+     "n": 2835,
+     "lt9": 315,
+     "lt11": 378,
+     "min": 8.853333333333333,
+     "samples": [
+      "0 / 14 PATCHES @8.9px",
+      "0 / 12 PATCHES @8.9px",
+      "0 / 17 PATCHES @8.9px",
+      "0 / 12 PATCHES @8.9px",
+      "1 @8.9px",
+      "0 / 14 PATCHES @8.9px"
+     ]
+    },
+    "practice": {
+     "n": 1755,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 14.755555555555556,
+     "samples": []
+    },
+    "g_landing": {
+     "n": 1040,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "g_marshal": {
+     "n": 1023,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_paper": {
+     "n": 792,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_bags": {
+     "n": 480,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.280000000000001,
+     "samples": []
+    },
+    "g_golf": {
+     "n": 360,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_pong": {
+     "n": 398,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.280000000000001,
+     "samples": []
+    },
+    "g_pool": {
+     "n": 392,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "g_cargo": {
+     "n": 1056,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.312592592592592,
+     "samples": []
+    },
+    "g_spot": {
+     "n": 704,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_metar": {
+     "n": 2508,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.280000000000001,
+     "samples": []
+    },
+    "g_wx": {
+     "n": 1632,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.804444444444444,
+     "samples": []
+    },
+    "g_lightgun": {
+     "n": 2070,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_depart": {
+     "n": 1320,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.312592592592592,
+     "samples": []
+    },
+    "g_arrive": {
+     "n": 1178,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.312592592592592,
+     "samples": []
+    },
+    "g_taxi": {
+     "n": 1600,
+     "lt9": 768,
+     "lt11": 896,
+     "min": 8.361481481481482,
+     "samples": [
+      "27-9 @8.4px",
+      "27-9 @8.4px",
+      "27-9 @8.4px",
+      "27-9 @8.4px",
+      "A @8.9px",
+      "A @8.9px"
+     ]
+    },
+    "g_preflight": {
+     "n": 1071,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_wash": {
+     "n": 1134,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_cloud": {
+     "n": 693,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_pairs": {
+     "n": 448,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_gauges": {
+     "n": 1300,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.706074074074076,
+     "samples": []
+    },
+    "g_words": {
+     "n": 5135,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_darts": {
+     "n": 798,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 12.296296296296296,
+     "samples": []
+    },
+    "g_hockey": {
+     "n": 210,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_radar4": {
+     "n": 544,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.280000000000001,
+     "samples": []
+    },
+    "g_skee": {
+     "n": 407,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.312592592592592,
+     "samples": []
+    },
+    "g_bowling": {
+     "n": 736,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.771851851851851,
+     "samples": []
+    },
+    "g_hoops": {
+     "n": 400,
+     "lt9": 50,
+     "lt11": 50,
+     "min": 0,
+     "samples": []
+    }
+   },
+   "gErrors": []
+  },
+  "desktop1440": {
+   "requests": 106,
+   "thirdParty": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap"
+   ],
+   "errors": [
+    "ERROR: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "--- scene settings",
+    "--- scene dash",
+    "--- scene page",
+    "--- scene board",
+    "--- scene map",
+    "--- scene radio",
+    "--- scene locker",
+    "--- scene termsRead",
+    "--- scene fleet",
+    "--- scene groundschool",
+    "--- scene logbook",
+    "--- scene route",
+    "--- scene games",
+    "--- scene flightlog",
+    "--- scene logflight",
+    "--- scene crew",
+    "--- scene library",
+    "--- scene book",
+    "--- scene path",
+    "--- scene practice",
+    "--- game landing",
+    "--- game marshal",
+    "--- game paper",
+    "--- game bags",
+    "--- game golf",
+    "--- game pong",
+    "--- game pool",
+    "--- game cargo",
+    "--- game spot",
+    "--- game metar",
+    "--- game wx",
+    "--- game lightgun",
+    "--- game depart",
+    "--- game arrive",
+    "--- game taxi",
+    "--- game preflight",
+    "--- game wash",
+    "--- game cloud",
+    "--- game pairs",
+    "--- game gauges",
+    "--- game words",
+    "--- game darts",
+    "--- game hockey",
+    "--- game radar4",
+    "--- game skee",
+    "--- game bowling",
+    "--- game hoops"
+   ],
+   "scenes": {
+    "settings": {
+     "now": "settings",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "dash": {
+     "now": "dash",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "page": {
+     "now": "page",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "board": {
+     "now": "board",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "map": {
+     "now": "map",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "radio": {
+     "now": "radio",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "locker": {
+     "now": "locker",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "termsRead": {
+     "now": "termsRead",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "fleet": {
+     "now": "fleet",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "groundschool": {
+     "now": "groundschool",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logbook": {
+     "now": "logbook",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "route": {
+     "now": "route",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "games": {
+     "now": "games",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "flightlog": {
+     "now": "flightlog",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "logflight": {
+     "now": "logflight",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "crew": {
+     "now": "crew",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "library": {
+     "now": "library",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "book": {
+     "now": "book",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "path": {
+     "now": "path",
+     "badFrames": 0,
+     "errs": 0
+    },
+    "practice": {
+     "now": "practice",
+     "badFrames": 0,
+     "errs": 0
+    }
+   },
+   "rooms": {
+    "lounge": {
+     "scene": "world",
+     "room": "lounge",
+     "stations": 11
+    },
+    "gameroom": {
+     "scene": "world",
+     "room": "gameroom",
+     "stations": 14
+    },
+    "classroom": {
+     "scene": "world",
+     "room": "classroom",
+     "stations": 10
+    },
+    "hangar": {
+     "scene": "world",
+     "room": "hangar",
+     "stations": 8
+    },
+    "platform": {
+     "scene": "world",
+     "room": "platform",
+     "stations": 7
+    },
+    "tower": {
+     "scene": "world",
+     "room": "tower",
+     "stations": 8
+    },
+    "ramp": {
+     "scene": "world",
+     "room": "ramp",
+     "stations": 6
+    },
+    "wash": {
+     "scene": "world",
+     "room": "wash",
+     "stations": 3
+    },
+    "runway": {
+     "scene": "world",
+     "room": "runway",
+     "stations": 6
+    }
+   },
+   "games": {
+    "landing": {
+     "scene": "g_landing",
+     "errs": 0
+    },
+    "marshal": {
+     "scene": "g_marshal",
+     "errs": 0
+    },
+    "paper": {
+     "scene": "g_paper",
+     "errs": 0
+    },
+    "bags": {
+     "scene": "g_bags",
+     "errs": 0
+    },
+    "golf": {
+     "scene": "g_golf",
+     "errs": 0
+    },
+    "pong": {
+     "scene": "g_pong",
+     "errs": 0
+    },
+    "pool": {
+     "scene": "g_pool",
+     "errs": 0
+    },
+    "cargo": {
+     "scene": "g_cargo",
+     "errs": 0
+    },
+    "spot": {
+     "scene": "g_spot",
+     "errs": 0
+    },
+    "metar": {
+     "scene": "g_metar",
+     "errs": 0
+    },
+    "wx": {
+     "scene": "g_wx",
+     "errs": 0
+    },
+    "lightgun": {
+     "scene": "g_lightgun",
+     "errs": 0
+    },
+    "depart": {
+     "scene": "g_depart",
+     "errs": 0
+    },
+    "arrive": {
+     "scene": "g_arrive",
+     "errs": 0
+    },
+    "taxi": {
+     "scene": "g_taxi",
+     "errs": 0
+    },
+    "preflight": {
+     "scene": "g_preflight",
+     "errs": 0
+    },
+    "wash": {
+     "scene": "g_wash",
+     "errs": 0
+    },
+    "cloud": {
+     "scene": "g_cloud",
+     "errs": 0
+    },
+    "pairs": {
+     "scene": "g_pairs",
+     "errs": 0
+    },
+    "gauges": {
+     "scene": "g_gauges",
+     "errs": 0
+    },
+    "words": {
+     "scene": "g_words",
+     "errs": 0
+    },
+    "darts": {
+     "scene": "g_darts",
+     "errs": 0
+    },
+    "hockey": {
+     "scene": "g_hockey",
+     "errs": 0
+    },
+    "radar4": {
+     "scene": "g_radar4",
+     "errs": 0
+    },
+    "skee": {
+     "scene": "g_skee",
+     "errs": 0
+    },
+    "bowling": {
+     "scene": "g_bowling",
+     "errs": 0
+    },
+    "hoops": {
+     "scene": "g_hoops",
+     "errs": 0
+    }
+   },
+   "back": {
+    "settings": [
+     "world:runway"
+    ],
+    "dash": [
+     "world:runway"
+    ],
+    "page": [
+     "world:runway"
+    ],
+    "board": [
+     "world:runway"
+    ],
+    "map": [
+     "world:runway"
+    ],
+    "radio": [
+     "world:runway"
+    ],
+    "locker": [
+     "world:runway"
+    ],
+    "termsRead": [
+     "settings",
+     "world:runway"
+    ],
+    "fleet": [
+     "world:runway"
+    ],
+    "groundschool": [
+     "world:runway"
+    ],
+    "logbook": [
+     "world:runway"
+    ],
+    "route": [
+     "world:runway"
+    ],
+    "games": [
+     "world:runway"
+    ],
+    "flightlog": [
+     "logbook",
+     "world:runway"
+    ],
+    "logflight": [
+     "flightlog",
+     "logbook",
+     "world:runway"
+    ],
+    "crew": [
+     "world:runway"
+    ],
+    "library": [
+     "world:runway"
+    ],
+    "book": [
+     "library",
+     "world:runway"
+    ],
+    "path": [
+     "world:runway"
+    ],
+    "practice": [
+     "world:runway"
+    ]
+   },
+   "checks": {
+    "readyMs": 430,
+    "tabFocus": "BODY",
+    "a11yTree": "{\"role\":\"WebArea\",\"name\":\"HypeTeen Flight Quarters\"}",
+    "canvasAria": {
+     "role": null,
+     "label": null,
+     "tabindex": null,
+     "liveRegions": 0
+    },
+    "termsScene": "terms",
+    "afterEnroll": "trainer",
+    "afterTrainer": "placement",
+    "saveBytes": {
+     "keys": [
+      "hfq_localdb_v1",
+      "hfq_acct_mvbcbi5vpwt2w5",
+      "hfq_roster_v1"
+     ],
+     "bytes": 2037
+    },
+    "tocRowHeightAt30": {
+     "rowHeightUnits": 11,
+     "rowHeightCssPx": 20.614814814814814
+    },
+    "reducedMotion": {
+     "appSetting": false,
+     "mediaQuery": false,
+     "gRm": false
+    },
+    "offlineSupport": {
+     "sw": false,
+     "manifest": false
+    },
+    "offlineReload": "reload failed: page.reload: net::ERR_INTERNET_DISCONNECTED"
+   },
+   "text": {
+    "title": {
+     "n": 152,
+     "lt9": 0,
+     "lt11": 19,
+     "min": 10.869629629629628,
+     "samples": []
+    },
+    "terms": {
+     "n": 210,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "signup": {
+     "n": 1243,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "locker": {
+     "n": 2938,
+     "lt9": 0,
+     "lt11": 1298,
+     "min": 10.869629629629628,
+     "samples": []
+    },
+    "trainer": {
+     "n": 1280,
+     "lt9": 0,
+     "lt11": 560,
+     "min": 10.120000000000001,
+     "samples": []
+    },
+    "placement": {
+     "n": 772,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "world:classroom": {
+     "n": 2240,
+     "lt9": 224,
+     "lt11": 1344,
+     "min": 7.121481481481481,
+     "samples": [
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "world:lounge": {
+     "n": 1512,
+     "lt9": 448,
+     "lt11": 1064,
+     "min": 7.121481481481481,
+     "samples": [
+      "AUDITOR @8.2px",
+      "EARNED THE MY TRAINER  @8.2px",
+      "AUDITOR @8.2px",
+      "STEPPED UP TO BALANCE  @8.2px",
+      "AUDITOR @8.2px",
+      "EARNED THE ENROLLED BA @8.2px"
+     ]
+    },
+    "world:gameroom": {
+     "n": 1508,
+     "lt9": 348,
+     "lt11": 1044,
+     "min": 6.746666666666666,
+     "samples": [
+      "PLAY A GAME! @8.6px",
+      "CARGO @7.9px",
+      "RADAR @7.9px",
+      "SKEE-BALL @6.7px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "world:hangar": {
+     "n": 1121,
+     "lt9": 236,
+     "lt11": 708,
+     "min": 6.746666666666666,
+     "samples": [
+      "OIL @6.7px",
+      "OIL @6.7px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "OIL @6.7px",
+      "OIL @6.7px"
+     ]
+    },
+    "world:platform": {
+     "n": 1197,
+     "lt9": 114,
+     "lt11": 684,
+     "min": 7.121481481481481,
+     "samples": [
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "world:tower": {
+     "n": 1484,
+     "lt9": 265,
+     "lt11": 1113,
+     "min": 7.121481481481481,
+     "samples": [
+      "GND @8.6px",
+      "TWR @8.6px",
+      "APP @8.6px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "GND @8.6px"
+     ]
+    },
+    "world:ramp": {
+     "n": 1134,
+     "lt9": 108,
+     "lt11": 486,
+     "min": 7.121481481481481,
+     "samples": [
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "world:wash": {
+     "n": 1026,
+     "lt9": 171,
+     "lt11": 627,
+     "min": 5.997037037037037,
+     "samples": [
+      "REMOVE @6.0px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "REMOVE @6.0px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "world:runway": {
+     "n": 8069,
+     "lt9": 742,
+     "lt11": 3710,
+     "min": 7.121481481481481,
+     "samples": [
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "MAP @7.1px",
+      "TOWER @7.1px"
+     ]
+    },
+    "settings": {
+     "n": 1154,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.994074074074074,
+     "samples": []
+    },
+    "dash": {
+     "n": 2220,
+     "lt9": 0,
+     "lt11": 930,
+     "min": 10.869629629629628,
+     "samples": []
+    },
+    "page": {
+     "n": 195,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 13.493333333333332,
+     "samples": []
+    },
+    "board": {
+     "n": 378,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "map": {
+     "n": 2538,
+     "lt9": 972,
+     "lt11": 1566,
+     "min": 6.371851851851852,
+     "samples": [
+      "MAP @7.1px",
+      "TOWER @7.1px",
+      "TAP A PLACE \u2022 TAP AGAIN TO GO @8.6px",
+      "TOWER @8.6px",
+      "PLATFORM @8.6px",
+      "LOUNGE @8.6px"
+     ]
+    },
+    "radio": {
+     "n": 1197,
+     "lt9": 63,
+     "lt11": 630,
+     "min": 8.62074074074074,
+     "samples": [
+      "PICK A FREQUENCY @8.6px",
+      "PICK A FREQUENCY @8.6px",
+      "PICK A FREQUENCY @8.6px",
+      "PICK A FREQUENCY @8.6px",
+      "PICK A FREQUENCY @8.6px",
+      "PICK A FREQUENCY @8.6px"
+     ]
+    },
+    "termsRead": {
+     "n": 201,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "fleet": {
+     "n": 1452,
+     "lt9": 132,
+     "lt11": 594,
+     "min": 8.995555555555555,
+     "samples": [
+      "BODY @9.0px",
+      "STRIPE @9.0px",
+      "BODY @9.0px",
+      "STRIPE @9.0px",
+      "BODY @9.0px",
+      "STRIPE @9.0px"
+     ]
+    },
+    "groundschool": {
+     "n": 2240,
+     "lt9": 576,
+     "lt11": 1280,
+     "min": 6.746666666666666,
+     "samples": [
+      "FLIGHT DAYS @9.0px",
+      "TODAY\u2019S PLAN @9.0px",
+      "UNIT PATCHES @9.0px",
+      "1 @6.7px",
+      "2 @6.7px",
+      "3 @6.7px"
+     ]
+    },
+    "logbook": {
+     "n": 9758,
+     "lt9": 6783,
+     "lt11": 7497,
+     "min": 5.622222222222222,
+     "samples": [
+      "0:00 TRAINING \u2022 0 LDG @9.0px",
+      "0:00 SIM TIME \u2022 0 LDG @9.0px",
+      "1 @5.6px",
+      "2 @5.6px",
+      "3 @5.6px",
+      "4 @5.6px"
+     ]
+    },
+    "route": {
+     "n": 1885,
+     "lt9": 325,
+     "lt11": 845,
+     "min": 7.1214814814814815,
+     "samples": [
+      "1 @9.0px",
+      "1 @7.1px",
+      "AFFIRM IT: TEST OUT, DRILL, PRACTICE @9.0px",
+      "SKIP AHEAD: 80% @8.6px",
+      "VIEWING PLATFORM @8.6px",
+      "1 @9.0px"
+     ]
+    },
+    "games": {
+     "n": 20737,
+     "lt9": 0,
+     "lt11": 7798,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "flightlog": {
+     "n": 2339,
+     "lt9": 455,
+     "lt11": 1001,
+     "min": 8.058518518518518,
+     "samples": [
+      "FLIGHTS @8.1px",
+      "TRAINING TIME @8.1px",
+      "LANDINGS @8.1px",
+      "AIRPORTS @8.1px",
+      "AIRCRAFT @8.1px",
+      "FLIGHTS @8.1px"
+     ]
+    },
+    "logflight": {
+     "n": 1105,
+     "lt9": 0,
+     "lt11": 260,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "crew": {
+     "n": 2244,
+     "lt9": 924,
+     "lt11": 924,
+     "min": 8.995555555555555,
+     "samples": [
+      "JUST NOW @9.0px",
+      "\u2606 KUDOS @9.0px",
+      "JUST NOW @9.0px",
+      "\u2606 KUDOS @9.0px",
+      "JUST NOW @9.0px",
+      "\u2606 KUDOS @9.0px"
+     ]
+    },
+    "library": {
+     "n": 3731,
+     "lt9": 728,
+     "lt11": 1638,
+     "min": 8.995555555555555,
+     "samples": [
+      "BOOKS READ @9.0px",
+      "QUIZZES PASSED @9.0px",
+      "ACED @9.0px",
+      "6 MIN \u2022 8 SECTIONS @9.0px",
+      "6 MIN \u2022 8 SECTIONS @9.0px",
+      "6 MIN \u2022 8 SECTIONS @9.0px"
+     ]
+    },
+    "book": {
+     "n": 1764,
+     "lt9": 63,
+     "lt11": 189,
+     "min": 8.995555555555555,
+     "samples": [
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px",
+      "HOW AIRPLANES FLY \u2022 6 MIN \u2022 8 SECTIONS @9.0px"
+     ]
+    },
+    "path": {
+     "n": 2790,
+     "lt9": 930,
+     "lt11": 1984,
+     "min": 6.746666666666666,
+     "samples": [
+      "FLIGHT DAYS @8.6px",
+      "TODAY\u2019S PLAN @8.6px",
+      "XP @8.6px",
+      "DISCOVERY @9.0px",
+      "0 / 14 PATCHES @6.7px",
+      "STUDENT @9.0px"
+     ]
+    },
+    "practice": {
+     "n": 1701,
+     "lt9": 0,
+     "lt11": 0,
+     "min": 11.244444444444444,
+     "samples": []
+    },
+    "g_landing": {
+     "n": 1040,
+     "lt9": 130,
+     "lt11": 455,
+     "min": 8.995555555555555,
+     "samples": [
+      "TOO HIGH @9.0px",
+      "POWER @9.0px",
+      "TOO HIGH @9.0px",
+      "POWER @9.0px",
+      "TOO HIGH @9.0px",
+      "POWER @9.0px"
+     ]
+    },
+    "g_marshal": {
+     "n": 1984,
+     "lt9": 0,
+     "lt11": 896,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_paper": {
+     "n": 780,
+     "lt9": 0,
+     "lt11": 390,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_bags": {
+     "n": 552,
+     "lt9": 0,
+     "lt11": 138,
+     "min": 10.120000000000001,
+     "samples": []
+    },
+    "g_golf": {
+     "n": 552,
+     "lt9": 0,
+     "lt11": 207,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_pong": {
+     "n": 806,
+     "lt9": 0,
+     "lt11": 148,
+     "min": 10.120000000000001,
+     "samples": []
+    },
+    "g_pool": {
+     "n": 854,
+     "lt9": 61,
+     "lt11": 610,
+     "min": 8.995555555555555,
+     "samples": [
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px",
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px",
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px",
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px",
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px",
+      "LEFT: ALFA \u2022 BRAVO \u2022 CHARLIE \u2022 DELTA \u2022 E @9.0px"
+     ]
+    },
+    "g_cargo": {
+     "n": 1072,
+     "lt9": 67,
+     "lt11": 402,
+     "min": 8.62074074074074,
+     "samples": [
+      "BALANCED @8.6px",
+      "BALANCED @8.6px",
+      "BALANCED @8.6px",
+      "BALANCED @8.6px",
+      "BALANCED @8.6px",
+      "BALANCED @8.6px"
+     ]
+    },
+    "g_spot": {
+     "n": 726,
+     "lt9": 0,
+     "lt11": 132,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_metar": {
+     "n": 2904,
+     "lt9": 0,
+     "lt11": 990,
+     "min": 10.120000000000001,
+     "samples": []
+    },
+    "g_wx": {
+     "n": 2244,
+     "lt9": 264,
+     "lt11": 462,
+     "min": 8.995555555555555,
+     "samples": [
+      "VISUAL: GOOD WEATHER @9.0px",
+      "MARGINAL VISUAL @9.0px",
+      "INSTRUMENT @9.0px",
+      "LOW INSTRUMENT @9.0px",
+      "VISUAL: GOOD WEATHER @9.0px",
+      "MARGINAL VISUAL @9.0px"
+     ]
+    },
+    "g_lightgun": {
+     "n": 2990,
+     "lt9": 0,
+     "lt11": 2275,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_depart": {
+     "n": 1320,
+     "lt9": 132,
+     "lt11": 792,
+     "min": 8.62074074074074,
+     "samples": [
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px",
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px",
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px"
+     ]
+    },
+    "g_arrive": {
+     "n": 1273,
+     "lt9": 134,
+     "lt11": 804,
+     "min": 8.62074074074074,
+     "samples": [
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px",
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px",
+      "PICK A FREQUENCY @8.6px",
+      "STEP 1 / 13 @9.0px"
+     ]
+    },
+    "g_taxi": {
+     "n": 1650,
+     "lt9": 990,
+     "lt11": 1056,
+     "min": 6.371851851851852,
+     "samples": [
+      "PARKING STAND @8.2px",
+      "HANGAR @8.2px",
+      "27-9 @6.4px",
+      "27-9 @6.4px",
+      "27-9 @6.4px",
+      "27-9 @6.4px"
+     ]
+    },
+    "g_preflight": {
+     "n": 1088,
+     "lt9": 0,
+     "lt11": 64,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_wash": {
+     "n": 1188,
+     "lt9": 0,
+     "lt11": 594,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_cloud": {
+     "n": 715,
+     "lt9": 0,
+     "lt11": 65,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_pairs": {
+     "n": 469,
+     "lt9": 0,
+     "lt11": 134,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_gauges": {
+     "n": 1320,
+     "lt9": 66,
+     "lt11": 660,
+     "min": 8.920592592592593,
+     "samples": [
+      "KNOTS @8.9px",
+      "KNOTS @8.9px",
+      "KNOTS @8.9px",
+      "KNOTS @8.9px",
+      "KNOTS @8.9px",
+      "KNOTS @8.9px"
+     ]
+    },
+    "g_words": {
+     "n": 4977,
+     "lt9": 0,
+     "lt11": 630,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_darts": {
+     "n": 1349,
+     "lt9": 0,
+     "lt11": 710,
+     "min": 9.37037037037037,
+     "samples": []
+    },
+    "g_hockey": {
+     "n": 504,
+     "lt9": 0,
+     "lt11": 72,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_radar4": {
+     "n": 592,
+     "lt9": 0,
+     "lt11": 148,
+     "min": 10.120000000000001,
+     "samples": []
+    },
+    "g_skee": {
+     "n": 726,
+     "lt9": 66,
+     "lt11": 462,
+     "min": 8.62074074074074,
+     "samples": [
+      "50 @8.6px",
+      "50 @8.6px",
+      "50 @8.6px",
+      "50 @8.6px",
+      "50 @8.6px",
+      "50 @8.6px"
+     ]
+    },
+    "g_bowling": {
+     "n": 1152,
+     "lt9": 0,
+     "lt11": 144,
+     "min": 10.494814814814815,
+     "samples": []
+    },
+    "g_hoops": {
+     "n": 630,
+     "lt9": 140,
+     "lt11": 210,
+     "min": 0,
+     "samples": [
+      "3 PT @9.0px",
+      "3 PT @9.0px",
+      "3 PT @9.0px",
+      "3 PT @9.0px",
+      "3 PT @9.0px",
+      "3 PT @9.0px"
+     ]
+    }
+   },
+   "gErrors": []
+  }
+ }
+}
