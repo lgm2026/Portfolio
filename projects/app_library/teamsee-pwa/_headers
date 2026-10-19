@@ -1,0 +1,20 @@
+# Cloudflare static-asset headers (Workers Assets / Pages). The page and service worker revalidate on every load (cheap: ETag 304);
+# icons and the manifest can be cached for a day.
+/index.html
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+/
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+/sw.js
+  Cache-Control: no-cache
+/app-data.json
+  Cache-Control: no-cache
+/*.png
+  Cache-Control: public, max-age=86400
+/icon.svg
+  Cache-Control: public, max-age=86400
+/manifest.webmanifest
+  Cache-Control: public, max-age=86400

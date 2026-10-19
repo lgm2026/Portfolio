@@ -1,0 +1,51 @@
+{
+  "name": "TeamSee Sports Calendar",
+  "short_name": "TeamSee",
+  "description": "Follow leagues and teams, plan around games, keep memories, export or subscribe.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "sports",
+    "productivity"
+  ],
+  "shortcuts": [
+    {
+      "name": "Agenda",
+      "url": "./index.html?view=agenda"
+    },
+    {
+      "name": "My Sports Weekend",
+      "url": "./index.html?view=weekend"
+    }
+  ]
+}
