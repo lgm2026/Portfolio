@@ -1,0 +1,25 @@
+TeamSee 2.7.2 : PWA package (upload and go)
+
+1. Unzip. Everything in this folder is the app. There is no build step and nothing to install.
+2. Upload the CONTENTS of this folder to any folder on your site, for example:
+     yourportfolio.com/teamsee/        (works from any folder or at the site root)
+   Every path in the app is relative, so it does not care where it lives.
+3. Open that address over HTTPS. The browser offers "Install" / "Add to Home Screen", and after the
+   first load the app opens offline (service worker caches it).
+
+Files
+  index.html            the whole app: code, schedule data and all six brand images (about 2 MB)
+  sw.js                 offline service worker
+  manifest.webmanifest  install info (name, icons, shortcuts)
+  icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png, favicon-48.png, icon.svg   app icons
+  _headers              cache rules for Cloudflare Pages / Netlify
+  .htaccess             the same cache rules for Apache hosts
+
+Notes
+  - HTTPS is required for install and offline (localhost also works for testing).
+  - Fonts (Archivo, Kanit) load from Google Fonts the first time online; offline it falls back to system fonts.
+  - Your users' settings, events and memories stay in their own browser. Nothing is sent to a server.
+  - First-time visitors get a short welcome with an "I understand and agree" terms notice (agreement is required once; the tour itself is skippable). Full terms: Data & sources > Terms & disclaimer. Replay the tour: Settings > Tips > Replay the welcome tour.
+  - Schedule data is a snapshot built 2026-10-19. Times marked TBD are shown as TBD until a source confirms them.
+  - To link from a portfolio page: <a href="/teamsee/">TeamSee</a>. To embed: <iframe src="/teamsee/" title="TeamSee"></iframe>
+  - Changing the folder name later is fine, but visitors who installed it from the old address must reinstall.

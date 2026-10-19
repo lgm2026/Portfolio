@@ -1,0 +1,11 @@
+# Apache hosts (cPanel, shared hosting). Netlify/Cloudflare read _headers instead.
+AddType application/manifest+json .webmanifest
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|sw\.js)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(png|svg|webmanifest)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
