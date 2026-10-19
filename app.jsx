@@ -809,6 +809,14 @@
    TUNES CONFIG: add tracks as {t:"Song Title",platform:"youtube",id:"VIDEO_ID"} or
    {t:"Song Title",platform:"spotify",id:"TRACK_ID"}. They appear in the player instantly. */
       const APP_LIBRARY = [
+        
+{
+  t: "TeamSee",
+  sub: "Interactive Sports Calendar — Follow Teams, Track Games, Add Events & Save Memories",
+  url: "projects/app_library/teamsee-pwa/",
+  img: "projects/app_library/teamsee-pwa/icon.svg",
+},
+
         {
           t: "QRHype",
           sub: "Fast, Simple QR Code Generator",
@@ -1239,15 +1247,17 @@ function ProjectStrip({ go }) {
     
 ...APP_LIBRARY
   .filter((a) => a.url && a.t !== "Raging Knights Mobile Clubhouse")
-  .map((a) => ({
 
-      ...a,
-      img:
-        "projects/app_library/project-images/" +
-        a.t.replace(/\s+/g, "-") +
-        "-img.png",
-      type: "external",
-    })),
+.map((a) => ({
+  ...a,
+  img:
+    a.img ||
+    "projects/app_library/project-images/" +
+      a.t.replace(/\s+/g, "-") +
+      "-img.png",
+  type: "external",
+})),
+
 
     {
       t: "HypeTeen Academy",
