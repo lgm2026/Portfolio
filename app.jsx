@@ -814,7 +814,7 @@
   t: "TeamSee",
   sub: "Interactive Sports Calendar — Follow Teams, Track Games, Add Events & Save Memories",
   url: "projects/app_library/teamsee-pwa/",
-  img: "projects/app_library/teamsee-pwa/icon.svg",
+  img: "projects/app_library/teamsee-pwa/icon.png",
 },
 
         {
